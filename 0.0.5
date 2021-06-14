@@ -1,0 +1,25 @@
+{
+    "currentVersion": "0.0.5",
+    "previousVersion": "0.0.4",
+    "packageUrl": "url to app exchange package",
+    "tagList": [
+        "New fields",
+        "Page Layout"
+    ],
+    "instructionList": [
+        {
+            "instructionType": "PermissionSetGroupAssign",
+            "instructionTypeName": "Assign Permission Set Group To Profile Users- NOTE: keep this at the end only to avoid issues",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-400",
+                    "actionType": "AssignPermissionSetGroup",
+                    "namespace": "",
+                    "profilePermissionSetGroupAssignMap": {
+                        "System Administrator": "AC_PermissionSetGroup_BasicUser"
+                    }
+                }
+            ]
+        }
+    ]
+}
