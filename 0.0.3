@@ -1,145 +1,19 @@
 {
-    "currentVersion": "0.0.3",
-    "previousVersion": "0.0.2",
-    "packageUrl": "url to app exchange package",
-    "tagList": [
-        "New fields",
-        "Page Layout"
-    ],
+    "version": "0.0.3",
     "instructionList": [
         {
-
-            "sobjectName": "Account",
-            "instructionType": "PageLayout",
-            "instructionTypeName": "The Layout",
+            "instructionType": "ProfilePermission",
+            "instructionTypeName": "",
             "taskList": [
                 {
-                    "jiraTicket": "AC-285",
-                    "action": "Add",
-                    "actionType": "Field",
-                    "actionTypeName": "Donuts__c",
-                    "location": {
-                        "position": "Below",
-                        "reference": "Name",
-                        "section": "Trust Information",
-                        "column": 0,
-                        "behavior": "Edit"
-                    }
-                },
-                {
-                    "jiraTicket": "AC-286",
-                    "action": "Add",
-                    "actionType": "Field",
-                    "actionTypeName": "More_Donutss__c",
-                    "location": {
-                        "position": "Above",
-                        "reference": "Donuts__c",
-                        "section": "Trust Information",
-                        "column": 1,
-                        "behavior": "Readonly"
-                    }
-                },
-                {
-                    "jiraTicket": "AC-287",
-                    "action": "Add",
-                    "actionType": "RelatedList",
-                    "actionTypeName": "RelatedContactList",
-                    "fieldHeaders": [
-                        "FULL_NAME",
-                        "CONTACT.TITLE",
-                        "CONTACT.EMAIL",
-                        "CONTACT.PHONE1"
-                    ],
-                    "buttons": null,
-                    "sortField": null,
-                    "sortOrder": null
-                },
-                {
-                    "jiraTicket": "AC-288",
-                    "action": "Add",
-                    "actionType": "RelatedList",
-                    "actionTypeName": "RelatedAccountContactRelationList",
-                    "fieldHeaders": [
-                        "CONTACT.FULL_NAME",
-                        "ACCCONRELATION.ROLES",
-                        "ACCCONRELATION.START_DATE",
-                        "ACCCONRELATION.END_DATE"
-                    ],
-                    "buttons": null,
-                    "sortField": null,
-                    "sortOrder": null,
-                    "location": {
-                        "position": "Top",
-                        "reference": "RelatedContactList"
-                    }
-                }
-            ]
-        },
-        {
-            "sobjectName": "FinServ__FinancialAccount__c",
-            "namespace": "",
-            "instructionType": "CompactLayout",
-            "instructionTypeName": "The Layout",
-            "taskList": [
-                {
-                    "jiraTicket": "AC-289",
-                    "namespace":"command",
-                    "action": "CompactLayout",
-                    "actionType": "CompactLayout",
-                    "actionTypeName": "Financial_Account_Annuity_Layout",
-                    "fieldHeaders" : [
-                        "command__DTCC_Status__c",
-                        "command__AE_Status__c"
-                    ],
-                    "fieldsToRemove" : [
-                        "FinServ__Status__c"
-                    ]
-
-                }
-            ]
-        },
-        {
-            "sobjectName": "Contact",
-            "instructionType": "PageLayout",
-            "instructionTypeName": "The Layout",
-            "taskList": [
-                {
-                    "jiraTicket": "AC-300",
-                    "action": "Modify",
-                    "actionType": "ModifyField",
-                    "actionTypeName": "WGTM__c",
-                    "fields": {
-                        "fullName": "Contact.WGTM__c",
-                        "label" : "TestLabel"
-                    }
-                }
-            ]
-        },
-        {
-            "description": "Profile Modifications",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-107",
-                    "description": "Add Import Leads permission to AC Basic User Profile",
+                    "jiraTicket": "AC-350",
+                    "namespace":"",
                     "actionType": "ProfilePermission",
-                    "actionTypeName": "AC Basic User",
-                    "optionsMap": {
-                        "ImportLeads": true,
+
+                    "profileName" : "AC Basic User",
+                    "profileUserPermissionMap" : {
                         "ViewSetup" : false
-                    }
-                }
-            ]
-        },
-        {
-            "instructionType": "PermissionSetGroupAssign",
-            "instructionTypeName": "Assign Permission Set Group To Profile Users- NOTE: keep this at the end only to avoid issues",
-            "taskList": [
-                {
-                    "jiraTicket": "AC-400",
-                    "actionType": "AssignPermissionSetGroup",
-                    "namespace": "",
-                    "profilePermissionSetGroupAssignMap": {
-                        "System Administrator": "AC_PermissionSetGroup_BasicUser"
+
                     }
                 }
             ]
