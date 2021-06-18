@@ -2,18 +2,20 @@
     "version": "0.0.4",
     "instructionList": [
         {
-            "instructionType": "ProfilePermission",
-            "instructionTypeName": "",
+            "sObjectName": "PersonAccount",
+            "instructionTypeName": "Client",
             "taskList": [
                 {
-                    "jiraTicket": "AC-350",
-                    "namespace":"",
-                    "actionType": "ProfilePermission",
-
-                    "profileName" : "AC Basic User",
-                    "profileUserPermissionMap" : {
-                        "ViewSetup" : false
-
+                    "jiraTicket": "ac-262",
+                    "description": "Add wedding anni date field",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__WeddingAnniversary__pc",
+                    "location": {
+                        "position": "below",
+                        "reference": "FinServ__MaritalStatus__pc",
+                        "section": "Account Information",
+                        "column": 0,
+                        "behavior": "Readonly"
                     }
                 }
             ]
