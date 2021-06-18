@@ -1,22 +1,23 @@
 {
-    "version": "0.0.5",
+    "version": "0.0.1",
     "instructionList": [
-        {
-            "sObjectName": "PersonAccount",
-            "instructionTypeName": "command_Client",
+         {
+            "sobjectName": "Opportunity",
+            "instructionType": "",
+            "instructionTypeName": "Stage",
             "taskList": [
                 {
-                    "jiraTicket": "ac-261",
-                    "description": "Add wedding anni date field",
-                    "actionType": "Field",
-                    "actionTypeName": "FinServ__WeddingAnniversary__pc",
-                    "location": {
-                        "position": "below",
-                        "reference": "FinServ__MaritalStatus__pc",
-                        "section": "Account Information",
-                        "column": 0,
-                        "behavior": "Edit"
-                    }
+                    "jiraTicket": "ac-6",
+                    "actionType": "PicklistValueStandard",
+                    "actionTypeName":"Stage",
+                    "actionTypeLabel": "Bob is MY uncle",
+                    "default_x": false,
+                    "subTaskList": [
+                        {
+                            "actionType": "ProcessField",
+                            "actionTypeName":"FinServ__Opportunity Process"
+                        }
+                    ]
                 }
             ]
         }
