@@ -1,21 +1,45 @@
 {
-    "version": "0.0.2",
     "instructionList": [
-         {
-            "sobjectName": "Opportunity",
-            "instructionType": "",
-            "instructionTypeName": "Stage",
+        {
+            "description": "Profile Modifications",
             "taskList": [
                 {
-                    "jiraTicket": "ac-6",
-                    "actionType": "PicklistValueStandard",
-                    "actionTypeName":"Stage",
-                    "actionTypeLabel": "Bob is MY uncle",
-                    "default_x": false,
+                    "jiraTicket": "ac-1515",
+                    "description": "Contains several tasks to modify the AC Basic Profile",
+                    "actionType": "ProfilePermission",
+                    "actionTypeName": "AC Basic User",
                     "subTaskList": [
                         {
-                            "actionType": "ProcessField",
-                            "actionTypeName":"FinServ__Opportunity Process"
+                            "jiraTicket": "ac-1515",
+                            "description": "Remove ability for AC Basic Users to view setup",
+                            "optionsMap": {
+                                "ViewSetup": false
+                            }
+                        },
+                        {
+                            "jiraTicket": "ac-720",
+                            "description": "Allow users to update records with inactive users as owners",
+                            "optionsMap": {
+                                "UpdateWithInactiveOwner": true,
+                                "CreateAuditFields": true
+                            }
+                        },
+                        {
+                            "jiraTicket": "ac-85",
+                            "description": "Allow Reporting for AC Basic User Profile",
+                            "optionsMap": {
+                                "CreateReportFolders": true,
+                                "EditMyReports":  true,
+                                "ViewPublicReports": true,
+                                "ManageReportsInPubFolders": true
+                            }
+                        },
+                        {
+                            "jiraTicket": "ac-107",
+                            "description": "Add 'Import Leads' permission to AC Basic User Profile",
+                            "optionsMap": {
+                                "ImportLeads": true
+                            }
                         }
                     ]
                 }
