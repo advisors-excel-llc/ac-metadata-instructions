@@ -1,23 +1,221 @@
 {
-    "version": "0.0.1",
     "instructionList": [
-         {
-            "sobjectName": "Opportunity",
-            "instructionType": "",
-            "instructionTypeName": "Stage",
+        {
+            "sObjectName": "Lead",
+            "instructionTypeName": "command__AC Lead Layout",
             "taskList": [
                 {
-                    "jiraTicket": "ac-6",
-                    "actionType": "PicklistValueStandard",
-                    "actionTypeName":"Stage",
-                    "actionTypeLabel": "Bob is MY uncle",
-                    "default_x": false,
+                    "jiraTicket": "ac-234",
+                    "description": "Add Writing and Servicing Advisors fields to AC Lead Layout",
+                    "actionType": "Field",
                     "subTaskList": [
                         {
-                            "actionType": "ProcessField",
-                            "actionTypeName":"FinServ__Opportunity Process"
+                            "actionTypeName": "command__Lead_Writing_Advisors__c",
+                            "location": {
+                                "position": "below",
+                                "reference": "command__Lead_Martial_Status__c",
+                                "section": "Lead Information",
+                                "column": 0,
+                                "behavior": "Edit"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__Lead_Servicing_Advisors__c",
+                            "location": {
+                                "position": "below",
+                                "reference": "FinServ__ReferredByContact__c",
+                                "section": "Lead Information",
+                                "column": 1,
+                                "behavior": "Edit"
+                            }
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "sObjectName": "PersonAccount",
+            "instructionTypeName": "command__Client",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-261",
+                    "description": "Add wedding anni date field below Marital status",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__WeddingAnniversary__pc",
+                    "location": {
+                        "position": "Below",
+                        "reference": "FinServ__MaritalStatus__pc",
+                        "section": "Account Information",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Task",
+            "instructionTypeName": "command__AC Task Layout",
+            "description": "Add Type field to AC Task Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-1866a",
+                    "description": "Add Type field to AC Task Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "Type",
+                    "location": {
+                        "position": "below",
+                        "reference": "Subject",
+                        "section": "Task Information",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-1866b",
+                    "description": "Remove Attachments related lists",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedActivityAttachmentList",
+                    "optionsMap": {
+                        "action": "remove"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-1866c",
+                    "description": "Add files related list",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedFileList",
+                    "optionsMap": {
+                    }
+                },
+                                {
+                    "jiraTicket": "ac-1866d",
+                    "description": "Add notes related List",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedContentNoteList",
+                    "optionsMap": {
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Opportunity",
+            "instructionTypeName": "FinServ__Opportunity (General) Layout",
+            "description": "Modify related lists on opportunity general layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-1863a",
+                    "description": "add Opportunity fields history list",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedEntityHistoryList"
+                },
+                {
+                    "jiraTicket": "ac-1863b",
+                    "description": "Add files related list",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedFileList"
+                },
+                {
+                    "jiraTicket": "ac-1863c",
+                    "description": "Add notes related List",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedContentNoteList"
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account (Annuity) Layout",
+            "description": "Modify related lists on Financial Account (Annuity) layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-1857a",
+                    "description": "Add household field to Fin Serv Annuity Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__Household__c",
+                    "location": {
+                        "position": "below",
+                        "reference": "FinServ__PrimaryOwner__c",
+                        "section": "System Information",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }                        
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account(Life) Layout",
+            "description": "Modify related lists on Financial Account(Life) layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-1857b",
+                    "description": "Add household field to Fin Serv Life Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__Household__c",
+                    "location": {
+                        "position": "below",
+                        "reference": "FinServ__PrimaryOwner__c",
+                        "section": "System Information",
+                        "column": 1,
+                        "behavior": "Edit"
+                    }                        
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account (REIT/Mutual Fund/Other) Layout",
+            "description": "Modify related lists on Financial Account (REIT/Mutual Fund/Other) layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-1857c",
+                    "description": "Add household field to Fin Serv REIT/Mutual Fund/Other Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__Household__c",
+                    "location": {
+                        "position": "below",
+                        "reference": "FinServ__PrimaryOwner__c",
+                        "section": "Basic Info",
+                        "column": 1,
+                        "behavior": "Edit"
+                    }                        
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account(AUM) Layout",
+            "description": "Add Account value below Stat Signed on AUM Fin Account Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-656",
+                    "description": "Add Account value below Stat Signed on AUM Fin Account Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "command__Account_Value__c",
+                    "location": {
+                        "position": "Below",
+                        "reference": "command__State_Signed__c",
+                        "section": "Basic Information",
+                        "column": 1,
+                        "behavior": "Edit"
+                    }                        
+                }
+            ]
+        },
+        {
+            "sobjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "Compact Layout",
+            "description": "Add Status field to Compact Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-4694",
+                    "description": "Remove Status-DNU field and add Status field to Compact Layout",
+                    "actionType": "CompactLayout",
+                    "actionTypeName": "command__Financial_Account_REIT_Mutual_Fund_Other_Layout",
+                    "optionsMap": {
+                        "fieldsToAdd": "FinServ__Status__c",
+                        "fieldsToRemove": "command__DTCC_Status__c"
+                    }
                 }
             ]
         }
