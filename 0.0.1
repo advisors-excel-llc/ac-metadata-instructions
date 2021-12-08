@@ -124,66 +124,6 @@
         },
         {
             "sObjectName": "FinServ__FinancialAccount__c",
-            "instructionTypeName": "command__Financial Account (Annuity) Layout",
-            "description": "Modify related lists on Financial Account (Annuity) layout",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-1857a",
-                    "description": "Add household field to Fin Serv Annuity Layout",
-                    "actionType": "Field",
-                    "actionTypeName": "FinServ__Household__c",
-                    "location": {
-                        "position": "below",
-                        "reference": "FinServ__PrimaryOwner__c",
-                        "section": "System Information",
-                        "column": 0,
-                        "behavior": "Edit"
-                    }                        
-                }
-            ]
-        },
-        {
-            "sObjectName": "FinServ__FinancialAccount__c",
-            "instructionTypeName": "command__Financial Account(Life) Layout",
-            "description": "Modify related lists on Financial Account(Life) layout",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-1857b",
-                    "description": "Add household field to Fin Serv Life Layout",
-                    "actionType": "Field",
-                    "actionTypeName": "FinServ__Household__c",
-                    "location": {
-                        "position": "below",
-                        "reference": "FinServ__PrimaryOwner__c",
-                        "section": "System Information",
-                        "column": 1,
-                        "behavior": "Edit"
-                    }                        
-                }
-            ]
-        },
-        {
-            "sObjectName": "FinServ__FinancialAccount__c",
-            "instructionTypeName": "command__Financial Account (REIT/Mutual Fund/Other) Layout",
-            "description": "Modify related lists on Financial Account (REIT/Mutual Fund/Other) layout",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-1857c",
-                    "description": "Add household field to Fin Serv REIT/Mutual Fund/Other Layout",
-                    "actionType": "Field",
-                    "actionTypeName": "FinServ__Household__c",
-                    "location": {
-                        "position": "below",
-                        "reference": "FinServ__PrimaryOwner__c",
-                        "section": "Basic Info",
-                        "column": 1,
-                        "behavior": "Edit"
-                    }                        
-                }
-            ]
-        },
-        {
-            "sObjectName": "FinServ__FinancialAccount__c",
             "instructionTypeName": "command__Financial Account(AUM) Layout",
             "description": "Add Account value below Stat Signed on AUM Fin Account Layout",
             "taskList": [
@@ -215,6 +155,82 @@
                     "optionsMap": {
                         "fieldsToAdd": "FinServ__Status__c",
                         "fieldsToRemove": "command__DTCC_Status__c"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account (Annuity) Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-635a",
+                    "description": "Add HouseHold field value below Product Name",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__Household__c",
+                    "location": {
+                        "position": "Below",
+                        "reference": "FinServ__ProductName__c",
+                        "section": "Basic Info",
+                        "column": 1,
+                        "behavior": "Readonly"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account (REIT/Mutual Fund/Other) Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-635b",
+                    "description": "Add HouseHold field value below Product Name Fin Account Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__Household__c",
+                    "location": {
+                        "position": "Below",
+                        "reference": "FinServ__ProductName__c",
+                        "section": "Basic Info",
+                        "column": 1,
+                        "behavior": "Readonly"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account(AUM) Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-635d",
+                    "description": "Add HouseHold field value below Model",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__Household__c",
+                    "location": {
+                        "position": "Below",
+                        "reference": "command__Model__c",
+                        "section": "Basic Information",
+                        "column": 1,
+                        "behavior": "Readonly"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account(Life) Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-635e",
+                    "description": "Add HouseHold field value below Product Name",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__Household__c",
+                    "location": {
+                        "position": "Below",
+                        "reference": "FinServ__ProductName__c",
+                        "section": "Information",
+                        "column": 1,
+                        "behavior": "Readonly"
                     }
                 }
             ]
