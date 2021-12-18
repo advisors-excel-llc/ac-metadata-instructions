@@ -1,0 +1,113 @@
+{
+    "instructionList": [
+                {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account (Annuity) Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "MISC-1346",
+                    "description": "Add AE Data Feed fields to annuity layout.",
+                    "actionType": "Field",
+                    "subTaskList": [
+                        {
+                            "actionTypeName": "command__AE_Account_Value__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 0,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_Tax_Qualification__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 1,
+                                "behavior": "Readonly"
+                            }
+                        },                        
+                        {
+                            "actionTypeName": "command__AE_Actuarial_Present_Value__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 0,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_RMD_Value__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 1,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_Year_End_Value__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 0,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_Gross_Death_Benefit__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 1,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_Initial_Purchase_Amount__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 0,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_Total_Withdrawal__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 1,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_Surrender_Value__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 0,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_Total_Contribution_Since_Inception__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 1,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_Effective_Date__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 0,
+                                "behavior": "Readonly"
+                            }
+                        },
+                        {
+                            "actionTypeName": "command__AE_Received_Date__c",
+                            "location": {
+                                "section": "AE Data",
+                                "column": 1,
+                                "behavior": "Readonly"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
+}
