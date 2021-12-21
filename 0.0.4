@@ -1,6 +1,6 @@
 {
     "instructionList": [
-                {
+        {
             "sObjectName": "FinServ__FinancialAccount__c",
             "instructionTypeName": "command__Financial Account (Annuity) Layout",
             "taskList": [
@@ -9,6 +9,19 @@
                     "description": "Add AE Data Feed fields to annuity layout.",
                     "actionType": "Field",
                     "subTaskList": [
+                        {
+                            "actionType" = "LayoutSection",
+                            "actionTypeName" = "AE Data",
+                            "location": {
+                                "reference": "Basic Info"
+                            },
+                            "optionsMap": {
+                                "customLabel": true,
+                                "detailHeading" : true,
+                                "editHeading": false,
+                                "style": "TwoColumnsLeftToRight"
+                            }
+                        },
                         {
                             "actionTypeName": "command__AE_Account_Value__c",
                             "location": {
