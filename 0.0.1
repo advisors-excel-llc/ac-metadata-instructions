@@ -1,6 +1,26 @@
 {
     "instructionList": [
         {
+                    "sObjectName": "FinServ__FinancialAccount__c",
+                    "instructionTypeName": "command__Financial Account(AUM) Layout",
+                    "description": "Modify related lists on Financial Account(AUM) Layout",
+                    "taskList": [
+                        {
+                            "jiraTicket": "ac-656",
+                            "description": "Add files related List",
+                            "actionType": "RelatedList",
+                            "actionTypeName": "RelatedFileList",
+                            "optionsMap": {
+                                "action": "add"
+                            },
+                            "location": {
+                                "position": "Below",
+                                "reference": "RelatedContentNoteList"
+                            }
+                        }
+                    ]
+                },
+                {
             "sObjectName": "Lead",
             "instructionTypeName": "command__AC Lead Layout",
             "taskList": [
@@ -231,26 +251,6 @@
                         "section": "Information",
                         "column": 1,
                         "behavior": "Edit"
-                    }
-                }
-            ]
-        },
-        {
-            "sObjectName": "FinServ__FinancialAccount__c",
-            "instructionTypeName": "command__Financial Account(AUM) Layout",
-            "description": "Modify related lists on Financial Account(AUM) Layout",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-656",
-                    "description": "Add files related List",
-                    "actionType": "RelatedList",
-                    "actionTypeName": "RelatedFileList",
-                    "optionsMap": {
-                        "action": "add"
-                    },
-                    "location": {
-                        "position": "Below",
-                        "reference": "RelatedContentNoteList"
                     }
                 }
             ]
