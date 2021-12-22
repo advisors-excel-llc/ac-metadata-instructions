@@ -125,7 +125,7 @@
         {
             "sObjectName": "FinServ__FinancialAccount__c",
             "instructionTypeName": "command__Financial Account(AUM) Layout",
-            "description": "Add Account value below Stat Signed on AUM Fin Account Layout",
+            "description": "Add Account value below State Signed on AUM Fin Account Layout",
             "taskList": [
                 {
                     "jiraTicket": "ac-656",
@@ -138,7 +138,7 @@
                         "section": "Basic Information",
                         "column": 1,
                         "behavior": "Edit"
-                    }                        
+                    }
                 }
             ]
         },
@@ -173,7 +173,7 @@
                         "reference": "FinServ__ProductName__c",
                         "section": "Basic Info",
                         "column": 1,
-                        "behavior": "Readonly"
+                        "behavior": "Edit"
                     }
                 }
             ]
@@ -192,7 +192,7 @@
                         "reference": "FinServ__ProductName__c",
                         "section": "Basic Info",
                         "column": 1,
-                        "behavior": "Readonly"
+                        "behavior": "Edit"
                     }
                 }
             ]
@@ -203,15 +203,15 @@
             "taskList": [
                 {
                     "jiraTicket": "ac-635d",
-                    "description": "Add HouseHold field value below Model",
+                    "description": "Add HouseHold field value below Primary owner",
                     "actionType": "Field",
                     "actionTypeName": "FinServ__Household__c",
                     "location": {
                         "position": "Below",
-                        "reference": "command__Model__c",
+                        "reference": "FinServ__PrimaryOwner__c",
                         "section": "Basic Information",
-                        "column": 1,
-                        "behavior": "Readonly"
+                        "column": 0,
+                        "behavior": "Edit"
                     }
                 }
             ]
@@ -230,8 +230,21 @@
                         "reference": "FinServ__ProductName__c",
                         "section": "Information",
                         "column": 1,
-                        "behavior": "Readonly"
+                        "behavior": "Edit"
                     }
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account(AUM) Layout",
+            "description": "Modify related lists on Financial Account(AUM) Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-656",
+                    "description": "Add files related List",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedFileList"
                 }
             ]
         }
