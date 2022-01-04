@@ -13,7 +13,7 @@
                         "position": "Below",
                         "reference": "FinServ__MaritalStatus__pc",
                         "section": "Account Information",
-                        "column": 0,
+                        "column": 1,
                         "behavior": "Edit"
                     }
                 }
@@ -166,7 +166,7 @@
                         {
                             "jiraTicket": "ac-20125a",
                             "actionTypeName": "command__Modal_Premium__c",
-                            "description": "Add modal premium below Death Benift on Financial Account(Life) Layout ",
+                            "description": "Add modal premium below Death Benefit on Financial Account(Life) Layout ",
                             "location": {
                                 "position": "below",
                                 "reference": "command__Death_Benefit__c",
@@ -267,48 +267,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "sObjectName": "FinServ__FinancialAccount__c",
-            "instructionTypeName": "command__Financial Account (Annuity) Layout",
-            "description": "Add Expected Premium to Financial Account(Annuity) Layout ",
-            "taskList": [
-                {
-                    "actionType": "Field",
-                    "subTaskList": [
-                        {
-                            "jiraTicket": "ac-20125K",
-                            "actionTypeName": "command__AE_Expected_Premium__c",
-                            "location": {
-                                "position": "below",
-                                "reference": "command__AE_Account_Value__c",
-                                "section": "AE Data",
-                                "column": 0,
-                                "behavior": "Edit"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "sObjectName": "PersonAccount",
-            "instructionTypeName": "command__Client",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-261",
-                    "description": "Add wedding Anniversary date field below Marital status",
-                    "actionType": "Field",
-                    "actionTypeName": "FinServ__WeddingAnniversary__pc",
-                    "location": {
-                        "position": "Below",
-                        "reference": "FinServ__MaritalStatus__pc",
-                        "section": "Account Information",
-                        "column": 1,
-                        "behavior": "Edit"
-                    }
-                }
-            ]
-        }
+        }      
     ]
 }
