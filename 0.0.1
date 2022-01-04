@@ -290,6 +290,25 @@
                     ]
                 }
             ]
+        },
+        {
+            "sObjectName": "PersonAccount",
+            "instructionTypeName": "command__Client",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-261",
+                    "description": "Add wedding Anniversary date field below Marital status",
+                    "actionType": "Field",
+                    "actionTypeName": "FinServ__WeddingAnniversary__pc",
+                    "location": {
+                        "position": "Below",
+                        "reference": "FinServ__MaritalStatus__pc",
+                        "section": "Account Information",
+                        "column": 1,
+                        "behavior": "Edit"
+                    }
+                }
+            ]
         }
     ]
 }
