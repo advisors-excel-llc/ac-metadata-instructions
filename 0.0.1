@@ -1,39 +1,6 @@
 {
     "instructionList": [
         {
-            "sObjectName": "Lead",
-            "instructionTypeName": "command__AC Lead Layout",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-234",
-                    "description": "Add Writing and Servicing Advisors fields to AC Lead Layout",
-                    "actionType": "Field",
-                    "subTaskList": [
-                        {
-                            "actionTypeName": "command__Lead_Writing_Advisors__c",
-                            "location": {
-                                "position": "below",
-                                "reference": "command__Lead_Martial_Status__c",
-                                "section": "Lead Information",
-                                "column": 0,
-                                "behavior": "Edit"
-                            }
-                        },
-                        {
-                            "actionTypeName": "command__Lead_Servicing_Advisors__c",
-                            "location": {
-                                "position": "below",
-                                "reference": "FinServ__ReferredByContact__c",
-                                "section": "Lead Information",
-                                "column": 1,
-                                "behavior": "Edit"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "sObjectName": "PersonAccount",
             "instructionTypeName": "command__Client",
             "taskList": [
@@ -46,7 +13,7 @@
                         "position": "Below",
                         "reference": "FinServ__MaritalStatus__pc",
                         "section": "Account Information",
-                        "column": 0,
+                        "column": 1,
                         "behavior": "Edit"
                     }
                 }
@@ -84,16 +51,14 @@
                     "description": "Add files related list",
                     "actionType": "RelatedList",
                     "actionTypeName": "RelatedFileList",
-                    "optionsMap": {
-                    }
+                    "optionsMap": {}
                 },
-                                {
+                {
                     "jiraTicket": "ac-1866d",
                     "description": "Add notes related List",
                     "actionType": "RelatedList",
                     "actionTypeName": "RelatedContentNoteList",
-                    "optionsMap": {
-                    }
+                    "optionsMap": {}
                 }
             ]
         },
@@ -138,7 +103,7 @@
                         "section": "Basic Information",
                         "column": 1,
                         "behavior": "Edit"
-                    }                        
+                    }
                 }
             ]
         },
@@ -155,63 +120,6 @@
                     "optionsMap": {
                         "fieldsToAdd": "FinServ__Status__c",
                         "fieldsToRemove": "command__DTCC_Status__c"
-                    }
-                }
-            ]
-        },
-        {
-            "sObjectName": "FinServ__FinancialAccount__c",
-            "instructionTypeName": "command__Financial Account (Annuity) Layout",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-635a",
-                    "description": "Add HouseHold field value below Product Name",
-                    "actionType": "Field",
-                    "actionTypeName": "FinServ__Household__c",
-                    "location": {
-                        "position": "Below",
-                        "reference": "FinServ__ProductName__c",
-                        "section": "Basic Info",
-                        "column": 1,
-                        "behavior": "Edit"
-                    }
-                }
-            ]
-        },
-        {
-            "sObjectName": "FinServ__FinancialAccount__c",
-            "instructionTypeName": "command__Financial Account (REIT/Mutual Fund/Other) Layout",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-635b",
-                    "description": "Add HouseHold field value below Product Name Fin Account Layout",
-                    "actionType": "Field",
-                    "actionTypeName": "FinServ__Household__c",
-                    "location": {
-                        "position": "Below",
-                        "reference": "FinServ__ProductName__c",
-                        "section": "Basic Info",
-                        "column": 1,
-                        "behavior": "Edit"
-                    }
-                }
-            ]
-        },
-        {
-            "sObjectName": "FinServ__FinancialAccount__c",
-            "instructionTypeName": "command__Financial Account(Life) Layout",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-635d",
-                    "description": "Add HouseHold field value below Product Name",
-                    "actionType": "Field",
-                    "actionTypeName": "FinServ__Household__c",
-                    "location": {
-                        "position": "Below",
-                        "reference": "FinServ__ProductName__c",
-                        "section": "Information",
-                        "column": 1,
-                        "behavior": "Edit"
                     }
                 }
             ]
@@ -247,6 +155,118 @@
                     "actionTypeName": "RelatedFileList"
                 }
             ]
-        }
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account(Life) Layout",
+            "taskList": [
+                {
+                    "actionType": "Field",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-20125a",
+                            "actionTypeName": "command__Modal_Premium__c",
+                            "description": "Add modal premium below Death Benefit on Financial Account(Life) Layout ",
+                            "location": {
+                                "position": "below",
+                                "reference": "command__Death_Benefit__c",
+                                "section": "Information",
+                                "column": 1,
+                                "behavior": "Edit"
+                            }
+                        },
+                        {
+                            "jiraTicket": "ac-20125b",
+                            "actionTypeName": "command__Issued_Date__c",
+                            "description": "Add Issued date to Financial Account(Life) Layout",
+                            "location": {
+                                "section": "Dates",
+                                "column": 0,
+                                "behavior": "Edit"
+                            }
+                        },
+                        {
+                            "jiraTicket": "ac-20125c",
+                            "actionTypeName": "command__Review_Date__c",
+                            "description": "Add Review Date to Financial Account(Life) Layout ",
+                            "location": {
+                                "section": "Dates",
+                                "column": 0,
+                                "behavior": "Edit"
+                            }
+                        },
+                        {
+                            "jiraTicket": "ac-20125d",
+                            "actionTypeName": "command__Due_Date__c",
+                            "description": "Add Due Date to Financial Account(Life) Layout ",
+                            "location": {
+                                "section": "Dates",
+                                "column": 1,
+                                "behavior": "Edit"
+                            }
+                        },
+                        {
+                            "jiraTicket": "ac-20125e",
+                            "actionTypeName": "command__Paid_Date__c",
+                            "description": "Add Paid Date to Financial Account(Life) Layout ",
+                            "location": {
+                                "position": "below",
+                                "reference": "command__Due_Date__c",
+                                "section": "Dates",
+                                "column": 1,
+                                "behavior": "Edit"
+                            }
+                        },
+                        {
+                            "jiraTicket": "ac-20125f",
+                            "actionTypeName": "command__Closed_Date__c",
+                            "description": "Add Closed Date to Financial Account(Life) Layout ",
+                            "location": {
+                                "position": "below",
+                                "reference": "command__Paid_Date__c",
+                                "section": "Dates",
+                                "column": 1,
+                                "behavior": "Edit"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account(AUM) Layout",
+            "taskList": [
+                {
+                    "actionType": "Field",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-20125g",
+                            "actionTypeName": "command__Registration_Id__c",
+                            "description": "Add Registration ID to Financial Account(AUM) Layout ",
+                            "location": {
+                                "position": "below",
+                                "reference": "FinServ__Household__c",
+                                "section": "Basic Information",
+                                "column": 0,
+                                "behavior": "Edit"
+                            }
+                        },
+                        {
+                            "jiraTicket": "ac-20125h",
+                            "actionTypeName": "command__Management_Style__c",
+                            "description": "Add Management Style to Financial Account(AUM) Layout ",
+                            "location": {
+                                "position": "below",
+                                "reference": "command__Registration_Id__c",
+                                "section": "Basic Information",
+                                "column": 0,
+                                "behavior": "Edit"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }      
     ]
 }
