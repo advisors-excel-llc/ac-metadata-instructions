@@ -67,6 +67,32 @@
                     }
                 }
             ]
+        },
+        {
+            "sObjectName": "PersonAccount",
+            "instructionTypeName": "command__Client",
+            "description": "Add Type field to AC Task Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-57a",
+                    "description": "Add files related list",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedFileList",
+                    "optionsMap": {}
+                },
+                {
+                    "jiraTicket": "ac-57b",
+                    "description": "Add Gift related list to Client Layout.",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "command__Gift__c.command__Contact__c",
+                    "optionsMap": {
+                        "fieldHeaders": "NAME,command__Gift_Cost__c,command__Date_Sent__c",
+                        "buttons": null,
+                        "sortField": null,
+                        "sortOrder": null
+                    }
+                }
+            ]
         }
     ]
 }
