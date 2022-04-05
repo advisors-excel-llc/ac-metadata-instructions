@@ -74,14 +74,14 @@
             "description": "Add Type field to AC Task Layout",
             "taskList": [
                 {
-                    "jiraTicket": "ac-57a",
+                    "jiraTicket": "ac-57a,ac-1878",
                     "description": "Add files related list",
                     "actionType": "RelatedList",
                     "actionTypeName": "RelatedFileList",
                     "optionsMap": {}
                 },
                 {
-                    "jiraTicket": "ac-57b",
+                    "jiraTicket": "ac-57b,ac-1878",
                     "description": "Add Gift related list to Client Layout.",
                     "actionType": "RelatedList",
                     "actionTypeName": "command__Gift__c.command__Contact__c",
@@ -91,6 +91,40 @@
                         "sortField": null,
                         "sortOrder": null
                     }
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-4682",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "command__Tax_Qualification__c",
+                    "optionsMap": {
+                        "picklistValues": "457 Plan,529 Plan,Beneficiary IRA,Educational IRA,HR10,Health Savings Account,Medical Savings Account,Non Deductible IRA,Non-Qualified,Non-Qualified (1035),Pension Plan,Profit Sharing Plan,Qualified,Rollover IRA,Roth IRA,SEP IRA,Simple IRA,Traditional IRA,UGMA,UTMA"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Account",
+            "instructionTypeName": "FinServ__Account (Household) Layout",
+            "description": "Add Type field to AC Task Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-1878a",
+                    "description": "Add files related list",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedFileList",
+                    "optionsMap": {}
+                },
+                {
+                    "jiraTicket": "ac-1878b",
+                    "description": "Add files related list",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedContentNoteList",
+                    "optionsMap": {}
                 }
             ]
         }
