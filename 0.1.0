@@ -1,18 +1,51 @@
 {
-    "instructionList": [
+  "instructionList": [
+    {
+      "sObjectName": "FinServ__FinancialAccount__c",
+      "instructionTypeName": "command__Alternative",
+      "taskList": [
         {
-            "sObjectName": "FinServ__FinancialAccount__c",
-            "instructionTypeName": "command__Alternative",
-            "taskList": [
-                {
-                    "jiraTicket": "AC-4682g",
-                    "actionType": "RecordTypePicklist",
-                    "actionTypeName": "command__Tax_Qualification__c",
-                    "optionsMap": {
-                        "picklistValues": "457 Plan,529 Plan,Beneficiary IRA,Educational IRA,HR10,Health Savings Account,Medical Savings Account,Non Deductible IRA,Non-Qualified,Non-Qualified (1035),Pension Plan,Profit Sharing Plan,Qualified,Rollover IRA,Roth IRA,SEP IRA,Simple IRA,Traditional IRA,UGMA,UTMA"
-                    }
-                }
-            ]
+          "jiraTicket": "AC-4682g",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Tax_Qualification__c",
+          "optionsMap": {
+            "picklistValues": "457 Plan,529 Plan,Beneficiary IRA,Educational IRA,HR10,Health Savings Account,Medical Savings Account,Non Deductible IRA,Non-Qualified,Non-Qualified (1035),Pension Plan,Profit Sharing Plan,Qualified,Rollover IRA,Roth IRA,SEP IRA,Simple IRA,Traditional IRA,UGMA,UTMA"
+          }
         }
-    ]
+      ]
+    },
+    {
+      "sObjectName": "Lead",
+      "instructionTypeName": "command__AC Lead Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-234",
+          "description": "Add Writing and Servicing Advisors fields to AC Lead Layout",
+          "actionType": "Field",
+          "subTaskList": [
+            {
+              "actionTypeName": "command__Lead_Writing_Advisors__c",
+              "location": {
+                "position": "below",
+                "reference": "command__Lead_Martial_Status__c",
+                "section": "Lead Information",
+                "column": 0,
+                "behavior": "Edit"
+              }
+            },
+            {
+              "actionTypeName": "command__Lead_Servicing_Advisors__c",
+              "location": {
+                "position": "below",
+                "reference": "FinServ__ReferredByContact__c",
+                "section": "Lead Information",
+                "column": 1,
+                "behavior": "Edit"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
