@@ -53,7 +53,7 @@
             {
                "jiraTicket":"AC-720",
                "actionType":"DeclarativeMetadata",
-               "actionTypeName":"Metadata",
+               "actionTypeName":"DeclarativeMetadata",
                "optionsMap":{
                   "packageSubMembers":"Security",
                   "packageMember":"Settings",
