@@ -1,0 +1,58 @@
+{
+  "instructionList": [
+    {
+      "sObjectName": "Event",
+      "instructionTypeName": "command__Event Layout",
+      "description": "Add the Repeat field Event Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-549a",
+          "description": "Add Type field to AC Task Layout",
+          "actionType": "Field",
+          "actionTypeName": "IsRecurrence2",
+          "location": {
+            "position": "below",
+            "reference": "OwnerId",
+            "section": "Calendar Event Details",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-549b",
+          "description": "Add Type field to AC Task Layout",
+          "actionType": "Field",
+          "actionTypeName": "Attendees",
+          "location": {
+            "position": "below",
+            "reference": "IsRecurrence2",
+            "section": "Calendar Event Details",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+
+      ]
+    },
+    {
+      "sObjectName": "FinServ__FinancialAccount__c",
+      "instructionTypeName": "command__Financial Account(Life) Layout",
+      "description": "Add Account value below State Signed on AUM Fin Account Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-20043",
+          "description": "Add Account value below Stat Signed on AUM Fin Account Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Target__c",
+          "location": {
+            "position": "Below",
+            "reference": "command__Death_Benefit__c",
+            "section": "Information",
+            "column": 1,
+            "behavior": "Edit"
+          }
+        }
+      ]
+    }
+  ]
+}
