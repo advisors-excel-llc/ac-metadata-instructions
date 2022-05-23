@@ -1,0 +1,59 @@
+{
+    "instructionList": [
+        {
+            "sObjectName": "Event",
+            "instructionTypeName": "command__Event Layout",
+            "description": "Add the Repeat field Event Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-549a",
+                    "description": "Add Type field to AC Task Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "IsRecurrence2",
+                    "location": {
+                        "position": "below",
+                        "reference": "OwnerId",
+                        "section": "Calendar Event Details",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-549b",
+                    "description": "Add Type field to AC Task Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "Attendees",
+                    "location": {
+                        "position": "below",
+                        "reference": "IsRecurrence2",
+                        "section": "Calendar Event Details",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-549c",
+                    "description": "Add Delete All Following  on Event Layout",
+                    "actionType": "PlatformAction",
+                    "actionTypeName": "nothing",
+                    "optionsMap": {
+                        "platformActionType": "StandardButton",
+                        "platformActionName": "DeleteFromThisEventOnwards",
+                        "platformActionListContext": "Record"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-549d",
+                    "description": "Add Delete All Following  on Event Layout",
+                    "actionType": "PlatformAction",
+                    "actionTypeName": "nothing",
+                    "optionsMap": {
+                        "platformActionType": "StandardButton",
+                        "platformActionName": "DeleteSeries",
+                        "platformActionListContext": "Record"
+                    }
+                }
+            ]
+        }
+    ]
+}
