@@ -1,5 +1,4 @@
 {
-    "version": "0.0.4",
     "instructionList": [
         {
             "sObjectName" : "FinServ__FinancialAccount__c",
@@ -31,13 +30,18 @@
                 }
             ]
         },
-        {
-          "jiraTicket": "AC-20154",
-          "actionType": "PicklistValueCustom",
-          "actionTypeName": "FinServ__Status__c",
-          "optionsMap": {
-            "picklistValues": "Approved,Await 1035 Funds,Held at AE,Lapse Pending,Lapsed"
-          }
+        {    
+            "sObjectName" : "FinServ__FinancialAccount__c",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-20154",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "FinServ__Status__c",
+                    "optionsMap": {
+                        "picklistValues": "Approved,Await 1035 Funds,Held at AE,Lapse Pending,Lapsed"
+                    }
+                }
+            ]
         }
       ]
     }
