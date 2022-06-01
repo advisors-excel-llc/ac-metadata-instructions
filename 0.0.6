@@ -71,18 +71,18 @@
         {
             "sObjectName": "PersonAccount",
             "instructionTypeName": "command__Client",
-            "description": "Add Type field to AC Task Layout",
+            "description": "Add Gifts and Files Related Lists to Client Layout",
             "taskList": [
                 {
-                    "jiraTicket": "ac-57a",
+                    "jiraTicket": "ac-1878a",
                     "description": "Add files related list",
                     "actionType": "RelatedList",
                     "actionTypeName": "RelatedFileList",
                     "optionsMap": {}
                 },
                 {
-                    "jiraTicket": "ac-57b",
-                    "description": "Add Gift related list to Client Layout.",
+                    "jiraTicket": "ac-1878b",
+                    "description": "Add Gift related list",
                     "actionType": "RelatedList",
                     "actionTypeName": "command__Gift__c.command__Contact__c",
                     "optionsMap": {
@@ -93,7 +93,27 @@
                     }
                 }
             ]
-
+        },
+        {
+            "sObjectName": "Account",
+            "instructionTypeName": "command__AC Account (Household) Layout",
+            "description": "Add Files and Notes Related Lists to Account (Household) Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-1878c",
+                    "description": "Add Files related list",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedFileList",
+                    "optionsMap": {}
+                },
+                {
+                    "jiraTicket": "ac-1878d",
+                    "description": "Add Notes related list",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedContentNoteList",
+                    "optionsMap": {}
+                }
+            ]
         },
         {
             "sObjectName": "command__Premium__c",
