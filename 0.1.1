@@ -1,40 +1,6 @@
 {
   "instructionList": [
     {
-      "sObjectName": "Event",
-      "instructionTypeName": "command__Event Layout",
-      "description": "Add the Repeat field Event Layout",
-      "taskList": [
-        {
-          "jiraTicket": "ac-549a",
-          "description": "Add Type field to AC Task Layout",
-          "actionType": "Field",
-          "actionTypeName": "IsRecurrence2",
-          "location": {
-            "position": "below",
-            "reference": "OwnerId",
-            "section": "Calendar Event Details",
-            "column": 0,
-            "behavior": "Edit"
-          }
-        },
-        {
-          "jiraTicket": "ac-549b",
-          "description": "Add Type field to AC Task Layout",
-          "actionType": "Field",
-          "actionTypeName": "Attendees",
-          "location": {
-            "position": "below",
-            "reference": "IsRecurrence2",
-            "section": "Calendar Event Details",
-            "column": 0,
-            "behavior": "Edit"
-          }
-        }
-
-      ]
-    },
-    {
       "sObjectName": "FinServ__FinancialAccount__c",
       "instructionTypeName": "command__Financial Account(Life) Layout",
       "description": "Add Account value below State Signed on AUM Fin Account Layout",
@@ -53,21 +19,6 @@
           }
         }
       ]
-    },
-      {
-         "sObjectName":"FinServ__FinancialAccount__c",
-         "instructionTypeName":"command__Alternative",
-         "taskList":[
-            {
-               "jiraTicket":"AC-4682g",
-               "actionType":"RecordTypePicklist",
-               "actionTypeName":"command__Tax_Qualification__c",
-               "optionsMap":{
-                  "picklistValues":"457 Plan,529 Plan,Beneficiary IRA,Educational IRA,HR10,Health Savings Account,Medical Savings Account,Non Deductible IRA,Non-Qualified,Non-Qualified (1035),Pension Plan,Profit Sharing Plan,Qualified,Rollover IRA,Roth IRA,SEP IRA,Simple IRA,Traditional IRA,UGMA,UTMA"
-               }
-            }
-         ]
-      }
-   ]
-
+    }
+  ]
 }
