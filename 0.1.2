@@ -1,0 +1,59 @@
+{
+    "instructionList": [
+        {
+            "sObjectName": "Event",
+            "instructionTypeName": "command__Event Layout",
+            "description": "Add  fields on  Event Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-549a",
+                    "description": "Add the Repeat field under Assigned To in the Calendar Details section",
+                    "actionType": "Field",
+                    "actionTypeName": "IsRecurrence2",
+                    "location": {
+                        "position": "below",
+                        "reference": "OwnerId",
+                        "section": "Calendar Event Details",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-549b",
+                    "description": "Add the Attendees Field under ‘Repeat’ in the Calendar Details section",
+                    "actionType": "Field",
+                    "actionTypeName": "Attendees",
+                    "location": {
+                        "position": "below",
+                        "reference": "IsRecurrence2",
+                        "section": "Calendar Event Details",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-549c",
+                    "description": "Add Delete All Following  to the Mobile and Lightning Actions section",
+                    "actionType": "PlatformAction",
+                    "actionTypeName": "nothing",
+                    "optionsMap": {
+                        "platformActionType": "StandardButton",
+                        "platformActionName": "DeleteFromThisEventOnwards",
+                        "platformActionListContext": "Record"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-549d",
+                    "description": "Add DeleteSeries to Mobile and Lightning Actions section",
+                    "actionType": "PlatformAction",
+                    "actionTypeName": "nothing",
+                    "optionsMap": {
+                        "platformActionType": "StandardButton",
+                        "platformActionName": "DeleteSeries",
+                        "platformActionListContext": "Record"
+                    }
+                }
+            ]
+        }
+    ]
+}
