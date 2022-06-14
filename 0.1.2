@@ -1,27 +1,26 @@
 {
-
-  "instructionList": [
-    {
-      "sObjectName": "FinServ__FinancialAccount__c",
-      "instructionTypeName": "command__Financial Account(Life) Layout",
-      "description": "Add Account value below State Signed on AUM Fin Account Layout",
-      "taskList": [
+    "instructionList": [
         {
-          "jiraTicket": "ac-20043",
-          "description": "Add Account value below Stat Signed on AUM Fin Account Layout",
-          "actionType": "Field",
-          "actionTypeName": "command__Target__c",
-          "location": {
-            "position": "Below",
-            "reference": "command__Death_Benefit__c",
-            "section": "Information",
-            "column": 1,
-            "behavior": "Edit"
-          }
-        }
-      ]
-    },
-    {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Financial Account(Life) Layout",
+            "description": "Add Target Premium to Life Financial Account page layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-20043",
+                    "description": "Add Target Premium field below Death Benefit field on Life financial account",
+                    "actionType": "Field",
+                    "actionTypeName": "command__Target__c",
+                    "location": {
+                        "position": "Below",
+                        "reference": "command__Death_Benefit__c",
+                        "section": "Information",
+                        "column": 1,
+                        "behavior": "Edit"
+                    }
+                }
+            ]
+        },
+        {
             "sObjectName": "Event",
             "instructionTypeName": "command__Event Layout",
             "description": "Add  fields on  Event Layout",
@@ -78,4 +77,3 @@
         }
     ]
 }
-
