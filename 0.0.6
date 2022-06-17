@@ -127,7 +127,96 @@
                     }
                 }
             ]
-
+        },
+        {
+            "sObjectName": "Task",
+            "instructionTypeName": "command__AC Task Layout",
+            "description": "Add Type field to AC Task Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-4103a",
+                    "description": "Add Type field to AC Task Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "Type",
+                    "location": {
+                        "position": "below",
+                        "reference": "Subject",
+                        "section": "Task Information",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-4103b",
+                    "description": "Remove Attachments related lists",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedActivityAttachmentList",
+                    "optionsMap": {
+                        "action": "remove"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-4103c",
+                    "description": "Add files related list",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedFileList",
+                    "optionsMap": {}
+                },
+                {
+                    "jiraTicket": "ac-4103d",
+                    "description": "Add notes related List",
+                    "actionType": "RelatedList",
+                    "actionTypeName": "RelatedContentNoteList",
+                    "optionsMap": {}
+                }
+            ]
+        },
+        {
+            "sObjectName": "Task",
+            "instructionType": "Modify",
+            "instructionTypeName": "FieldLevelSecurity",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-4103e",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "Type",
+                    "optionsMap": {
+                        "profileName": "System Administrator",
+                        "readable": "true",
+                        "editable": "true"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-4103f",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "Type",
+                    "optionsMap": {
+                        "profileName": "AC Basic User",
+                        "readable": "true",
+                        "editable": "true"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-4103g",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "Type",
+                    "optionsMap": {
+                        "profileName": "AC Read Only",
+                        "readable": "true",
+                        "editable": "true"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-4103h",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "Type",
+                    "optionsMap": {
+                        "profileName": "ReadOnly",
+                        "readable": "true",
+                        "editable": "true"
+                    }
+                }
+            ]
         }
     ]
 }
