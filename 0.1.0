@@ -58,7 +58,7 @@
                "actionTypeName":"AC Basic User",
                "subTaskList":[
                   {
-                     "jiraTicket":"ac-720",
+                     "jiraTicket":"ac-720b",
                      "description":"Allow users to update records with inactive users as owners",
                      "optionsMap":{
                         "UpdateWithInactiveOwner":true,
