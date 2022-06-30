@@ -45,25 +45,27 @@
                   "packageMember":"Settings",
                   "filePath":"settings/Security.settings",
                   "coupledFields":"<enableAuditFieldsInactiveOwner>false</enableAuditFieldsInactiveOwner>,<enableAuditFieldsInactiveOwner>true</enableAuditFieldsInactiveOwner>"
-               }
-            }
-         ]
-      },
-      {
-         "description": "Profile Modifications",
-         "taskList":[
-            {
-               "jiraTicket":"AC-720b",
-               "actionType":"ProfilePermission",
-               "actionTypeName":"AC Basic User",
+               },
                "subTaskList":[
                   {
-                     "jiraTicket":"ac-720b",
-                     "description":"Allow users to update records with inactive users as owners",
-                     "optionsMap":{
-                        "UpdateWithInactiveOwner":true,
-                        "CreateAuditFields":true
-                     }
+                     "description":"Profile Modifications",
+                     "taskList":[
+                        {
+                           "jiraTicket":"AC-720b",
+                           "actionType":"ProfilePermission",
+                           "actionTypeName":"AC Basic User",
+                           "subTaskList":[
+                              {
+                                 "jiraTicket":"ac-720b",
+                                 "description":"Allow users to update records with inactive users as owners",
+                                 "optionsMap":{
+                                    "UpdateWithInactiveOwner":true,
+                                    "CreateAuditFields":true
+                                 }
+                              }
+                           ]
+                        }
+                     ]
                   }
                ]
             }
