@@ -48,22 +48,16 @@
                },
                "subTaskList":[
                   {
-                     "description":"Profile Modifications",
+                     "description":"Allow users to update records with inactive users as owners",
                      "taskList":[
                         {
                            "jiraTicket":"AC-720b",
                            "actionType":"ProfilePermission",
                            "actionTypeName":"AC Basic User",
-                           "subTaskList":[
-                              {
-                                 "jiraTicket":"ac-720b",
-                                 "description":"Allow users to update records with inactive users as owners",
-                                 "optionsMap":{
-                                    "UpdateWithInactiveOwner":true,
-                                    "CreateAuditFields":true
-                                 }
-                              }
-                           ]
+                           "optionsMap":{
+                              "UpdateWithInactiveOwner":true,
+                              "CreateAuditFields":true
+                           }
                         }
                      ]
                   }
