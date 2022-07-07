@@ -1,0 +1,32 @@
+{
+    "instructionList": [
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-24747",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "FinServ__Status__c",
+                    "optionsMap": {
+                        "sortList": true,
+                        "picklistValues": "In Review,Outstanding Requirements,Approved Pending Premium,Rejected"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "FinServ__FinancialAccount__c",
+            "instructionTypeName": "command__Medicare",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-24747",
+                    "actionType": "RecordTypePicklist",
+                    "actionTypeName": "FinServ__Status__c",
+                    "optionsMap": {
+                        "picklistValues": "In Review,Outstanding Requirements,Approved Pending Premium,Rejected"
+                    }
+                }
+            ]
+        }
+    ]
+}
