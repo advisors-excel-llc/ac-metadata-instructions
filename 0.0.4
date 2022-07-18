@@ -1,17 +1,20 @@
 {
-  "instructionList": [
-    {
-      "description": "Profile Modifications",
-      "taskList": [
-        {
-          "jiraTicket": "ac-1515",
-          "actionType": "ProfilePermission",
-          "actionTypeName": "AC Basic User",
-          "optionsMap": {
-            "TransferAnyEntity": true
-          }
-        }
-      ]
-    }
-  ]
+   "instructionList":[
+      {
+         "instructionTypeName":"DeclarativeMetadata",
+         "taskList":[
+            {
+               "jiraTicket":"AC-720",
+               "actionType":"DeclarativeMetadata",
+               "actionTypeName":"DeclarativeMetadata",
+               "optionsMap":{
+                  "packageSubMembers":"Security",
+                  "packageMember":"Settings",
+                  "filePath":"settings/Security.settings",
+                  "coupledFields":"<enableAuditFieldsInactiveOwner>false</enableAuditFieldsInactiveOwner>,<enableAuditFieldsInactiveOwner>true</enableAuditFieldsInactiveOwner>"
+               }
+            }
+         ]
+      }
+   ]
 }
