@@ -1,332 +1,335 @@
 {
-  "instructionList": [
-	{
-	  "sObjectName": "FinServ__AccountAccountRelation__c",
-	  "instructionType": "Modify",
-	  "instructionTypeName": "FieldLevelSecurity",
-	  "taskList": [
-		{
-		  "jiraTicket": "AC-1872a",
-		  "actionType": "FieldLevelSecurity",
-		  "actionTypeName": "FinServ__AssociationType__c",
-		  "optionsMap": {
-			"profileName": "System Administrator",
-			"readable": "true",
-			"editable": "true"
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "FinServ__AccountAccountRelation__c",
-	  "instructionType": "Modify",
-	  "instructionTypeName": "FieldLevelSecurity",
-	  "taskList": [
-		{
-		  "jiraTicket": "AC-1872b",
-		  "actionType": "FieldLevelSecurity",
-		  "actionTypeName": "FinServ__AssociationType__c",
-		  "optionsMap": {
-			"profileName": "AC Basic User",
-			"readable": "true",
-			"editable": "true"
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "FinServ__AccountAccountRelation__c",
-	  "instructionType": "Modify",
-	  "instructionTypeName": "FieldLevelSecurity",
-	  "taskList": [
-		{
-		  "jiraTicket": "AC-1872c",
-		  "actionType": "FieldLevelSecurity",
-		  "actionTypeName": "FinServ__AssociationType__c",
-		  "optionsMap": {
-			"profileName": "AC Read Only",
-			"readable": "true",
-			"editable": "true"
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "FinServ__AccountAccountRelation__c",
-	  "instructionType": "Modify",
-	  "instructionTypeName": "FieldLevelSecurity",
-	  "taskList": [
-		{
-		  "jiraTicket": "AC-1872d",
-		  "actionType": "FieldLevelSecurity",
-		  "actionTypeName": "FinServ__AssociationType__c",
-		  "optionsMap": {
-			"profileName": "ReadOnly",
-			"readable": "true",
-			"editable": "true"
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "PersonAccount",
-	  "instructionTypeName": "command__Client",
-	  "description": "Add Gifts and Files Related Lists to Client Layout",
-	  "taskList": [
-		{
-		  "jiraTicket": "ac-1878a",
-		  "description": "Add files related list",
-		  "actionType": "RelatedList",
-		  "actionTypeName": "RelatedFileList",
-		  "optionsMap": {}
-		},
-		{
-		  "jiraTicket": "ac-1878b",
-		  "description": "Add Gift related list",
-		  "actionType": "RelatedList",
-		  "actionTypeName": "command__Gift__c.command__Contact__c",
-		  "optionsMap": {
-			"fieldHeaders": "NAME,command__Gift_Cost__c,command__Date_Sent__c",
-			"buttons": null,
-			"sortField": null,
-			"sortOrder": null
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "Account",
-	  "instructionTypeName": "command__AC Account (Household) Layout",
-	  "description": "Add Files and Notes Related Lists to Account (Household) Layout",
-	  "taskList": [
-		{
-		  "jiraTicket": "ac-1878c",
-		  "description": "Add Files related list",
-		  "actionType": "RelatedList",
-		  "actionTypeName": "RelatedFileList",
-		  "optionsMap": {}
-		},
-		{
-		  "jiraTicket": "ac-1878d",
-		  "description": "Add Notes related list",
-		  "actionType": "RelatedList",
-		  "actionTypeName": "RelatedContentNoteList",
-		  "optionsMap": {}
-		}
-	  ]
-	},
-	{
-	  "sObjectName":"Lead",
-	  "instructionTypeName":"command__AC Lead Layout",
-	  "taskList":[
-		{
-		  "jiraTicket":"ac-234",
-		  "description":"Add Writing and Servicing Advisors fields to AC Lead Layout",
-		  "actionType":"Field",
-		  "subTaskList":[
-			{
-			  "actionTypeName":"command__Lead_Writing_Advisors__c",
-			  "location":{
-				"position":"below",
-				"reference":"command__Lead_Martial_Status__c",
-				"section":"Lead Information",
-				"column":0,
-				"behavior":"Edit"
-			  }
-			},
-			{
-			  "actionTypeName":"command__Lead_Servicing_Advisors__c",
-			  "location":{
-				"position":"below",
-				"reference":"FinServ__ReferredByContact__c",
-				"section":"Lead Information",
-				"column":1,
-				"behavior":"Edit"
-			  }
-			}
-		  ]
-		}
-	  ]
-	},
-	{
-	  "instructionTypeName":"DeclarativeMetadata",
-	  "taskList":[
-		{
-		  "jiraTicket":"AC-720a",
-		  "actionType":"DeclarativeMetadata",
-		  "actionTypeName":"DeclarativeMetadata",
-		  "optionsMap":{
-			"packageSubMembers":"Security",
-			"packageMember":"Settings",
-			"filePath":"settings/Security.settings",
-			"coupledFields":"<enableAuditFieldsInactiveOwner>false</enableAuditFieldsInactiveOwner>,<enableAuditFieldsInactiveOwner>true</enableAuditFieldsInactiveOwner>"
-		  },
-		  "subTaskList":[
-			{
-			  "instructionTypeName":"ProfilePermission",
-			  "description":"Allow users to update records with inactive users as owners",
-			  "jiraTicket":"AC-720b",
-			  "actionType":"ProfilePermission",
-			  "actionTypeName":"AC Basic User",
-			  "optionsMap":{
-				"UpdateWithInactiveOwner":true,
-				"CreateAuditFields":true
-			  }
-			}
-		  ]
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "FinServ__FinancialAccount__c",
-	  "instructionTypeName": "command__Financial Account(Life) Layout",
-	  "description": "Add Target Premium to Life Financial Account page layout",
-	  "taskList": [
-		{
-		  "jiraTicket": "ac-20043",
-		  "description": "Add Target Premium field below Death Benefit field on Life financial account",
-		  "actionType": "Field",
-		  "actionTypeName": "command__Target__c",
-		  "location": {
-			"position": "Below",
-			"reference": "command__Death_Benefit__c",
-			"section": "Information",
-			"column": 1,
-			"behavior": "Edit"
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "Event",
-	  "instructionTypeName": "command__Event Layout",
-	  "description": "Add  fields on  Event Layout",
-	  "taskList": [
-		{
-		  "jiraTicket": "ac-549a",
-		  "description": "Add the Repeat field under Assigned To in the Calendar Details section",
-		  "actionType": "Field",
-		  "actionTypeName": "IsRecurrence2",
-		  "location": {
-			"position": "below",
-			"reference": "OwnerId",
-			"section": "Calendar Event Details",
-			"column": 0,
-			"behavior": "Edit"
-		  }
-		},
-		{
-		  "jiraTicket": "ac-549b",
-		  "description": "Add the Attendees Field under ‘Repeat’ in the Calendar Details section",
-		  "actionType": "Field",
-		  "actionTypeName": "Attendees",
-		  "location": {
-			"position": "below",
-			"reference": "IsRecurrence2",
-			"section": "Calendar Event Details",
-			"column": 0,
-			"behavior": "Edit"
-		  }
-		},
-		{
-		  "jiraTicket": "ac-549c",
-		  "description": "Add Delete All Following  to the Mobile and Lightning Actions section",
-		  "actionType": "PlatformAction",
-		  "actionTypeName": "nothing",
-		  "optionsMap": {
-			"platformActionType": "StandardButton",
-			"platformActionName": "DeleteFromThisEventOnwards",
-			"platformActionListContext": "Record"
-		  }
-		},
-		{
-		  "jiraTicket": "ac-549d",
-		  "description": "Add DeleteSeries to Mobile and Lightning Actions section",
-		  "actionType": "PlatformAction",
-		  "actionTypeName": "nothing",
-		  "optionsMap": {
-			"platformActionType": "StandardButton",
-			"platformActionName": "DeleteSeries",
-			"platformActionListContext": "Record"
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "FinServ__FinancialAccount__c",
-	  "instructionTypeName": "command__Financial Account (Annuity) Layout",
-	  "taskList": [
-		{
-		  "jiraTicket": "ac-635a",
-		  "description": "Add HouseHold field  below Product Name",
-		  "actionType": "Field",
-		  "actionTypeName": "FinServ__Household__c",
-		  "location": {
-			"position": "Below",
-			"reference": "FinServ__ProductName__c",
-			"section": "Basic Info",
-			"column": 1,
-			"behavior": "Readonly"
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "FinServ__FinancialAccount__c",
-	  "instructionTypeName": "command__Financial Account (REIT/Mutual Fund/Other) Layout",
-	  "taskList": [
-		{
-		  "jiraTicket": "ac-635b",
-		  "description": "Add HouseHold field  below Product Name Fin Account Layout",
-		  "actionType": "Field",
-		  "actionTypeName": "FinServ__Household__c",
-		  "location": {
-			"position": "Below",
-			"reference": "FinServ__ProductName__c",
-			"section": "Basic Info",
-			"column": 1,
-			"behavior": "Readonly"
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "FinServ__FinancialAccount__c",
-	  "instructionTypeName": "command__Financial Account(AUM) Layout",
-	  "taskList": [
-		{
-		  "jiraTicket": "ac-635d",
-		  "description": "Add HouseHold field  below Primary Owner",
-		  "actionType": "Field",
-		  "actionTypeName": "FinServ__Household__c",
-		  "location": {
-			"position": "Below",
-			"reference": "FinServ__PrimaryOwner__c",
-			"section": "Basic Information",
-			"column": 1,
-			"behavior": "Readonly"
-		  }
-		}
-	  ]
-	},
-	{
-	  "sObjectName": "FinServ__FinancialAccount__c",
-	  "instructionTypeName": "command__Financial Account(Life) Layout",
-	  "taskList": [
-		{
-		  "jiraTicket": "ac-635e",
-		  "description": "Add HouseHold field value below Product Name",
-		  "actionType": "Field",
-		  "actionTypeName": "FinServ__Household__c",
-		  "location": {
-			"position": "Below",
-			"reference": "FinServ__ProductName__c",
-			"section": "Information",
-			"column": 1,
-			"behavior": "Readonly"
-		  }
-		}
-	  ]
-	}
-  ]
+   "instructionList":[
+      {
+         "sObjectName":"FinServ__AccountAccountRelation__c",
+         "instructionType":"Modify",
+         "instructionTypeName":"FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"AC-1872a",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"FinServ__AssociationType__c",
+               "optionsMap":{
+                  "profileName":"System Administrator",
+                  "readable":"true",
+                  "editable":"true"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"FinServ__AccountAccountRelation__c",
+         "instructionType":"Modify",
+         "instructionTypeName":"FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"AC-1872b",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"FinServ__AssociationType__c",
+               "optionsMap":{
+                  "profileName":"AC Basic User",
+                  "readable":"true",
+                  "editable":"true"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"FinServ__AccountAccountRelation__c",
+         "instructionType":"Modify",
+         "instructionTypeName":"FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"AC-1872c",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"FinServ__AssociationType__c",
+               "optionsMap":{
+                  "profileName":"AC Read Only",
+                  "readable":"true",
+                  "editable":"true"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"FinServ__AccountAccountRelation__c",
+         "instructionType":"Modify",
+         "instructionTypeName":"FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"AC-1872d",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"FinServ__AssociationType__c",
+               "optionsMap":{
+                  "profileName":"ReadOnly",
+                  "readable":"true",
+                  "editable":"true"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"PersonAccount",
+         "instructionTypeName":"command__Client",
+         "description":"Add Gifts and Files Related Lists to Client Layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-1878a",
+               "description":"Add files related list",
+               "actionType":"RelatedList",
+               "actionTypeName":"RelatedFileList",
+               "optionsMap":{
+
+               }
+            },
+            {
+               "jiraTicket":"ac-1878b",
+               "description":"Add Gift related list",
+               "actionType":"RelatedList",
+               "actionTypeName":"command__Gift__c.command__Contact__c",
+               "optionsMap":{
+                  "fieldHeaders":"NAME,command__Gift_Cost__c,command__Date_Sent__c",
+                  "buttons":null,
+                  "sortField":null,
+                  "sortOrder":null
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Account",
+         "instructionTypeName":"command__AC Account (Household) Layout",
+         "description":"Add Files and Notes Related Lists to Account (Household) Layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-1878c",
+               "description":"Add Files related list",
+               "actionType":"RelatedList",
+               "actionTypeName":"RelatedFileList",
+               "optionsMap":{
+
+               }
+            },
+            {
+               "jiraTicket":"ac-1878d",
+               "description":"Add Notes related list",
+               "actionType":"RelatedList",
+               "actionTypeName":"RelatedContentNoteList",
+               "optionsMap":{
+
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Lead",
+         "instructionTypeName":"command__AC Lead Layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-234",
+               "description":"Add Writing and Servicing Advisors fields to AC Lead Layout",
+               "actionType":"Field",
+               "subTaskList":[
+                  {
+                     "actionTypeName":"command__Lead_Writing_Advisors__c",
+                     "location":{
+                        "position":"below",
+                        "reference":"command__Lead_Martial_Status__c",
+                        "section":"Lead Information",
+                        "column":0,
+                        "behavior":"Edit"
+                     }
+                  },
+                  {
+                     "actionTypeName":"command__Lead_Servicing_Advisors__c",
+                     "location":{
+                        "position":"below",
+                        "reference":"FinServ__ReferredByContact__c",
+                        "section":"Lead Information",
+                        "column":1,
+                        "behavior":"Edit"
+                     }
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "instructionTypeName":"SecuritySettings",
+         "taskList":[
+            {
+               "jiraTicket":"AC-720a",
+               "actionType":"SecuritySettings",
+               "actionTypeName":"SecuritySettings",
+               "optionsMap":{
+                  "enableAuditFieldsInactiveOwner":"true"
+               },
+               "subTaskList":[
+                  {
+                     "instructionTypeName":"ProfilePermission",
+                     "description":"Allow users to update records with inactive users as owners",
+                     "jiraTicket":"AC-720b",
+                     "actionType":"ProfilePermission",
+                     "actionTypeName":"AC Basic User",
+                     "optionsMap":{
+                        "UpdateWithInactiveOwner":true,
+                        "CreateAuditFields":true
+                     }
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "sObjectName":"FinServ__FinancialAccount__c",
+         "instructionTypeName":"command__Financial Account(Life) Layout",
+         "description":"Add Target Premium to Life Financial Account page layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-20043",
+               "description":"Add Target Premium field below Death Benefit field on Life financial account",
+               "actionType":"Field",
+               "actionTypeName":"command__Target__c",
+               "location":{
+                  "position":"Below",
+                  "reference":"command__Death_Benefit__c",
+                  "section":"Information",
+                  "column":1,
+                  "behavior":"Edit"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Event",
+         "instructionTypeName":"command__Event Layout",
+         "description":"Add  fields on  Event Layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-549a",
+               "description":"Add the Repeat field under Assigned To in the Calendar Details section",
+               "actionType":"Field",
+               "actionTypeName":"IsRecurrence2",
+               "location":{
+                  "position":"below",
+                  "reference":"OwnerId",
+                  "section":"Calendar Event Details",
+                  "column":0,
+                  "behavior":"Edit"
+               }
+            },
+            {
+               "jiraTicket":"ac-549b",
+               "description":"Add the Attendees Field under ‘Repeat’ in the Calendar Details section",
+               "actionType":"Field",
+               "actionTypeName":"Attendees",
+               "location":{
+                  "position":"below",
+                  "reference":"IsRecurrence2",
+                  "section":"Calendar Event Details",
+                  "column":0,
+                  "behavior":"Edit"
+               }
+            },
+            {
+               "jiraTicket":"ac-549c",
+               "description":"Add Delete All Following  to the Mobile and Lightning Actions section",
+               "actionType":"PlatformAction",
+               "actionTypeName":"nothing",
+               "optionsMap":{
+                  "platformActionType":"StandardButton",
+                  "platformActionName":"DeleteFromThisEventOnwards",
+                  "platformActionListContext":"Record"
+               }
+            },
+            {
+               "jiraTicket":"ac-549d",
+               "description":"Add DeleteSeries to Mobile and Lightning Actions section",
+               "actionType":"PlatformAction",
+               "actionTypeName":"nothing",
+               "optionsMap":{
+                  "platformActionType":"StandardButton",
+                  "platformActionName":"DeleteSeries",
+                  "platformActionListContext":"Record"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"FinServ__FinancialAccount__c",
+         "instructionTypeName":"command__Financial Account (Annuity) Layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-635a",
+               "description":"Add HouseHold field  below Product Name",
+               "actionType":"Field",
+               "actionTypeName":"FinServ__Household__c",
+               "location":{
+                  "position":"Below",
+                  "reference":"FinServ__ProductName__c",
+                  "section":"Basic Info",
+                  "column":1,
+                  "behavior":"Readonly"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"FinServ__FinancialAccount__c",
+         "instructionTypeName":"command__Financial Account (REIT/Mutual Fund/Other) Layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-635b",
+               "description":"Add HouseHold field  below Product Name Fin Account Layout",
+               "actionType":"Field",
+               "actionTypeName":"FinServ__Household__c",
+               "location":{
+                  "position":"Below",
+                  "reference":"FinServ__ProductName__c",
+                  "section":"Basic Info",
+                  "column":1,
+                  "behavior":"Readonly"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"FinServ__FinancialAccount__c",
+         "instructionTypeName":"command__Financial Account(AUM) Layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-635d",
+               "description":"Add HouseHold field  below Primary Owner",
+               "actionType":"Field",
+               "actionTypeName":"FinServ__Household__c",
+               "location":{
+                  "position":"Below",
+                  "reference":"FinServ__PrimaryOwner__c",
+                  "section":"Basic Information",
+                  "column":1,
+                  "behavior":"Readonly"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"FinServ__FinancialAccount__c",
+         "instructionTypeName":"command__Financial Account(Life) Layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-635e",
+               "description":"Add HouseHold field value below Product Name",
+               "actionType":"Field",
+               "actionTypeName":"FinServ__Household__c",
+               "location":{
+                  "position":"Below",
+                  "reference":"FinServ__ProductName__c",
+                  "section":"Information",
+                  "column":1,
+                  "behavior":"Readonly"
+               }
+            }
+         ]
+      }
+   ]
 }
