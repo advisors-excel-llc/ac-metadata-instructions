@@ -1,33 +1,17 @@
 {
-    "instructionList": [
-         {
-         "instructionTypeName":"DeclarativeMetadata",
+   "instructionList":[
+      {
+         "instructionTypeName":"SecuritySettings",
          "taskList":[
             {
                "jiraTicket":"AC-720a",
-               "actionType":"DeclarativeMetadata",
-               "actionTypeName":"DeclarativeMetadata",
+               "actionType":"SecuritySettings",
+               "actionTypeName":"SecuritySettings",
                "optionsMap":{
-                  "packageSubMembers":"Security",
-                  "packageMember":"Settings",
-                  "filePath":"settings/Security.settings",
-                  "coupledFields":"<enableAuditFieldsInactiveOwner>false</enableAuditFieldsInactiveOwner>,<enableAuditFieldsInactiveOwner>true</enableAuditFieldsInactiveOwner>"
-               },
-               "subTaskList":[
-                  {
-                     "instructionTypeName":"ProfilePermission",
-                     "description":"Allow users to update records with inactive users as owners",
-                     "jiraTicket":"AC-720b",
-                     "actionType":"ProfilePermission",
-                     "actionTypeName":"AC Basic User",
-                     "optionsMap":{
-                        "UpdateWithInactiveOwner":true,
-                        "CreateAuditFields":true
-                     }
-                  }
-               ]
+                  "enableAuditFieldsInactiveOwner":"true"
+               }
             }
          ]
       }
-    ]
+   ]
 }
