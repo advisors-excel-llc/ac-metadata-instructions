@@ -53,6 +53,26 @@
                }
             }
          ]
-      }
+      },
+      {
+               "sObjectName":"Event",
+               "instructionTypeName":"command__Event Layout",
+               "description":"Add  fields on  Event Layout",
+               "taskList":[
+                  {
+                     "jiraTicket":"ac-549a",
+                     "description":"Add the Repeat field under Assigned To in the Calendar Details section",
+                     "actionType":"Field",
+                     "actionTypeName":"IsRecurrence2",
+                     "location":{
+                        "position":"below",
+                        "reference":"OwnerId",
+                        "section":"Calendar Event Details",
+                        "column":0,
+                        "behavior":"Edit"
+                     }
+                  }
+                  ]
+                  }
    ]
 }
