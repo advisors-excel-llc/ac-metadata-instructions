@@ -464,6 +464,88 @@
                "actionTypeLabel":"Name,command__Carrier__r.Name,FinServ__ProductName__r.Name,command__Mode__c,command__Death_Benefit__c,command__Issued_Date__c,FinServ__Status__c"
             }
          ]
+      },
+      {
+         "sObjectName": "Account",
+         "instructionTypeName": "command__AC Account (Household) Layout",
+         "taskList": [
+            {
+               "jiraTicket": "AC-35435a",
+               "description": "Adding/updating the Address information  section and properties",
+               "actionType": "LayoutSection",
+               "actionTypeName": "Address Information",
+               "location": {
+                  "reference": "Contact Information"
+               },
+               "optionsMap": {
+                  "customLabel": true,
+                  "detailHeading": true,
+                  "editHeading": false,
+                  "style": "TwoColumnsLeftToRight"
+               }
+            },
+            {
+               "jiraTicket": "AC-35435b",
+               "description": "Adding the field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Primary_Phone__c",
+               "location": {
+                  "position": "below",
+                  "reference": "Phone",
+                  "section": "Contact Information",
+                  "column": 0,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "AC-35435d",
+               "description": "Adding the field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Do_Not_Text__c",
+               "location": {
+                  "position": "below",
+                  "section": "Contact Information",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "AC-35435e",
+               "description": "Adding the field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Do_Not_Mass_Text__c",
+               "location": {
+                  "position": "below",
+                  "section": "Contact Information",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "AC-35435f",
+               "description": "Adding the field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Do_Not_Mass_Email__c",
+               "location": {
+                  "position": "below",
+                  "section": "Contact Information",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "AC-35435g",
+               "description": "Adding the field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "PersonMobilePhone",
+               "location": {
+                  "position": "below",
+                  "section": "Contact Information",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            }
+         ]
       }
    ]
 }
