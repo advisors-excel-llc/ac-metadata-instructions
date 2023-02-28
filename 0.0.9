@@ -1,24 +1,29 @@
 {
    "instructionList":[
       {
-         "instructionTypeName":"AC Basic User",
+         "sObjectName": "PersonAccount",
+         "instructionTypeName": "command__Person_Account_Matching_First_Last",
          "taskList":[
             {
-               "jiraTicket":"AC-26710",
-               "description":"Adjust app visibility for AC Basic User",
-               "actionType":"ProfileApplication",
-               "actionTypeName":"standard__SalesforceCMS",
+               "jiraTicket":"AC-37821",
+               "description":"Enable command__Person_Account_Matching_First_Last matching rule",
+               "actionType":"MatchingRule"
                "optionsMap":{
-                  "displayApplication":"false"
+                  "ruleStatus":"Active"
                }
-            },
+            }
+         ]
+      },
+      {
+         "sObjectName": "Lead",
+         "instructionTypeName": "command__Lead_First_Last_Name_Compare",
+         "taskList":[
             {
-               "jiraTicket":"AC-26710",
-               "description":"Adjust app visibility for AC Basic User",
-               "actionType":"ProfileApplication",
-               "actionTypeName":"command__AC_Marketing",
+               "jiraTicket":"AC-37821",
+               "description":"Enable Lead_First_Last_Name_Compare matching rule",
+               "actionType":"MatchingRule"
                "optionsMap":{
-                  "displayApplication":"false"
+                  "ruleStatus":"Active"
                }
             }
          ]
