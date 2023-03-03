@@ -464,6 +464,36 @@
                "actionTypeLabel":"Name,command__Carrier__r.Name,FinServ__ProductName__r.Name,command__Mode__c,command__Death_Benefit__c,command__Issued_Date__c,FinServ__Status__c"
             }
          ]
+      },
+      {
+         "sObjectName": "PersonAccount",
+         "instructionTypeName": "command__Person_Account_Matching_First_Last",
+         "taskList":[
+            {
+               "jiraTicket":"AC-37821",
+               "description":"Enable command__Person_Account_Matching_First_Last matching rule",
+               "actionType":"MatchingRule",
+               "actionTypeName":"command__Person_Account_Matching_First_Last",
+               "optionsMap":{
+                  "ruleStatus":"Active"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName": "Lead",
+         "instructionTypeName": "command__Lead_First_Last_Name_Compare",
+         "taskList":[
+            {
+               "jiraTicket":"AC-37821",
+               "description":"Enable Lead_First_Last_Name_Compare matching rule",
+               "actionType":"MatchingRule",
+               "actionTypeName":"command__Lead_First_Last_Name_Compare",
+               "optionsMap":{
+                  "ruleStatus":"Active"
+               }
+            }
+         ]
       }
    ]
 }
