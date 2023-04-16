@@ -1,0 +1,31 @@
+{
+    "instructionList": [
+      {
+          "sObjectName": "CampaignType",
+          "taskList": [
+              {
+                  "jiraTicket": "ac-210",
+                  "description": "Add the picklist values to CampaignType",
+                  "actionType": "PicklistValueStandard",
+                  "optionsMap": {
+                      "sortList": true
+                  },
+                  "subTaskList": [
+                      {
+                          "actionTypeName": "Radio"
+                      },
+                      {
+                          "actionTypeName": "Television"
+                      },
+                      {
+                          "actionTypeName": "Social Media"
+                      },
+                      {
+                          "actionTypeName": "Workshop"
+                      }
+                  ]
+              }
+          ]
+      }
+    ]
+  }
