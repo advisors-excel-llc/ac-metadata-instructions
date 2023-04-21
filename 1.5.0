@@ -45,6 +45,17 @@
              },
              {
                 "jiraTicket": "AC-35435d",
+                "description": "Adding the Do Not Call field on the Household Layout",
+                "actionType": "Field",
+                "actionTypeName": "command__Do_Not_Call__c",
+                "location": {
+                   "section": "Contact Information",
+                   "column": 1,
+                   "behavior": "Edit"
+                }
+             },
+             {
+                "jiraTicket": "AC-35435e",
                 "description": "Adding the Do not Text field on the Household Layout",
                 "actionType": "Field",
                 "actionTypeName": "command__Account_Do_Not_Text__c",
@@ -57,7 +68,7 @@
                 }
              },
              {
-                "jiraTicket": "AC-35435e",
+                "jiraTicket": "AC-35435f",
                 "description": "Adding the Do not Mass Text field on the Household Layout",
                 "actionType": "Field",
                 "actionTypeName": "command__Account_Do_Not_Mass_Text__c",
@@ -70,7 +81,7 @@
                 }
              },
              {
-                "jiraTicket": "AC-35435f",
+                "jiraTicket": "AC-35435g",
                 "description": "Adding the Do not Mass Email field on the Household Layout",
                 "actionType": "Field",
                 "actionTypeName": "command__Account_Do_Not_Mass_Email__c",
@@ -83,19 +94,20 @@
                 }
              },
              {
-                "jiraTicket": "AC-35435g",
+                "jiraTicket": "AC-35435h",
                 "description": "Adding the Mobile field on the Household Layout",
                 "actionType": "Field",
                 "actionTypeName": "command__Mobile__c",
                 "location": {
                    "position": "below",
+                   "reference": "Phone",
                    "section": "Contact Information",
                    "column": 0,
                    "behavior": "Edit"
                 }
              },
              {
-                "jiraTicket": "AC-35435h",
+                "jiraTicket": "AC-35435i",
                 "description": "Adding the Email field on the Household Layout",
                 "actionType": "Field",
                 "actionTypeName": "command__BusinessEmail__c",
@@ -108,7 +120,7 @@
                 }
              },
              {
-                "jiraTicket": "AC-35435i",
+                "jiraTicket": "AC-35435j",
                 "description": "Adding the Website field on the Household Layout",
                 "actionType": "Field",
                 "actionTypeName": "Website",
@@ -117,18 +129,6 @@
                    "reference": "command__BusinessEmail__c",
                    "section": "Contact Information",
                    "column": 0,
-                   "behavior": "Edit"
-                }
-             },
-             {
-                "jiraTicket": "AC-35435j",
-                "description": "Adding the Do Not Call field on the Household Layout",
-                "actionType": "Field",
-                "actionTypeName": "command__Do_Not_Call__c",
-                "location": {
-                   "position": "below",
-                   "section": "Contact Information",
-                   "column": 1,
                    "behavior": "Edit"
                 }
              },
@@ -168,7 +168,7 @@
                 }
              },
              {
-                "jiraTicket": "AC-35435l",
+                "jiraTicket": "AC-35435n",
                 "description": "Adding the Do Not Mass Mail field on the Household Layout",
                 "actionType": "Field",
                 "actionTypeName": "command__Account_Do_Not_Mass_Mail__c",
