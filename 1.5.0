@@ -10,7 +10,7 @@
                     "actionType": "Field",
                     "actionTypeName": "command__Account_Stage__c",
                     "optionsMap": {
-                        "fieldExist": "true"
+                        "doNotModifyExisting": "true"
                     },
                     "location": {
                         "position": "Below",
@@ -26,7 +26,7 @@
                     "actionType": "Field",
                     "actionTypeName": "command__Rank__c",
                     "optionsMap": {
-                        "fieldExist": "true"
+                        "doNotModifyExisting": "true"
                     },
                     "location": {
                         "position": "Below",
