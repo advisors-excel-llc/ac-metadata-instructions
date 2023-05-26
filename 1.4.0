@@ -1,19 +1,23 @@
 {
    "instructionList":[
       {
-        "sObjectName":"Event",
+         "sObjectName":"Event",
          "instructionTypeName":"DeclarativeMetadata",
          "taskList":[
             {
                "jiraTicket":"AC-720",
                "actionType":"DeclarativeMetadata",
                "actionTypeName":"Metadata",
-               "optionsMap":{
-                  "packageSubMembers":"Event.command__Name_or_Related_To_Not_Null",
-                  "packageMember":"ValidationRule",
-                  "filePath":"objects/Event.object",
-                  "coupledFields":"<active>true</active>,<active>false</active> : <fullName>Name_or_Related_To_Not_Null</fullName>,<fullName>command__Name_or_Related_To_Not_Null</fullName>"
-               }
+               "subTaskList":[
+                  {
+                     "optionsMap":{
+                        "packageSubMembers":"Event.command__Name_or_Related_To_Not_Null",
+                        "packageMember":"ValidationRule",
+                        "filePath":"objects/Event.object",
+                        "coupledFields":"<active>true</active>,<active>false</active> : <fullName>Name_or_Related_To_Not_Null</fullName>,<fullName>command__Name_or_Related_To_Not_Null</fullName>"
+                     }
+                  }
+               ]
             }
          ]
       }
