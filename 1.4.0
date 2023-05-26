@@ -1,6 +1,7 @@
 {
    "instructionList":[
       {
+        "sObjectName":"Event",
          "instructionTypeName":"DeclarativeMetadata",
          "taskList":[
             {
