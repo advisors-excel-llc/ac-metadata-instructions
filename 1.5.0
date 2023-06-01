@@ -1,0 +1,63 @@
+{
+   "instructionList":[
+      {
+         "instructionTypeName":"AC Basic User",
+         "taskList":[
+            {
+               "jiraTicket":"AC-26710",
+               "description":"Adjust Digital Experiences app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"standard__SalesforceCMS",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710",
+               "description":"Adjust AAKonsult app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"AAKCS__AAkonsult_Campaign_Status_Lightning",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710",
+               "description":"Adjust AAKonsult app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"AAKCS__AAkonsult_Campaign_Status",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710",
+               "description":"Adjust Chatter app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"standard__Chatter",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710",
+               "description":"Adjust Lightning Usage app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"standard__LightningInstrumentation",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710",
+               "description":"Adjust Your Account app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"standard__OnlineSales",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            }
+         ]
+      }
+   ]
+}
