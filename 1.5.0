@@ -16,7 +16,7 @@
                         "position": "Below",
                         "reference": "Name",
                         "section": "Account Information",
-                        "column": 1,
+                        "column": 0,
                         "behavior": "Edit"
                     }
                 },
