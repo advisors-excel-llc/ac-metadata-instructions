@@ -42,12 +42,11 @@
             "sObjectName": "AccountContactRelation",
             "taskList": [
                 {
-                    "jiraTicket": "AC-20154",
+                    "jiraTicket": "AC-3971a",
                     "actionType": "PicklistValueCustom",
                     "actionTypeName": "FinServ__Rollups__c",
                     "optionsMap": {
-                        "picklistValues": "Tasks",
-                        "deactivatePicklistValues": "Financial Accounts"
+                        "deactivatePicklistValues": "Assets and Liabilities,Financial Goals,Referrals"
                     }
                 }
             ]
