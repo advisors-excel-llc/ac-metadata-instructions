@@ -37,6 +37,20 @@
                     }
                 }
             ]
+        },
+        {
+            "sObjectName": "AccountContactRelation",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-20154",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "FinServ__Rollups__c",
+                    "optionsMap": {
+                        "picklistValues": "Tasks",
+                        "deactivatePicklistValues": "Financial Accounts"
+                    }
+                }
+            ]
         }
     ]
 }
