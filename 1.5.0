@@ -47,7 +47,8 @@
                     "actionType": "PicklistValueCustom",
                     "actionTypeName": "FinServ__Rollups__c",
                     "optionsMap": {
-                        "deactivatePicklistValues": "Assets and Liabilities,Financial Goals,Referrals"
+                        "picklistValues": "Assets and Liabilities,Financial Goals,Referrals",
+                        "picklistOperation" :"deactivate"
                     }
                 }
             ]
