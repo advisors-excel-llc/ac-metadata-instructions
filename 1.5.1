@@ -1,0 +1,51 @@
+{
+    "instructionList": [
+        {
+            "sObjectName": "Event",
+            "instructionTypeName": "command__Event Layout",
+            "description": "Add  fields on  Event Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-32621a",
+                    "description": "Change the Type field position Calendar Details section",
+                    "actionType": "Field",
+                    "actionTypeName": "Type",
+                    "location": {
+                        "position": "below",
+                        "section": "Calendar Event Details",
+                        "column": 1,
+                        "behavior": "Edit"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-32621b",
+                    "description": "Add the Resolution Field under ‘Type’ in the Calendar Details section",
+                    "actionType": "Field",
+                    "actionTypeName": "command__Resolution__c",
+                    "location": {
+                        "position": "below",
+                        "reference": "Type",
+                        "section": "Calendar Details",
+                        "column": 1,
+                        "behavior": "Edit"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Activity",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-24629",
+                    "description": "Path instruction for Deactivate/Remove Postponed from resolution ",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "command__Resolution__c",
+                    "optionsMap": {
+                        "picklistValues": "Postponed",
+                        "picklistOperation": "deactivate"
+                    }
+                }
+            ]
+        }
+    ]
+}
