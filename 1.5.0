@@ -4,7 +4,7 @@
          "instructionTypeName":"AC Basic User",
          "taskList":[
             {
-               "jiraTicket":"AC-26710",
+               "jiraTicket":"AC-26710a",
                "description":"Adjust Digital Experiences app visibility for AC Basic User",
                "actionType":"ProfileApplication",
                "actionTypeName":"standard__SalesforceCMS",
@@ -13,7 +13,7 @@
                }
             },
             {
-               "jiraTicket":"AC-26710",
+               "jiraTicket":"AC-26710b",
                "description":"Adjust AAKonsult app visibility for AC Basic User",
                "actionType":"ProfileApplication",
                "actionTypeName":"AAKCS__AAkonsult_Campaign_Status_Lightning",
@@ -22,7 +22,7 @@
                }
             },
             {
-               "jiraTicket":"AC-26710",
+               "jiraTicket":"AC-26710c",
                "description":"Adjust AAKonsult app visibility for AC Basic User",
                "actionType":"ProfileApplication",
                "actionTypeName":"AAKCS__AAkonsult_Campaign_Status",
@@ -31,7 +31,7 @@
                }
             },
             {
-               "jiraTicket":"AC-26710",
+               "jiraTicket":"AC-26710d",
                "description":"Adjust Chatter app visibility for AC Basic User",
                "actionType":"ProfileApplication",
                "actionTypeName":"standard__Chatter",
@@ -40,7 +40,7 @@
                }
             },
             {
-               "jiraTicket":"AC-26710",
+               "jiraTicket":"AC-26710e",
                "description":"Adjust Lightning Usage app visibility for AC Basic User",
                "actionType":"ProfileApplication",
                "actionTypeName":"standard__LightningInstrumentation",
@@ -49,7 +49,7 @@
                }
             },
             {
-               "jiraTicket":"AC-26710",
+               "jiraTicket":"AC-26710f",
                "description":"Adjust Your Account app visibility for AC Basic User",
                "actionType":"ProfileApplication",
                "actionTypeName":"standard__OnlineSales",
