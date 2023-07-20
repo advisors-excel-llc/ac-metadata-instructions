@@ -37,6 +37,22 @@
                     }
                 }
             ]
+        },
+        {
+            "sObjectName": "Campaign",
+            "description": "Add new picklist values to Type",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-210",
+                    "description": "Add Radio,Television,Social Media,Workshop values to Type",
+                    "actionType": "PicklistValueStandard",
+                    "actionTypeName": "Type",
+                    "optionsMap": {
+                        "picklistValues": "Radio,Television,Social Media,Workshop",
+                        "picklistOperation": "add"
+                    }
+                }
+            ]
         }
     ]
 }
