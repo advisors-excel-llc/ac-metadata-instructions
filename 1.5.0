@@ -56,6 +56,60 @@
                "optionsMap":{
                   "displayApplication":"false"
                }
+            },
+            {
+               "sObjectName":"Account",
+               "instructionTypeName":"command__AC Account (Household) Layout",
+               "taskList":[
+                  {
+                     "jiraTicket":"ac-23908a",
+                     "description":"Add Stage field below AccountName in household Layout",
+                     "actionType":"Field",
+                     "actionTypeName":"command__Account_Stage__c",
+                     "optionsMap":{
+                        "doNotModifyExisting":"true"
+                     },
+                     "location":{
+                        "position":"Below",
+                        "reference":"Name",
+                        "section":"Account Information",
+                        "column":0,
+                        "behavior":"Edit"
+                     }
+                  },
+                  {
+                     "jiraTicket":"ac-23908b",
+                     "description":"Add Rank field below Stage in household Layout",
+                     "actionType":"Field",
+                     "actionTypeName":"command__Rank__c",
+                     "optionsMap":{
+                        "doNotModifyExisting":"true"
+                     },
+                     "location":{
+                        "position":"Below",
+                        "reference":"command__Account_Stage__c",
+                        "section":"Account Information",
+                        "column":0,
+                        "behavior":"Edit"
+                     }
+                  }
+               ]
+            },
+            {
+               "sObjectName":"Campaign",
+               "description":"Add new picklist values to Type",
+               "taskList":[
+                  {
+                     "jiraTicket":"ac-210",
+                     "description":"Add Radio,Television,Social Media,Workshop values to Type",
+                     "actionType":"PicklistValueStandard",
+                     "actionTypeName":"Type",
+                     "optionsMap":{
+                        "picklistValues":"Radio,Television,Social Media,Workshop",
+                        "picklistOperation":"add"
+                     }
+                  }
+               ]
             }
          ]
       }
