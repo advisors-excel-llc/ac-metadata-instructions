@@ -1,31 +1,37 @@
 {
     "instructionList": [
         {
-            "sObjectName": "Event",
-            "instructionTypeName": "command__Event Layout",
-            "description": "Add  fields on  Event Layout",
+            "sObjectName": "Activity",
+            "description": "Path instrution to create new picklist field ",
             "taskList": [
                 {
-                    "jiraTicket": "ac-32621a",
-                    "description": "Change the Type field position Calendar Details section",
-                    "actionType": "Field",
-                    "actionTypeName": "Type",
-                    "location": {
-                        "position": "below",
-                        "section": "Calendar Event Details",
-                        "column": 1,
-                        "behavior": "Edit"
+                    "jiraTicket": "ac-23914a",
+                    "description": "Add new picklist field and values to it",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "Meeting_Outcome__c",
+                    "optionsMap": {
+                        "restricted": "true",
+                        "label": "Meeting Outcome",
+                        "picklistValues": "Confirmed,Canceled,Rescheduled,Completed,No-Show",
+                        "picklistOperation": "newField"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "sObjectName": "Event",
+            "instructionTypeName": "command__Event Layout",
+            "description": "Path instruction to add fields on  Event Layout",
+            "taskList": [
                 {
-                    "jiraTicket": "ac-32621b",
-                    "description": "Add the Resolution Field under ‘Type’ in the Calendar Details section",
+                    "jiraTicket": "ac-23914b",
+                    "description": "Place Meeting Outcome field below Attendees Calendar Details section",
                     "actionType": "Field",
-                    "actionTypeName": "command__Resolution__c",
+                    "actionTypeName": "command__Meeting_Outcome__c",
                     "location": {
                         "position": "below",
-                        "reference": "Type",
-                        "section": "Calendar Details",
+                        "reference": "Attendees",
+                        "section": "Calendar Event Details",
                         "column": 1,
                         "behavior": "Edit"
                     }
@@ -34,15 +40,51 @@
         },
         {
             "sObjectName": "Activity",
+            "instructionType": "Modify",
+            "instructionTypeName": "FieldLevelSecurity",
             "taskList": [
                 {
-                    "jiraTicket": "ac-24629",
-                    "description": "Path instruction for Deactivate/Remove Postponed from resolution ",
-                    "actionType": "PicklistValueCustom",
-                    "actionTypeName": "command__Resolution__c",
+                    "jiraTicket": "AC-1872a",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "command__Meeting_Outcomer__c",
                     "optionsMap": {
-                        "picklistValues": "Postponed",
-                        "picklistOperation": "deactivate"
+                        "profileName": "AC Basic User",
+                        "readable": "true",
+                        "editable": "true"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Activity",
+            "instructionType": "Modify",
+            "instructionTypeName": "FieldLevelSecurity",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-1872a",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "command__Meeting_Outcomer__c",
+                    "optionsMap": {
+                        "profileName": "System Administrator",
+                        "readable": "true",
+                        "editable": "true"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Activity",
+            "instructionType": "Modify",
+            "instructionTypeName": "FieldLevelSecurity",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-1872a",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "command__Meeting_Outcomer__c",
+                    "optionsMap": {
+                        "profileName": "AC Read Only",
+                        "readable": "true",
+                        "editable": "true"
                     }
                 }
             ]
