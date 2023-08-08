@@ -112,6 +112,20 @@
                }
             }
          ]
+      },
+      {
+         "sObjectName": "Account",
+         "instructionTypeName": "command__AC Account (Household) Layout",
+         "description": "Add HouseHold Related list on the household layout",
+         "taskList": [
+            {
+               "jiraTicket": "ac-44251a",
+               "description": "Add related list to enable the Household opportunities on the lighting page",
+               "actionType": "RelatedList",
+               "actionTypeName": "Opportunity.FinServ__Household__c",
+               "optionsMap": {}
+            }
+         ]
       }
    ]
 }
