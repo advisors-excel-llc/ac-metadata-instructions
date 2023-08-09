@@ -112,6 +112,42 @@
                }
             }
          ]
+      },
+      {
+         "sObjectName":"Account",
+         "instructionType": "Modify",
+         "instructionTypeName": "FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"ac-45969a",
+               "description":"Update do not call field level security",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"PersonDoNotCall",
+               "optionsMap":{
+                  "profileName": "AC Basic User",
+                  "readable": "true",
+                  "editable": "true"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Account",
+         "instructionType": "Modify",
+         "instructionTypeName": "FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"ac-45969b",
+               "description":"Update do not call field level security",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"PersonDoNotCall",
+               "optionsMap":{
+                  "profileName": "System Administrator",
+                  "readable": "true",
+                  "editable": "true"
+               }
+            }
+         ]
       }
    ]
 }
