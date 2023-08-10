@@ -126,6 +126,21 @@
                "optionsMap": {}
             }
          ]
-      }
+      },
+      {
+         "sObjectName": "AccountContactRelation",
+         "taskList": [
+             {
+                 "jiraTicket": "AC-3971a",
+                 "description":"Deactivate the Assets and Liabilities,Financial Goals,Referrals picklist values form Rollup field",
+                 "actionType": "PicklistValueCustom",
+                 "actionTypeName": "FinServ__Rollups__c",
+                 "optionsMap": {
+                     "picklistValues": "Assets and Liabilities,Financial Goals,Referrals",
+                     "picklistOperation" :"deactivate"
+                 }
+             }
+         ]
+     }
    ]
 }
