@@ -177,6 +177,24 @@
                  }
              }
          ]
-      }
+      },
+      {
+         "sObjectName": "Opportunity",
+         "instructionType": "Modify",
+         "instructionTypeName": "FieldLevelSecurity",
+         "taskList": [
+             {
+                 "jiraTicket": "ac-46016",
+                 "description": "Update household field level security",
+                 "actionType": "FieldLevelSecurity",
+                 "actionTypeName": "FinServ__Household__c",
+                 "optionsMap": {
+                     "profileName": "AC Basic User",
+                     "readable": "true",
+                     "editable": "true"
+                 }
+             }
+         ]
+     }
    ]
 }
