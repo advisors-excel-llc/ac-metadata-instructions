@@ -3,6 +3,7 @@
       {
          "sObjectName":"Lead",
          "instructionTypeName":"Standard_Rule_for_Leads_with_Duplicate_Contacts",
+         "instructionType": "add matching rule",
          "taskList":[
             {
                "jiraTicket":"AC-1813c",
