@@ -3,15 +3,31 @@
       {
          "sObjectName":"Lead",
          "instructionTypeName":"Standard_Lead_Duplicate_Rule",
-         "instructionType": "add matching rule",
+         "instructionType":"add matching rule",
          "taskList":[
             {
-               "jiraTicket":"AC-1813c",
+               "jiraTicket":"AC-1813a",
                "description":"Add Lead.Lead_First_Last_Name_Compare matching rule to Standard Lead Duplicate Rule",
                "actionType":"DuplicateRule",
                "actionTypeName":"Standard_Lead_Duplicate_Rule",
                "optionsMap":{
                   "matchingRules":"Lead,Lead_First_Last_Name_Compare"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Account",
+         "instructionTypeName":"Standard_Person_Account_Duplicate_Rule",
+         "instructionType":"add matching rule",
+         "taskList":[
+            {
+               "jiraTicket":"AC-1813b",
+               "description":"Account.Person_Account_Matching_First_Last matching rule to Standard Person Duplicate Rule",
+               "actionType":"DuplicateRule",
+               "actionTypeName":"Standard_Person_Account_Duplicate_Rule",
+               "optionsMap":{
+                  "matchingRules":"Account,Person_Account_Matching_First_Last"
                }
             }
          ]
