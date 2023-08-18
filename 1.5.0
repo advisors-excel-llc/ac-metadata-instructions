@@ -27,7 +27,7 @@
                "actionType":"DuplicateRule",
                "actionTypeName":"Standard_Person_Account_Duplicate_Rule",
                "optionsMap":{
-                  "matchingRules":"Account,Person_Account_Matching_First_Last"
+                  "matchingRules":"PersonAccount,Person_Account_Matching_First_Last"
                }
             }
          ]
