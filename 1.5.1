@@ -1,23 +1,44 @@
 {
     "instructionList": [
         {
-            "sObjectName": "Event",
+            "sObjectName": "Activity",
             "taskList": [
                 {
-                    "jiraTicket": "ac-24873a",
-                    "actionType": "PicklistValueStandard",
-                    "actionTypeName": "Type",
-                    "optionsMap": {
-                        "picklistValues": "Call,Meeting,Email,Other",
-                        "picklistOperation": "deactivate"
-                    }
-                },
+                    "jiraTicket": "AC-24873a",
+                    "actionType": "RenameStandardFieldLabel",
+                    "actionTypeName": "type_activity",
+                    "description": "Update the standar field lable",
+                    "actionTypeLabel": "Meeting Type"
+                }
+            ]
+        },
+        {
+            "taskList": [
                 {
-                    "jiraTicket": "ac-24873b",
+                    "jiraTicket": "AC-24873b",
+                    "actionType": "DeclarativeMetadata",
+                    "actionTypeName": "dummy",
+                    "description": "Update the standar field lable on the event object",
+                    "optionsMap": {
+                        "filePath": "objectTranslations",
+                        "packageMember": "CustomObjectTranslation",
+                        "packageSubMembers": "Activity-en_US",
+                        "isRetriveAndDeploy": "true"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Activity",
+            "description": "Add new picklist values to Type",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-24873c",
+                    "description": "Add 1st Meeting,2nd Meeting,3rd Meeting,Delivery Meeting,Annual Review values to Type",
                     "actionType": "PicklistValueStandard",
                     "actionTypeName": "Type",
                     "optionsMap": {
-                        "picklistValues": "1st Meeting,2nd Meeting,3rd Meeting,Paperwork Signing Meeting,Annual Review,General",
+                        "picklistValues": "1st Meeting,2nd Meeting,3rd Meeting,Delivery Meeting,Annual Review",
                         "picklistOperation": "add"
                     }
                 }
