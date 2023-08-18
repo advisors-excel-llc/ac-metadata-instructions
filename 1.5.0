@@ -2,7 +2,7 @@
    "instructionList":[
       {
          "sObjectName":"Lead",
-         "instructionTypeName":"Standard_Rule_for_Leads_with_Duplicate_Contacts",
+         "instructionTypeName":"Standard_Lead_Duplicate_Rule",
          "instructionType": "add matching rule",
          "taskList":[
             {
