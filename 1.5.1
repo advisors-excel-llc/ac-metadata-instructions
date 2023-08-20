@@ -29,17 +29,52 @@
             ]
         },
         {
-            "sObjectName": "Activity",
+            "sObjectName": "Event",
             "description": "Add new picklist values to Type",
             "taskList": [
                 {
                     "jiraTicket": "ac-24873c",
-                    "description": "Add 1st Meeting,2nd Meeting,3rd Meeting,Delivery Meeting,Annual Review values to Type",
+                    "description": "Path to Deactivate the existing value",
+                    "actionType": "PicklistValueStandard",
+                    "actionTypeName": "Type",
+                    "optionsMap": {
+                        "picklistValues": "Email,Meeting,Other,Call",
+                        "picklistOperation": "deactivate"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Event",
+            "description": "Add new picklist values to Type",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-24873d",
+                    "description": "Path to add 1st Meeting,2nd Meeting,3rd Meeting,Delivery Meeting,Annual Review values to Type",
                     "actionType": "PicklistValueStandard",
                     "actionTypeName": "Type",
                     "optionsMap": {
                         "picklistValues": "1st Meeting,2nd Meeting,3rd Meeting,Delivery Meeting,Annual Review",
                         "picklistOperation": "add"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Event",
+            "instructionTypeName": "command__Event Layout",
+            "description": "Add  fields on  Event Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-24873e",
+                    "description": "Add Meeting Type field under Subject To in the Calendar Details section",
+                    "actionType": "Field",
+                    "actionTypeName": "Type",
+                    "location": {
+                        "position": "below",
+                        "reference": "Subject",
+                        "column": 0,
+                        "behavior": "Edit"
                     }
                 }
             ]
