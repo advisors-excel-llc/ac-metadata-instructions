@@ -177,6 +177,20 @@
                  }
              }
          ]
+      },
+      {
+         "sObjectName": "AccountContactRelation",
+         "taskList": [
+             {
+                 "jiraTicket": "AC-20076",
+                 "description":"Add notes to household rollups",
+                 "actionType": "PicklistValueCustom",
+                 "actionTypeName": "FinServ__Rollups__c",
+                 "optionsMap": {
+                     "picklistValues": "Notes"
+                 }
+             }
+         ]
       }
    ]
 }
