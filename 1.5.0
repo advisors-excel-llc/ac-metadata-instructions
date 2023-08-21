@@ -17,7 +17,7 @@
          ]
       },
       {
-         "sObjectName":"Account",
+         "sObjectName":"PersonAccount",
          "instructionTypeName":"Standard_Person_Account_Duplicate_Rule",
          "instructionType":"add matching rule",
          "taskList":[
