@@ -1,35 +1,257 @@
 {
    "instructionList":[
       {
+         "instructionTypeName":"AC Basic User",
+         "taskList":[
+            {
+               "jiraTicket":"AC-26710a",
+               "description":"Adjust Digital Experiences app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"standard__SalesforceCMS",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710b",
+               "description":"Adjust AAKonsult app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"AAKCS__AAkonsult_Campaign_Status_Lightning",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710c",
+               "description":"Adjust AAKonsult app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"AAKCS__AAkonsult_Campaign_Status",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710d",
+               "description":"Adjust Chatter app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"standard__Chatter",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710e",
+               "description":"Adjust Lightning Usage app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"standard__LightningInstrumentation",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            },
+            {
+               "jiraTicket":"AC-26710f",
+               "description":"Adjust Your Account app visibility for AC Basic User",
+               "actionType":"ProfileApplication",
+               "actionTypeName":"standard__OnlineSales",
+               "optionsMap":{
+                  "displayApplication":"false"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Account",
+         "instructionTypeName":"command__AC Account (Household) Layout",
+         "taskList":[
+            {
+               "jiraTicket":"ac-23908a",
+               "description":"Add Stage field below AccountName in household Layout",
+               "actionType":"Field",
+               "actionTypeName":"command__Account_Stage__c",
+               "optionsMap":{
+                  "doNotModifyExisting":"true"
+               },
+               "location":{
+                  "position":"Below",
+                  "reference":"Name",
+                  "section":"Account Information",
+                  "column":0,
+                  "behavior":"Edit"
+               }
+            },
+            {
+               "jiraTicket":"ac-23908b",
+               "description":"Add Rank field below Stage in household Layout",
+               "actionType":"Field",
+               "actionTypeName":"command__Rank__c",
+               "optionsMap":{
+                  "doNotModifyExisting":"true"
+               },
+               "location":{
+                  "position":"Below",
+                  "reference":"command__Account_Stage__c",
+                  "section":"Account Information",
+                  "column":0,
+                  "behavior":"Edit"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Campaign",
+         "description":"Add new picklist values to Type",
+         "taskList":[
+            {
+               "jiraTicket":"ac-210",
+               "description":"Add Radio,Television,Social Media,Workshop values to Type",
+               "actionType":"PicklistValueStandard",
+               "actionTypeName":"Type",
+               "optionsMap":{
+                  "picklistValues":"Radio,Television,Social Media,Workshop",
+                  "picklistOperation":"add"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Account",
+         "instructionType": "Modify",
+         "instructionTypeName": "FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"ac-45969a",
+               "description":"Update do not call field level security",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"PersonDoNotCall",
+               "optionsMap":{
+                  "profileName": "AC Basic User",
+                  "readable": "true",
+                  "editable": "true"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Account",
+         "instructionType": "Modify",
+         "instructionTypeName": "FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"ac-45969b",
+               "description":"Update do not call field level security",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"PersonDoNotCall",
+               "optionsMap":{
+                  "profileName": "System Administrator",
+                  "readable": "true",
+                  "editable": "true"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName": "Account",
+         "instructionTypeName": "command__AC Account (Household) Layout",
+         "description": "Add HouseHold Related list on the household layout",
+         "taskList": [
+            {
+               "jiraTicket": "ac-44251a",
+               "description": "Add related list to enable the Household opportunities on the lighting page",
+               "actionType": "RelatedList",
+               "actionTypeName": "Opportunity.FinServ__Household__c",
+               "optionsMap": {}
+            }
+         ]
+      },
+      {
+         "sObjectName": "AccountContactRelation",
+         "taskList": [
+             {
+                 "jiraTicket": "AC-3971a",
+                 "description":"Deactivate the Assets and Liabilities,Financial Goals,Referrals picklist values form Rollup field",
+                 "actionType": "PicklistValueCustom",
+                 "actionTypeName": "FinServ__Rollups__c",
+                 "optionsMap": {
+                     "picklistValues": "Assets and Liabilities,Financial Goals,Referrals",
+                     "picklistOperation" :"deactivate"
+                 }
+             }
+         ]
+      },
+      {
+         "sObjectName": "AccountContactRelation",
+         "taskList": [
+             {
+                 "jiraTicket": "AC-20076",
+                 "description":"Add notes to household rollups",
+                 "actionType": "PicklistValueCustom",
+                 "actionTypeName": "FinServ__Rollups__c",
+                 "optionsMap": {
+                     "picklistValues": "Notes"
+                 }
+             }
+         ]
+      },
+      {
          "sObjectName":"Lead",
          "instructionTypeName":"Standard_Lead_Duplicate_Rule",
          "instructionType":"add matching rule",
-         "taskList":[
-            {
-               "jiraTicket":"AC-1813a",
-               "description":"Add Lead.Lead_First_Last_Name_Compare matching rule to Standard Lead Duplicate Rule",
-               "actionType":"DuplicateRule",
-               "actionTypeName":"Standard_Lead_Duplicate_Rule",
-               "optionsMap":{
-                  "matchingRules":"Lead,Lead_First_Last_Name_Compare"
-               }
-            }
+         "taskList": [
+             {
+                 "jiraTicket": "AC-1813a",
+                 "description":"Add Lead.Lead_First_Last_Name_Compare matching rule to Standard Lead Duplicate Rule",
+                 "actionType":"DuplicateRule",
+                 "actionTypeName": "Standard_Lead_Duplicate_Rule",
+                 "optionsMap": {
+                     "matchingRules":"Lead,Lead_First_Last_Name_Compare"
+                 }
+             }
          ]
       },
       {
          "sObjectName":"PersonAccount",
          "instructionTypeName":"Standard_Person_Account_Duplicate_Rule",
          "instructionType":"add matching rule",
-         "taskList":[
-            {
-               "jiraTicket":"AC-1813b",
-               "description":"Account.Person_Account_Matching_First_Last matching rule to Standard Person Duplicate Rule",
-               "actionType":"DuplicateRule",
-               "actionTypeName":"Standard_Person_Account_Duplicate_Rule",
-               "optionsMap":{
-                  "matchingRules":"PersonAccount,Person_Account_Matching_First_Last"
-               }
-            }
+         "taskList": [
+             {
+                 "jiraTicket": "AC-1813b",
+                 "description":"PersonAccount.Person_Account_Matching_First_Last matching rule to Standard Person Duplicate Rule",
+                 "actionType":"DuplicateRule",
+                 "actionTypeName":"Standard_Person_Account_Duplicate_Rule",
+                 "optionsMap": {
+                     "matchingRules":"PersonAccount,Person_Account_Matching_First_Last"
+                 }
+             }
+         ]
+      },
+      {
+         "sObjectName":"PersonAccount",
+         "instructionTypeName":"Person_Account_Matching_First_Last",
+         "taskList": [
+             {
+                 "jiraTicket": "AC-37821",
+                 "description":"Enable command__Person_Account_Matching_First_Last matching rule",
+                 "actionType":"MatchingRule",
+                 "actionTypeName":"Person_Account_Matching_First_Last",
+                 "optionsMap": {
+                     "ruleStatus":"Active"
+                 }
+             }
+         ]
+      },
+      {
+         "sObjectName":"Lead",
+         "instructionTypeName":"Lead_First_Last_Name_Compare",
+         "taskList": [
+             {
+                 "jiraTicket": "AC-37821",
+                 "description":"Enable Lead_First_Last_Name_Compare matching rule",
+                 "actionType":"MatchingRule",
+                 "actionTypeName":"Lead_First_Last_Name_Compare",
+                 "optionsMap": {
+                     "ruleStatus":"Active"
+                 }
+             }
          ]
       }
    ]
