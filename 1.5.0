@@ -191,6 +191,25 @@
                  }
              }
          ]
+      },
+      {
+         "sObjectName": "Global",
+         "instructionTypeName": "command__Global Layout",
+         "description": "Remove Platform actions from Global Layout",
+         "taskList": [
+            {
+               "jiraTicket": "ac-549c",
+               "description": "Remove standard New note from Global layout Mobile and Lightning Actions section",
+               "actionType": "PlatformAction",
+               "actionTypeName": "nothing",
+               "optionsMap": {
+                  "platformActionType": "QuickAction",
+                  "platformActionName": "FeedItem.ContentNote",
+                  "platformActionListContext": "Global",
+                  "operation": "remove"
+               }
+            }
+         ]
       }
    ]
 }
