@@ -195,7 +195,6 @@
       {
          "sObjectName":"Lead",
          "instructionTypeName":"Standard_Lead_Duplicate_Rule",
-         "instructionType":"add matching rule",
          "taskList": [
              {
                  "jiraTicket": "AC-1813a",
@@ -203,7 +202,8 @@
                  "actionType":"DuplicateRule",
                  "actionTypeName": "Standard_Lead_Duplicate_Rule",
                  "optionsMap": {
-                     "matchingRules":"Lead,Lead_First_Last_Name_Compare"
+                     "matchingRules":"Lead,Lead_First_Last_Name_Compare",
+                     "operation":"add matching rule"
                  }
              }
          ]
@@ -211,7 +211,6 @@
       {
          "sObjectName":"PersonAccount",
          "instructionTypeName":"Standard_Person_Account_Duplicate_Rule",
-         "instructionType":"add matching rule",
          "taskList": [
              {
                  "jiraTicket": "AC-1813b",
@@ -219,7 +218,8 @@
                  "actionType":"DuplicateRule",
                  "actionTypeName":"Standard_Person_Account_Duplicate_Rule",
                  "optionsMap": {
-                     "matchingRules":"PersonAccount,Person_Account_Matching_First_Last"
+                     "matchingRules":"PersonAccount,Person_Account_Matching_First_Last",
+                     "operation":"add matching rule"
                  }
              }
          ]
