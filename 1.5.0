@@ -198,7 +198,7 @@
          "description": "Remove Platform actions from Global Layout",
          "taskList": [
             {
-               "jiraTicket": "ac-549c",
+               "jiraTicket": "ac-46595",
                "description": "Remove standard New note from Global layout Mobile and Lightning Actions section",
                "actionType": "PlatformAction",
                "actionTypeName": "nothing",
