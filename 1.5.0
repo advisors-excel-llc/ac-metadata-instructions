@@ -6,16 +6,15 @@
               "taskList": [
                   {
                       "jiraTicket": "AC-33532",
-                      "description": "Add Riders component to annuity layout.",
+                      "description": "Remove notes from flexipage.",
                       "actionType": "FlexiPageComponent",
                       "actionTypeName": "FlexiPageComponent",
                       "optionsMap": {
+                          "operation": "remove component",
                           "componentName": "force:relatedListSingleContainer",
-                          "componentProperties": "parentFieldApiName,FinServ__FinancialAccount__c.Id:relatedListApiName,command__Financial_Account_Riders__r:relatedListComponentOverride,NONE:rowsToDisplay,10:showActionBar,true",
-                          "referenceComponentName": "command:AEFinAcctRoles",
-                          "referenceComponentIdentifier": "listTitle",
-                          "referenceComponentIdentifierValue": "Advisors",
-                          "recordTypes": "FinServ__FinancialAccount__c.command__Annuity",
+                          "componentIdentifier": "relatedListApiName",
+                          "componentIdentifierValue": "AttachedContentNotes",
+                          "recordTypes": "Account.FinServ__IndustriesHousehold",
                           "profiles": "AC Basic User,AC Read Only,System Administrator",
                           "applicationName": "command__AC_Advisor"
                       },
