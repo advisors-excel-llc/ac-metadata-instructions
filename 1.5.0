@@ -1,28 +1,44 @@
 {
-   "instructionList":[
-      {
-              "sObjectName": "FinServ__FinancialAccount__c",
-              "instructionTypeName": "command__Financial_Account_Annuity",
-              "taskList": [
-                  {
-                      "jiraTicket": "AC-33532",
-                      "description": "Remove notes from flexipage.",
-                      "actionType": "FlexiPageComponent",
-                      "actionTypeName": "FlexiPageComponent",
-                      "optionsMap": {
-                          "operation": "remove component",
-                          "componentName": "force:relatedListSingleContainer",
-                          "componentIdentifier": "relatedListApiName",
-                          "componentIdentifierValue": "AttachedContentNotes",
-                          "recordTypes": "Account.FinServ__IndustriesHousehold",
-                          "profiles": "AC Basic User,AC Read Only,Admin",
-                          "applicationName": "command__AC_Advisor"
-                      },
-                      "location":{
-                          "position":"below"
-                      }
-                  }
-              ]
-            }
-   ]
+    "instructionList":[
+        {
+            "sObjectName":"FinServ__FinancialAccount__c",
+            "instructionTypeName":"command__Financial_Account_Annuity",
+            "taskList":[
+                {
+                    "jiraTicket":"AC-xxxa",
+                    "actionType":"FlexiPageComponent",
+                    "actionTypeName":"FlexiPageComponent",
+                    "location":{
+                        "position":"below"
+                    },
+                    "optionsMap":{
+                        "operation":"add component",
+                        "componentName": "command:customNotes",
+                        "componentProperties": "pageSize,5",
+                        "referenceComponentName":"force:relatedListSingleContainer",
+                        "referenceComponentIdentifier":"relatedListApiName",
+                        "referenceComponentIdentifierValue":"AttachedContentNotes",
+                        "recordTypes":"Account.FinServ__IndustriesHousehold",
+                        "profiles":"AC Basic User,AC Read Only,Admin",
+                        "applicationName":"command__AC_Advisor"
+                    },
+                    "subTaskList":[
+                        {
+                            "jiraTicket":"AC-xxxb",
+                            "description":"Remove  old notes from flexipage",
+                            "optionsMap":{
+                                "operation":"remove component",
+                                "componentName":"force:relatedListSingleContainer",
+                                "componentIdentifier":"relatedListApiName",
+                                "componentIdentifierValue":"AttachedContentNotes",
+                                "recordTypes":"Account.FinServ__IndustriesHousehold",
+                                "profiles":"AC Basic User,AC Read Only,Admin",
+                                "applicationName":"command__AC_Advisor"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
