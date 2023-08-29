@@ -15,7 +15,7 @@
                           "componentIdentifier": "relatedListApiName",
                           "componentIdentifierValue": "AttachedContentNotes",
                           "recordTypes": "Account.FinServ__IndustriesHousehold",
-                          "profiles": "AC Basic User,AC Read Only,System Administrator",
+                          "profiles": "AC Basic User,AC Read Only,Admin",
                           "applicationName": "command__AC_Advisor"
                       },
                       "location":{
