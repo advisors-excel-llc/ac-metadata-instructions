@@ -13,7 +13,7 @@
                     },
                     "optionsMap":{
                         "operation":"add component",
-                        "componentName":"customNotes",
+                        "componentName":"command:customNotes",
                         "componentProperties":"pageSize,5",
                         "referenceComponentName":"force:relatedListSingleContainer",
                         "referenceComponentIdentifier":"relatedListApiName",
