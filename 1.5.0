@@ -13,7 +13,7 @@
                     },
                     "optionsMap":{
                         "operation":"add component",
-                        "componentName":"customNotes",
+                        "componentName":"command:customNotes",
                         "componentProperties":"pageSize,5",
                         "referenceComponentName":"force:relatedListSingleContainer",
                         "referenceComponentIdentifier":"relatedListApiName",
@@ -36,9 +36,6 @@
                         "recordTypes":"Account.FinServ__IndustriesHousehold",
                         "profiles":"AC Basic User,AC Read Only,Admin",
                         "applicationName":"command__AC_Advisor"
-                    },
-                    "location":{
-                        "position":"below"
                     }
                 }
             ]
