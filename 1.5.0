@@ -8,10 +8,7 @@
                     "jiraTicket":"AC-46397a",
                     "actionType":"FlexiPageComponent",
                     "actionTypeName":"FlexiPageComponent",
-                    "description":"Add new note component to record pages for AC Advisor App",
-                    "location":{
-                        "position":"below"
-                    },
+                    "description":"Remove  old notes from flexipage",
                     "optionsMap":{
                         "operation":"add component",
                         "componentName":"command:customNotes",
@@ -19,9 +16,12 @@
                         "referenceComponentName":"force:relatedListSingleContainer",
                         "referenceComponentIdentifier":"relatedListApiName",
                         "referenceComponentIdentifierValue":"AttachedContentNotes",
-                        "recordTypes":"Account.FinServ__IndustriesHousehold,Account.command__PersonAccount,Account.command__Carrier,,Account.command__Custodian,Account.command__Advisors_Firm,Account.command__Business_Account,Account.command__Transfer_Company,Account.FinServ__IndustriesBusiness,Account.command__Entity,Account.FinServ__IndustriesInstitution,Account.command__Trust,Account.FinServ__IndustriesIndividual",
+                        "recordTypes":"Account.FinServ__IndustriesHousehold,Account.command__PersonAccount,Account.command__Carrier,Account.command__Custodian,Account.command__Advisors_Firm,Account.command__Business_Account,Account.command__Transfer_Company,Account.FinServ__IndustriesBusiness,Account.command__Entity,Account.FinServ__IndustriesInstitution,Account.command__Trust,Account.FinServ__IndustriesIndividual",
                         "profiles":"AC Basic User,AC Read Only,Admin",
-                        "applicationName":"command__AC_Advisor"
+                        "applicationNames":"command__AC_Advisor,"
+                    },
+                    "location":{
+                        "position":"below"
                     }
                 },
                 {
@@ -34,9 +34,9 @@
                         "componentName":"force:relatedListSingleContainer",
                         "componentIdentifier":"relatedListApiName",
                         "componentIdentifierValue":"AttachedContentNotes",
-                        "recordTypes":"Account.FinServ__IndustriesHousehold",
+                        "recordTypes":"Account.FinServ__IndustriesHousehold,Account.command__PersonAccount,Account.command__Carrier,Account.command__Custodian,Account.command__Advisors_Firm,Account.command__Business_Account,Account.command__Transfer_Company,Account.FinServ__IndustriesBusiness,Account.command__Entity,Account.FinServ__IndustriesInstitution,Account.command__Trust,Account.FinServ__IndustriesIndividual",
                         "profiles":"AC Basic User,AC Read Only,Admin",
-                        "applicationName":"command__AC_Advisor"
+                        "applicationNames":"command__AC_Advisor,command__AC_Marketing,command__AC_Ops"
                     }
                 }
             ]
