@@ -38,7 +38,7 @@
                         "profiles":"AC Basic User,AC Read Only,Admin",
                         "applicationName":"command__AC_Advisor"
                     }
-                }
+                },
                 {
                     "jiraTicket":"AC-46397c",
                     "actionType":"FlexiPageComponent",
@@ -73,7 +73,7 @@
                         "profiles":"AC Basic User,AC Read Only,Admin",
                         "applicationName":"command__AC_Marketing"
                     }
-                }
+                },
                 {
                     "jiraTicket":"AC-46397e",
                     "actionType":"FlexiPageComponent",
