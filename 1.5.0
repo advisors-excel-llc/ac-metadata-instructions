@@ -19,7 +19,7 @@
                         "referenceComponentName":"force:relatedListSingleContainer",
                         "referenceComponentIdentifier":"relatedListApiName",
                         "referenceComponentIdentifierValue":"AttachedContentNotes",
-                        "recordTypes":"Account.FinServ__IndustriesHousehold,Account.PersonAccount,Account.Carrier,,Account.Custodian,Account.Advisors_Firm,Account.Business_Account,Account.Transfer_Company,Account.FinServ__IndustriesBusiness,Account.Entity,Account.FinServ__IndustriesInstitution,Account.Trust,Account.FinServ__IndustriesIndividual",
+                        "recordTypes":"Account.FinServ__IndustriesHousehold,Account.command__PersonAccount,Account.command__Carrier,,Account.command__Custodian,Account.command__Advisors_Firm,Account.command__Business_Account,Account.command__Transfer_Company,Account.FinServ__IndustriesBusiness,Account.command__Entity,Account.FinServ__IndustriesInstitution,Account.command__Trust,Account.FinServ__IndustriesIndividual",
                         "profiles":"AC Basic User,AC Read Only,Admin",
                         "applicationName":"command__AC_Advisor"
                     }
