@@ -8,7 +8,7 @@
                     "jiraTicket":"AC-46397a",
                     "actionType":"FlexiPageComponent",
                     "actionTypeName":"FlexiPageComponent",
-                    "description":"Add new note component to record pages for AC Advisor App"
+                    "description":"Add new note component to record pages for AC Advisor App",
                     "location":{
                         "position":"below"
                     },
