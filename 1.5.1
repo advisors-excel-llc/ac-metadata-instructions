@@ -1,0 +1,29 @@
+{
+    "instructionList":[
+        {
+            "instructionTypeName":"FlexiPageComponent",
+            "taskList":[
+                {
+                    "jiraTicket":"AC-20070a",
+                    "actionType":"FlexiPageComponent",
+                    "actionTypeName":"FlexiPageComponent",
+                    "description":"Add updated notes custom component to account flexipages in AC Advisor App",
+                    "optionsMap":{
+                        "operation":"replace component",
+                        "componentName":"command:customNotes",
+                        "componentProperties":"pageSize,5",
+                        "referenceComponentName":"force:relatedListSingleContainer",
+                        "referenceComponentIdentifier":"relatedListApiName",
+                        "referenceComponentIdentifierValue":"AttachedContentNotes",
+                        "sObjectForRecordTypes":"Account,Campaign,Contact,Event,Finserv__FinancialAccount__c,Lead,Task",
+                        "profiles":"AC Basic User,AC Read Only,Admin",
+                        "applicationName":"command__AC_Advisor"
+                    },
+                    "location":{
+                        "position":"replace"
+                    }
+                }
+            ]
+        }
+    ]
+}
