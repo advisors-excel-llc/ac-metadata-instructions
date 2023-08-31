@@ -1,8 +1,7 @@
 {
     "instructionList":[
         {
-            "sObjectName":"FinServ__FinancialAccount__c",
-            "instructionTypeName":"command__Financial_Account_Annuity",
+            "instructionTypeName":"FlexiPageComponent",
             "taskList":[
                 {
                     "jiraTicket":"AC-46397a",
