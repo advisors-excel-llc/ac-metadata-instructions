@@ -294,6 +294,85 @@
                }
             }
          ]
+      },
+      {
+         "sObjectName":"Account",
+         "instructionType": "Modify",
+         "instructionTypeName": "FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"ac-45969a",
+               "description":"Update do not call field level security",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"PersonDoNotCall",
+               "optionsMap":{
+                  "profileName": "AC Basic User",
+                  "readable": "true",
+                  "editable": "true"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName":"Account",
+         "instructionType": "Modify",
+         "instructionTypeName": "FieldLevelSecurity",
+         "taskList":[
+            {
+               "jiraTicket":"ac-45969b",
+               "description":"Update do not call field level security",
+               "actionType":"FieldLevelSecurity",
+               "actionTypeName":"PersonDoNotCall",
+               "optionsMap":{
+                  "profileName": "System Administrator",
+                  "readable": "true",
+                  "editable": "true"
+               }
+            }
+         ]
+      },
+      {
+         "sObjectName": "Account",
+         "instructionTypeName": "command__AC Account (Household) Layout",
+         "description": "Add HouseHold Related list on the household layout",
+         "taskList": [
+            {
+               "jiraTicket": "ac-44251a",
+               "description": "Add related list to enable the Household opportunities on the lighting page",
+               "actionType": "RelatedList",
+               "actionTypeName": "Opportunity.FinServ__Household__c",
+               "optionsMap": {}
+            }
+         ]
+      },
+      {
+         "sObjectName": "AccountContactRelation",
+         "taskList": [
+             {
+                 "jiraTicket": "AC-3971a",
+                 "description":"Deactivate the Assets and Liabilities,Financial Goals,Referrals picklist values form Rollup field",
+                 "actionType": "PicklistValueCustom",
+                 "actionTypeName": "FinServ__Rollups__c",
+                 "optionsMap": {
+                     "picklistValues": "Assets and Liabilities,Financial Goals,Referrals",
+                     "picklistOperation" :"deactivate"
+                 }
+             }
+         ]
+      },
+      {
+         "sObjectName": "AccountContactRelation",
+         "taskList": [
+             {
+                 "jiraTicket": "AC-20076",
+                 "description":"Add notes to household rollups",
+                 "actionType": "PicklistValueCustom",
+                 "actionTypeName": "FinServ__Rollups__c",
+                 "optionsMap": {
+                     "picklistValues": "Notes"
+                 }
+             }
+         ]
       }
    ]
 }
