@@ -114,6 +114,188 @@
          ]
       },
       {
+         "sObjectName": "Account",
+         "instructionTypeName": "command__AC Account (Household) Layout",
+         "taskList": [
+            {
+               "jiraTicket": "ac-44589a",
+               "description": "Adding/updating the Address information  section and properties",
+               "actionType": "LayoutSection",
+               "actionTypeName": "Address Information",
+               "location": {
+                  "reference": "Contact Information"
+               },
+               "optionsMap": {
+                  "customLabel": true,
+                  "detailHeading": true,
+                  "editHeading": false,
+                  "style": "TwoColumnsLeftToRight"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589b",
+               "description": "Adding the primary phone field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Primary_Phone__c",
+               "location": {
+                  "section": "Contact Information",
+                  "column": 0,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589c",
+               "description": "Adding the Phone field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "Phone",
+               "location": {
+                  "position": "below",
+                  "reference": "command__Account_Primary_Phone__c",
+                  "section": "Contact Information",
+                  "column": 0,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589d",
+               "description": "Adding the Do Not Call field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Do_Not_Call__c",
+               "location": {
+                  "section": "Contact Information",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589e",
+               "description": "Adding the Do not Text field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Do_Not_Text__c",
+               "location": {
+                  "position": "below",
+                  "reference": "command__Do_Not_Call__c",
+                  "section": "Contact Information",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589f",
+               "description": "Adding the Do not Mass Text field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Do_Not_Mass_Text__c",
+               "location": {
+                  "position": "below",
+                  "section": "Contact Information",
+                  "reference": "command__Account_Do_Not_Text__c",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589g",
+               "description": "Adding the Do not Mass Email field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Do_Not_Mass_Email__c",
+               "location": {
+                  "position": "below",
+                  "section": "Contact Information",
+                  "reference": "command__Account_Do_Not_Mass_Text__c",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589h",
+               "description": "Adding the Mobile field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Mobile__c",
+               "location": {
+                  "position": "below",
+                  "reference": "Phone",
+                  "section": "Contact Information",
+                  "column": 0,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589i",
+               "description": "Adding the Email field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__BusinessEmail__c",
+               "location": {
+                  "position": "below",
+                  "reference": "command__Mobile__c",
+                  "section": "Contact Information",
+                  "column": 0,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589j",
+               "description": "Adding the Website field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "Website",
+               "location": {
+                  "position": "below",
+                  "reference": "command__BusinessEmail__c",
+                  "section": "Contact Information",
+                  "column": 0,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589k",
+               "description": "Adding the BillingAddress field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "BillingAddress",
+               "location": {
+                  "section": "Address Information",
+                  "column": 0,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589l",
+               "description": "Adding the field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Do_Not_Mail__c",
+               "location": {
+                  "position": "below",
+                  "reference": "BillingAddress",
+                  "section": "Address Information",
+                  "column": 0,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589m",
+               "description": "Adding the Other Address field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Other_address__c",
+               "location": {
+                  "section": "Address Information",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            },
+            {
+               "jiraTicket": "ac-44589n",
+               "description": "Adding the Do Not Mass Mail field on the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "command__Account_Do_Not_Mass_Mail__c",
+               "location": {
+                  "position": "below",
+                  "reference": "command__Other_address__c",
+                  "section": "Address Information",
+                  "column": 1,
+                  "behavior": "Edit"
+               }
+            }
+         ]
+      },
+      {
          "sObjectName":"Account",
          "instructionType": "Modify",
          "instructionTypeName": "FieldLevelSecurity",
@@ -194,6 +376,20 @@
                      "editable": "true"
                   }
             }
+         ]
+       },
+       {
+         "sObjectName": "AccountContactRelation",
+         "taskList": [
+             {
+                 "jiraTicket": "AC-20076",
+                 "description":"Add notes to household rollups",
+                 "actionType": "PicklistValueCustom",
+                 "actionTypeName": "FinServ__Rollups__c",
+                 "optionsMap": {
+                     "picklistValues": "Notes"
+                 }
+             }
          ]
       }
    ]
