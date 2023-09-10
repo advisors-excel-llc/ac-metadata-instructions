@@ -292,6 +292,15 @@
                   "column": 1,
                   "behavior": "Edit"
                }
+            },
+            {
+               "jiraTicket": "ac-44589p",
+               "description": "Remove Shipping Addres field from the Household Layout",
+               "actionType": "Field",
+               "actionTypeName": "ShippingAddress",
+               "optionsMap":{
+                   "operation":"remove"
+               }
             }
          ]
       }
