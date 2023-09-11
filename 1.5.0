@@ -407,7 +407,7 @@
          "description": "Remove Platform actions from Global Layout",
          "taskList": [
             {
-               "jiraTicket": "ac-46595",
+               "jiraTicket": "ac-46595a",
                "description": "Remove standard New note from Global layout Mobile and Lightning Actions section",
                "actionType": "PlatformAction",
                "actionTypeName": "nothing",
@@ -419,6 +419,24 @@
                }
             }
          ]
-      }
+      },
+      {
+            "sObjectName": "Lead",
+            "instructionTypeName": "command__AC Lead Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-46595b",
+                    "description": "Remove standard New note from AC Lead Layout Mobile and Lightning Actions section",
+                    "actionType": "PlatformAction",
+                    "actionTypeName": "nothing",
+                    "optionsMap": {
+                        "platformActionType": "QuickAction",
+                        "platformActionName": "FeedItem.ContentNote",
+                        "platformActionListContext": "Record",
+                        "operation": "remove"
+                    }
+                }
+            ]
+        }
    ]
 }
