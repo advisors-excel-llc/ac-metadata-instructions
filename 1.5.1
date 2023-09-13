@@ -1,0 +1,77 @@
+{
+    "instructionList": [
+        {
+            "sObjectName": "Activity",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-24873a",
+                    "actionType": "RenameStandardFieldLabel",
+                    "actionTypeName": "type_activity",
+                    "description": "Update the standard field label",
+                    "actionTypeLabel": "Meeting Type"
+                }
+            ]
+        },
+        {
+            "taskList": [
+                {
+                    "jiraTicket": "AC-24873b",
+                    "actionType": "DeclarativeMetadata",
+                    "actionTypeName": "dummy",
+                    "description": "Update the standard field label on the event object",
+                    "optionsMap": {
+                        "filePath": "objectTranslations",
+                        "packageMember": "CustomObjectTranslation",
+                        "packageSubMembers": "Activity-en_US",
+                        "labelUpdate": "true"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Event",
+            "description": "Add and deactivate picklist values to Type",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-24873c",
+                    "description": "Path to Deactivate the existing value",
+                    "actionType": "PicklistValueStandard",
+                    "actionTypeName": "Type",
+                    "optionsMap": {
+                        "picklistValues": "Email,Meeting,Other,Call",
+                        "picklistOperation": "deactivate"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-24873d",
+                    "description": "Path to add 1st Meeting,2nd Meeting,3rd Meeting,Delivery Meeting,Annual Review values to Type",
+                    "actionType": "PicklistValueStandard",
+                    "actionTypeName": "Type",
+                    "optionsMap": {
+                        "picklistValues": "1st Meeting,2nd Meeting,3rd Meeting,Delivery Meeting,Annual Review",
+                        "picklistOperation": "add"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Event",
+            "instructionTypeName": "command__Event Layout",
+            "description": "Add  fields on  Event Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-24873e",
+                    "description": "Add Meeting Type field under Subject in the Calendar Details section",
+                    "actionType": "Field",
+                    "actionTypeName": "Type",
+                    "location": {
+                        "position": "below",
+                        "reference": "Subject",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }
+                }
+            ]
+        }
+    ]
+}
