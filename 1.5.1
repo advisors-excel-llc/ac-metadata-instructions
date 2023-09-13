@@ -39,7 +39,7 @@
                     "actionTypeName": "Type",
                     "optionsMap": {
                         "picklistValues": "Email,Meeting,Other,Call",
-                        "picklistOperation": "deactivate"
+                        "operation": "deactivate"
                     }
                 },
                 {
@@ -48,8 +48,9 @@
                     "actionType": "PicklistValueStandard",
                     "actionTypeName": "Type",
                     "optionsMap": {
+                        "sortList": true,
                         "picklistValues": "1st Meeting,2nd Meeting,3rd Meeting,Delivery Meeting,Annual Review",
-                        "picklistOperation": "add"
+                        "operation": "add"
                     }
                 }
             ]
@@ -69,6 +70,75 @@
                         "reference": "Subject",
                         "column": 0,
                         "behavior": "Edit"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Lead",
+            "description": "Path instrution to update the label and adding the new values ",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-23914a",
+                    "description": "Update the label name to  A,B in the rank field",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "command__Lead_Rank__c",
+                    "picklistValueMap": {
+                        "A": "A",
+                        "B": "B",
+                        "C": "C"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-23914b",
+                    "description": "Add new picklist values A+,B+,C,D to rank",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "command__Lead_Rank__c",
+                    "optionsMap": {
+                        "sortList": true,
+                        "picklistValues": "A+,A,B+,B,C,D",
+                        "operation": "add"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Account",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-23914c",
+                    "description": "Add new picklist values A+,B+,C,D to rank",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "command__Rank__c",
+                    "optionsMap": {
+                        "sortList": true,
+                        "picklistValues": "A+,A,B+,B,C,D",
+                        "operation": "add"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-23914d",
+                    "description": "Deactivate Platinum,Gold,Silver in rank ",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "command__Rank__c",
+                    "optionsMap": {
+                        "picklistValues": "Platinum,Gold,Silver",
+                        "operation": "deactivate"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "PersonAccount",
+            "instructionTypeName": "command__PersonAccount",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-23914e",
+                    "description": "Add new picklist values A+,B+,C,D to client recordType",
+                    "actionType": "RecordTypePicklist",
+                    "actionTypeName": "command__Rank__c",
+                    "optionsMap": {
+                        "picklistValues": "A+,A,B+,B,C,D"
                     }
                 }
             ]
