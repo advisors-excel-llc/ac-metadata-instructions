@@ -142,6 +142,99 @@
                     }
                 }
             ]
+        },
+
+        {
+            "sObjectName": "Activity",
+            "description": "Path instrution to create new picklist field ",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-24629a",
+                    "description": "Add new Meeting Outcome picklist field",
+                    "actionType": "PicklistValueCustom",
+                    "actionTypeName": "Meeting_Outcome__c",
+                    "optionsMap": {
+                        "restricted": "true",
+                        "label": "Meeting Outcome",
+                        "picklistValues": "Confirmed,Canceled,Rescheduled,Completed,No-Show",
+                        "operation": "newField"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Event",
+            "instructionTypeName": "command__Event Layout",
+            "description": "Path instruction to add fields on  Event Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-24629b",
+                    "description": "Place Meeting Outcome field below Attendees in Calendar Details section",
+                    "actionType": "Field",
+                    "actionTypeName": "command__Meeting_Outcome__c",
+                    "location": {
+                        "position": "below",
+                        "reference": "Attendees",
+                        "section": "Calendar Event Details",
+                        "column": 1,
+                        "behavior": "Edit"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Activity",
+            "instructionType": "Modify",
+            "instructionTypeName": "FieldLevelSecurity",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-24629c",
+                    "description": "Add field level Level security",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "command__Meeting_Outcome__c",
+                    "optionsMap": {
+                        "profileName": "AC Basic User",
+                        "readable": "true",
+                        "editable": "true"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Activity",
+            "instructionType": "Modify",
+            "instructionTypeName": "FieldLevelSecurity",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-24629d",
+                    "description": "Add field level Level security",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "command__Meeting_Outcome__c",
+                    "optionsMap": {
+                        "profileName": "System Administrator",
+                        "readable": "true",
+                        "editable": "true"
+                    }
+                }
+            ]
+        },
+        {
+            "sObjectName": "Activity",
+            "instructionType": "Modify",
+            "instructionTypeName": "FieldLevelSecurity",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-24629e",
+                    "description": "Add field level Level security",
+                    "actionType": "FieldLevelSecurity",
+                    "actionTypeName": "command__Meeting_Outcome__c",
+                    "optionsMap": {
+                        "profileName": "AC Read Only",
+                        "readable": "true",
+                        "editable": "true"
+                    }
+                }
+            ]
         }
     ]
 }
