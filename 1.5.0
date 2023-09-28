@@ -229,7 +229,7 @@
          "instructionTypeName":"Person_Account_Matching_First_Last",
          "taskList": [
              {
-                 "jiraTicket": "AC-37821",
+                 "jiraTicket": "AC-37821a",
                  "description":"Enable command__Person_Account_Matching_First_Last matching rule",
                  "actionType":"MatchingRule",
                  "actionTypeName":"Person_Account_Matching_First_Last",
@@ -244,7 +244,7 @@
          "instructionTypeName":"Lead_First_Last_Name_Compare",
          "taskList": [
              {
-                 "jiraTicket": "AC-37821",
+                 "jiraTicket": "AC-37821b",
                  "description":"Enable Lead_First_Last_Name_Compare matching rule",
                  "actionType":"MatchingRule",
                  "actionTypeName":"Lead_First_Last_Name_Compare",
