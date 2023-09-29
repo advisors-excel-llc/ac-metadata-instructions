@@ -402,20 +402,6 @@
       ]
     },
     {
-      "sObjectName": "AccountContactRelation",
-      "taskList": [
-        {
-          "jiraTicket": "AC-20076",
-          "description": "Add notes to household rollups",
-          "actionType": "PicklistValueCustom",
-          "actionTypeName": "FinServ__Rollups__c",
-          "optionsMap": {
-            "picklistValues": "Notes"
-          }
-        }
-      ]
-    },
-    {
       "sObjectName": "Lead",
       "instructionTypeName": "Standard_Lead_Duplicate_Rule",
       "taskList": [
@@ -538,68 +524,6 @@
           },
           "location": {
             "position": "replace"
-          }
-        }
-      ]
-    },
-    {
-      "sObjectName": "Lead",
-      "instructionTypeName": "Standard_Lead_Duplicate_Rule",
-      "taskList": [
-        {
-          "jiraTicket": "AC-1813a",
-          "description": "Add Lead.Lead_First_Last_Name_Compare matching rule to Standard Lead Duplicate Rule",
-          "actionType": "DuplicateRule",
-          "actionTypeName": "Standard_Lead_Duplicate_Rule",
-          "optionsMap": {
-            "matchingRules": "Lead,Lead_First_Last_Name_Compare",
-            "operation": "add matching rule"
-          }
-        }
-      ]
-    },
-    {
-      "sObjectName": "PersonAccount",
-      "instructionTypeName": "Standard_Person_Account_Duplicate_Rule",
-      "taskList": [
-        {
-          "jiraTicket": "AC-1813b",
-          "description": "PersonAccount.Person_Account_Matching_First_Last matching rule to Standard Person Duplicate Rule",
-          "actionType": "DuplicateRule",
-          "actionTypeName": "Standard_Person_Account_Duplicate_Rule",
-          "optionsMap": {
-            "matchingRules": "PersonAccount,Person_Account_Matching_First_Last",
-            "operation": "add matching rule"
-          }
-        }
-      ]
-    },
-    {
-      "sObjectName": "PersonAccount",
-      "instructionTypeName": "Person_Account_Matching_First_Last",
-      "taskList": [
-        {
-          "jiraTicket": "AC-37821a",
-          "description": "Enable command__Person_Account_Matching_First_Last matching rule",
-          "actionType": "MatchingRule",
-          "actionTypeName": "Person_Account_Matching_First_Last",
-          "optionsMap": {
-            "ruleStatus": "Active"
-          }
-        }
-      ]
-    },
-    {
-      "sObjectName": "Lead",
-      "instructionTypeName": "Lead_First_Last_Name_Compare",
-      "taskList": [
-        {
-          "jiraTicket": "AC-37821b",
-          "description": "Enable Lead_First_Last_Name_Compare matching rule",
-          "actionType": "MatchingRule",
-          "actionTypeName": "Lead_First_Last_Name_Compare",
-          "optionsMap": {
-            "ruleStatus": "Active"
           }
         }
       ]
