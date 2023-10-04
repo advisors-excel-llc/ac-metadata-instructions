@@ -143,7 +143,21 @@
                 }
             ]
         },
-
+        {
+            "sObjectName": "Lead",
+            "instructionTypeName": "FinServ__General",
+            "taskList": [
+                {
+                    "jiraTicket": "AC-23914f",
+                    "description": "Add new picklist values A+,B+,C,D to general recordType",
+                    "actionType": "RecordTypePicklist",
+                    "actionTypeName": "command__Lead_Rank__c",
+                    "optionsMap": {
+                        "picklistValues": "A+,A,B+,B,C,D"
+                    }
+                }
+            ]
+        },
         {
             "sObjectName": "Activity",
             "description": "Path instrution to create new picklist field ",
