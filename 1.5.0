@@ -478,7 +478,7 @@
             "referenceComponentName": "force:relatedListSingleContainer",
             "referenceComponentIdentifier": "relatedListApiName",
             "referenceComponentIdentifierValue": "AttachedContentNotes",
-            "sObjectsForRecordTypes": "Account,Campaign,Case,Contact,Finserv__FinancialAccount__c,Lead,Task",
+            "sObjectsForRecordTypes": "Account,Campaign,Case,Contact,Event,Finserv__FinancialAccount__c,Lead,Task",
             "profiles": "AC Basic User,AC Read Only,Admin",
             "applicationName": "command__AC_Advisor"
           },
@@ -498,7 +498,7 @@
             "referenceComponentName": "force:relatedListSingleContainer",
             "referenceComponentIdentifier": "relatedListApiName",
             "referenceComponentIdentifierValue": "AttachedContentNotes",
-            "sObjectsForRecordTypes": "Account,Campaign,Case,Contact,Finserv__FinancialAccount__c,Lead,Task",
+            "sObjectsForRecordTypes": "Account,Campaign,Case,Contact,Event,Finserv__FinancialAccount__c,Lead,Task",
             "profiles": "AC Basic User,AC Read Only,Admin",
             "applicationName": "command__AC_Marketing"
           },
@@ -518,7 +518,7 @@
             "referenceComponentName": "force:relatedListSingleContainer",
             "referenceComponentIdentifier": "relatedListApiName",
             "referenceComponentIdentifierValue": "AttachedContentNotes",
-            "sObjectsForRecordTypes": "Account,Campaign,Case,Contact,Finserv__FinancialAccount__c,Lead,Task",
+            "sObjectsForRecordTypes": "Account,Campaign,Case,Contact,Event,Finserv__FinancialAccount__c,Lead,Task",
             "profiles": "AC Basic User,AC Read Only,Admin",
             "applicationName": "command__AC_Ops"
           },
