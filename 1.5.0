@@ -13,7 +13,7 @@
               "componentName": "command:householdTotalFinAcctValues",
               "componentProperties": "",
               "referenceComponentName": "flexipage:tabset",
-              "referenceComponentIdentifier": "flexipage_tabset",
+              "referenceComponentIdentifier": "tabs",
               "referenceComponentIdentifierValue": "fscClientTabs",
               "recordTypes": "Account.FinServ__IndustriesHousehold",
               "profiles": "AC Basic User,AC Read Only,Admin",
