@@ -11,7 +11,7 @@
             "optionsMap": {
               "operation": "add component",
               "componentName": "command:householdTotalFinAcctValues",
-              "componentProperties": "blank,blank",
+              "componentProperties": "",
               "referenceComponentName": "flexipage:tabset",
               "referenceComponentIdentifier": "tabs",
               "referenceComponentIdentifierValue": "fscClientTabs",
