@@ -4,7 +4,7 @@
       "instructionTypeName": "FlexiPageComponent",
       "taskList": [
         {
-          "jiraTicket": "AC-47091a",
+          "jiraTicket": "AC-47901a",
           "actionType": "FlexiPageComponent",
           "actionTypeName": "FlexiPageComponent",
           "description": "Household Account Record Type - Total Financial Accounts field in AC Ops App",
@@ -29,7 +29,7 @@
       "instructionTypeName": "FlexiPageComponent",
       "taskList": [
         {
-          "jiraTicket": "AC-47091b",
+          "jiraTicket": "AC-47901b",
           "actionType": "FlexiPageComponent",
           "actionTypeName": "FlexiPageComponent",
           "description": "Household Account Record Type - Total Financial Accounts field in AC Ops App",
@@ -54,7 +54,7 @@
       "instructionTypeName": "FlexiPageComponent",
       "taskList": [
         {
-          "jiraTicket": "AC-47091c",
+          "jiraTicket": "AC-47901c",
           "actionType": "FlexiPageComponent",
           "actionTypeName": "FlexiPageComponent",
           "description": "Household Account Record Type - Total Financial Accounts field in AC Ops App",
