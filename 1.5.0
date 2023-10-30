@@ -22,7 +22,12 @@
           "location": {
             "position": "above"
           }
-        },
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
         {
           "jiraTicket": "AC-47091b",
           "actionType": "FlexiPageComponent",
@@ -42,7 +47,12 @@
           "location": {
             "position": "above"
           }
-        },
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
         {
           "jiraTicket": "AC-47091c",
           "actionType": "FlexiPageComponent",
@@ -62,25 +72,29 @@
           "location": {
             "position": "above"
           }
-        },
+        }
+      ]
+    },
+    {
+      "taskList": [
         {
-          "jiraTicket": "AC-20070c",
+          "jiraTicket": "AC-47091d",
           "actionType": "FlexiPageComponent",
           "actionTypeName": "FlexiPageComponent",
-          "description": "Add updated notes custom component to Account,Campaign,Case,Contact,Event,Finserv__FinancialAccount__c,Lead,Task flexipages in AC Ops App",
+          "description": "Household Account Record Type - Total Financial Accounts field in AC Ops App",
           "optionsMap": {
-            "operation": "replace component",
-            "componentName": "command:customNotes",
-            "componentProperties": "pageSize,5",
-            "referenceComponentName": "force:relatedListSingleContainer",
-            "referenceComponentIdentifier": "relatedListApiName",
-            "referenceComponentIdentifierValue": "AttachedContentNotes",
-            "sObjectsForRecordTypes": "Account,Campaign,Case,Contact,Finserv__FinancialAccount__c,Lead,Task",
+            "operation": "add component",
+            "componentName": "command:householdTotalFinAcctValues",
+            "componentProperties": "visible,false",
+            "referenceComponentName": "flexipage:tabset",
+            "referenceComponentIdentifier": "tabs",
+            "referenceComponentIdentifierValue": "fscClientTabs",
+            "recordTypes": "Account.FinServ__IndustriesHousehold",
             "profiles": "AC Basic User,AC Read Only,Admin",
             "applicationName": "command__AC_Ops"
           },
           "location": {
-            "position": "replace"
+            "position": "above"
           }
         }
       ]
