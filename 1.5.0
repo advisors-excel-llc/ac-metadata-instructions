@@ -11,6 +11,7 @@
           "optionsMap": {
             "operation": "add component",
             "componentName": "command:householdTotalFinAcctValues",
+            "componentIdentifier": "householdTotalFinAcctValues_1",
             "componentProperties": "visible,false",
             "referenceComponentName": "flexipage:tabset",
             "referenceComponentIdentifier": "tabs",
