@@ -10,7 +10,7 @@
           "description": "Household Account Record Type - Total Financial Accounts field in AC Ops App",
           "optionsMap": {
             "operation": "add component",
-            "componentName": "command:householdTotalFinAcctValues",
+            "componentName": "householdTotalFinAcctValues",
             "componentIdentifier": "householdTotalFinAcctValues_3",
             "componentProperties": "visible,false",
             "referenceComponentName": "flexipage:tabset",
