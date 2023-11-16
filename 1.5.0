@@ -270,10 +270,10 @@
           }
         },
         {
-          "jiraTicket": "ac-44589m",
-          "description": "Adding the Other Address field on the Household Layout",
+          "jiraTicket": "ac-48696",
+          "description": "Adding the Shipping Address field on the Household Layout",
           "actionType": "Field",
-          "actionTypeName": "command__Other_address__c",
+          "actionTypeName": "ShippingAddress",
           "location": {
             "section": "Address Information",
             "column": 1,
@@ -287,19 +287,10 @@
           "actionTypeName": "command__Account_Do_Not_Mass_Mail__c",
           "location": {
             "position": "below",
-            "reference": "command__Other_address__c",
+            "reference": "ShippingAddress",
             "section": "Address Information",
             "column": 1,
             "behavior": "Edit"
-          }
-        },
-        {
-          "jiraTicket": "ac-44589p",
-          "description": "Remove Shipping Addres field from the Household Layout",
-          "actionType": "Field",
-          "actionTypeName": "ShippingAddress",
-          "optionsMap": {
-            "operation": "remove"
           }
         }
       ]
