@@ -319,14 +319,7 @@
             "readable": "true",
             "editable": "true"
           }
-        }
-      ]
-    },
-    {
-      "sObjectName": "Account",
-      "instructionType": "Modify",
-      "instructionTypeName": "FieldLevelSecurity",
-      "taskList": [
+        },
         {
           "jiraTicket": "ac-45969b",
           "description": "Update do not call field level security",
@@ -459,6 +452,101 @@
           "actionTypeName": "Lead_First_Last_Name_Compare",
           "optionsMap": {
             "ruleStatus": "Active"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Contact",
+      "taskList": [
+        {
+          "jiraTicket": "ac-48636a",
+          "actionType": "FinServ__PreferredName__c",
+          "actionTypeName": "FinServ__PreferredName__c",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636b",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__CurrentEmployer__c",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636c",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Gender__c",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636d",
+          "actionType": "FinServ__PreferredName__c",
+          "actionTypeName": "FinServ__PreferredName__c",
+          "optionsMap": {
+            "profileName": "AC Read Only",
+            "readable": "true",
+            "editable": "false"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636e",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__CurrentEmployer__c",
+          "optionsMap": {
+            "profileName": "AC Read Only",
+            "readable": "true",
+            "editable": "false"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636f",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Gender__c",
+          "optionsMap": {
+            "profileName": "AC Read Only",
+            "readable": "true",
+            "editable": "false"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636h",
+          "actionType": "FinServ__PreferredName__c",
+          "actionTypeName": "FinServ__PreferredName__c",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636i",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__CurrentEmployer__c",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636j",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Gender__c",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
           }
         }
       ]
