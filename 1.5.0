@@ -461,7 +461,7 @@
       "taskList": [
         {
           "jiraTicket": "ac-48636a",
-          "actionType": "FinServ__PreferredName__c",
+          "actionType": "FieldLevelSecurity",
           "actionTypeName": "FinServ__PreferredName__c",
           "optionsMap": {
             "profileName": "AC Basic User",
@@ -491,7 +491,7 @@
         },
         {
           "jiraTicket": "ac-48636d",
-          "actionType": "FinServ__PreferredName__c",
+          "actionType": "FieldLevelSecurity",
           "actionTypeName": "FinServ__PreferredName__c",
           "optionsMap": {
             "profileName": "AC Read Only",
@@ -521,7 +521,7 @@
         },
         {
           "jiraTicket": "ac-48636h",
-          "actionType": "FinServ__PreferredName__c",
+          "actionType": "FieldLevelSecurity",
           "actionTypeName": "FinServ__PreferredName__c",
           "optionsMap": {
             "profileName": "System Administrator",
