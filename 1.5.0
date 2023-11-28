@@ -319,14 +319,7 @@
             "readable": "true",
             "editable": "true"
           }
-        }
-      ]
-    },
-    {
-      "sObjectName": "Account",
-      "instructionType": "Modify",
-      "instructionTypeName": "FieldLevelSecurity",
-      "taskList": [
+        },
         {
           "jiraTicket": "ac-45969b",
           "description": "Update do not call field level security",
@@ -464,79 +457,96 @@
       ]
     },
     {
-      "instructionTypeName": "FlexiPageComponent",
+      "sObjectName": "Contact",
       "taskList": [
         {
-          "jiraTicket": "AC-47901a",
-          "actionType": "FlexiPageComponent",
-          "actionTypeName": "FlexiPageComponent",
-          "description": "Household Account Record Type - Total Financial Accounts field in AC Advisor App",
+          "jiraTicket": "ac-48636a",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__PreferredName__c",
           "optionsMap": {
-            "operation": "add component",
-            "componentName": "command:householdTotalFinAcctValues",
-            "componentIdentifier": "householdTotalFinAcctValues_3",
-            "componentProperties": "visible,false",
-            "referenceComponentName": "flexipage:tabset",
-            "referenceComponentIdentifier": "tabs",
-            "referenceComponentIdentifierValue": "fscClientTabs",
-            "recordTypes": "Account.FinServ__IndustriesHousehold",
-            "profiles": "AC Basic User,AC Read Only,Admin",
-            "applicationName": "command__AC_Advisor"
-          },
-          "location": {
-            "position": "above"
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
           }
-        }
-      ]
-    },
-    {
-      "instructionTypeName": "FlexiPageComponent",
-      "taskList": [
+        },
         {
-          "jiraTicket": "AC-47901b",
-          "actionType": "FlexiPageComponent",
-          "actionTypeName": "FlexiPageComponent",
-          "description": "Household Account Record Type - Total Financial Accounts field in AC Ops App",
+          "jiraTicket": "ac-48636b",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__CurrentEmployer__c",
           "optionsMap": {
-            "operation": "add component",
-            "componentName": "command:householdTotalFinAcctValues",
-            "componentIdentifier": "householdTotalFinAcctValues_3",
-            "componentProperties": "visible,false",
-            "referenceComponentName": "flexipage:tabset",
-            "referenceComponentIdentifier": "tabs",
-            "referenceComponentIdentifierValue": "fscClientTabs",
-            "recordTypes": "Account.FinServ__IndustriesHousehold",
-            "profiles": "AC Basic User,AC Read Only,Admin",
-            "applicationName": "command__AC_Ops"
-          },
-          "location": {
-            "position": "above"
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
           }
-        }
-      ]
-    },
-    {
-      "instructionTypeName": "FlexiPageComponent",
-      "taskList": [
+        },
         {
-          "jiraTicket": "AC-47901c",
-          "actionType": "FlexiPageComponent",
-          "actionTypeName": "FlexiPageComponent",
-          "description": "Household Account Record Type - Total Financial Accounts field in AC Marketing App",
+          "jiraTicket": "ac-48636c",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Gender__c",
           "optionsMap": {
-            "operation": "add component",
-            "componentName": "command:householdTotalFinAcctValues",
-            "componentIdentifier": "householdTotalFinAcctValues_3",
-            "componentProperties": "visible,false",
-            "referenceComponentName": "flexipage:tabset",
-            "referenceComponentIdentifier": "tabs",
-            "referenceComponentIdentifierValue": "fscClientTabs",
-            "recordTypes": "Account.FinServ__IndustriesHousehold",
-            "profiles": "AC Basic User,AC Read Only,Admin",
-            "applicationName": "command__AC_Marketing"
-          },
-          "location": {
-            "position": "above"
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636d",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__PreferredName__c",
+          "optionsMap": {
+            "profileName": "AC Read Only",
+            "readable": "true",
+            "editable": "false"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636e",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__CurrentEmployer__c",
+          "optionsMap": {
+            "profileName": "AC Read Only",
+            "readable": "true",
+            "editable": "false"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636f",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Gender__c",
+          "optionsMap": {
+            "profileName": "AC Read Only",
+            "readable": "true",
+            "editable": "false"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636h",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__PreferredName__c",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636i",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__CurrentEmployer__c",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636j",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Gender__c",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
           }
         }
       ]
