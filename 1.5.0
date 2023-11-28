@@ -7,7 +7,7 @@
           "jiraTicket": "AC-47901a",
           "actionType": "FlexiPageComponent",
           "actionTypeName": "FlexiPageComponent",
-          "description": "Household Account Record Type - Total Financial Accounts field in AC Ops App",
+          "description": "Household Account Record Type - Total Financial Accounts field in AC Advisor App",
           "optionsMap": {
             "operation": "add component",
             "componentName": "command:householdTotalFinAcctValues",
@@ -19,6 +19,58 @@
             "recordTypes": "Account.FinServ__IndustriesHousehold",
             "profiles": "AC Basic User,AC Read Only,Admin",
             "applicationName": "command__AC_Advisor"
+          },
+          "location": {
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-47901b",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Household Account Record Type - Total Financial Accounts field in AC Ops App",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:householdTotalFinAcctValues",
+            "componentIdentifier": "householdTotalFinAcctValues_3",
+            "componentProperties": "visible,false",
+            "referenceComponentName": "flexipage:tabset",
+            "referenceComponentIdentifier": "tabs",
+            "referenceComponentIdentifierValue": "fscClientTabs",
+            "recordTypes": "Account.FinServ__IndustriesHousehold",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Ops"
+          },
+          "location": {
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-47901c",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Household Account Record Type - Total Financial Accounts field in AC Marketing App",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:householdTotalFinAcctValues",
+            "componentIdentifier": "householdTotalFinAcctValues_3",
+            "componentProperties": "visible,false",
+            "referenceComponentName": "flexipage:tabset",
+            "referenceComponentIdentifier": "tabs",
+            "referenceComponentIdentifierValue": "fscClientTabs",
+            "recordTypes": "Account.FinServ__IndustriesHousehold",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Marketing"
           },
           "location": {
             "position": "above"
