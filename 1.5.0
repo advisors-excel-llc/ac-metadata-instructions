@@ -563,7 +563,12 @@
           "location": {
             "position": "replace"
           }
-        },
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
         {
           "jiraTicket": "AC-20070b",
           "actionType": "FlexiPageComponent",
@@ -583,7 +588,12 @@
           "location": {
             "position": "replace"
           }
-        },
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
         {
           "jiraTicket": "AC-20070c",
           "actionType": "FlexiPageComponent",
