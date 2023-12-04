@@ -1,17 +1,17 @@
 {
   "instructionList": [
     {
-      "instructionTypeName": "AssignPermissionSetGroup",
+      "instructionTypeName": "AssignPermissionSet",
       "taskList": [
         {
           "jiraTicket": "AC-49803",
-          "actionType": "AssignPermissionSetGroup",
-          "actionTypeName": "AssignPermissionSetGroup",
-          "description": "Add admin permission set group assignment to admin profile",
+          "actionType": "AssignPermissionSet",
+          "actionTypeName": "AssignPermissionSet",
+          "description": "Add Query All Fields assignment to admin profile",
           "namespace" : "command",
           "optionsMap": {
             "profile": "System Administrator",
-            "permissionSetGroup": "Admin_perms"
+            "permissionSet": "Query_All_Files"
           }
         }
       ]
