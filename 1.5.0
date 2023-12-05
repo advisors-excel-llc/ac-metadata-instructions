@@ -550,6 +550,22 @@
           }
         }
       ]
+    },
+    {
+      "instructionTypeName": "AssignPermissionSet",
+      "taskList": [
+        {
+          "jiraTicket": "AC-49803",
+          "actionType": "AssignPermissionSet",
+          "actionTypeName": "AssignPermissionSet",
+          "description": "Add Query_All_Files to all admin users",
+          "namespace" : "command",
+          "optionsMap": {
+            "profile": "System Administrator",
+            "permissionSet": "Query_All_Files"
+          }
+        }
+      ]
     }
   ]
 }
