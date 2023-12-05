@@ -556,16 +556,12 @@
       "taskList": [
         {
           "jiraTicket": "AC-49803",
-          "actionType": "AssignPermissionSetGroup",
-          "actionTypeName": "AssignPermissionSetGroup",
+          "actionType": "AssignPermissionSet",
           "description": "Add Query_All_Files to all admin users",
           "namespace" : "command",
           "optionsMap": {
             "profile": "System Administrator",
             "permissionSet": "Query_All_Files"
-          },
-          "location": {
-            "position": "replace"
           }
         }
       ]
