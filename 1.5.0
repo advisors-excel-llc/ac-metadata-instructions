@@ -550,6 +550,25 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName": "PersonAccount",
+      "instructionTypeName": "command__Client",
+      "taskList": [
+        {
+          "jiraTicket": "ac-9548",
+          "description": "Add Alert Message Field to Person Account Client Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Alert_Message__c",
+          "location": {
+            "position": "Below",
+            "reference": "Description",
+            "section": "Description Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
     }
   ]
 }
