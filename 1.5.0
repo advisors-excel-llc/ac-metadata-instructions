@@ -550,6 +550,37 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName": "PersonAccount",
+      "instructionTypeName": "command__Client",
+      "taskList": [
+        {
+          "jiraTicket": "ac-29a",
+          "description": "Remove Estimate Net Worth field from Person Account Client Layout ",
+          "actionType": "Field",
+          "actionTypeName": "command__Estimate_Net_Worth__c",
+          "optionsMap": {
+            "operation": "remove"
+          }
+        },
+        {
+          "jiraTicket": "ac-29b",
+          "description": "Add Estimated Net Worth field to Person Account Client Layout ",
+          "actionType": "Field",
+          "actionTypeName": "command__Estimated_Net_Worth__c",
+          "optionsMap": {
+            "operation": "add"
+          },
+          "location": {
+            "position": "above",
+            "reference": "command__Estimated_Liquid_Saving__c",
+            "section": "Income Planning",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
     }
   ]
 }
