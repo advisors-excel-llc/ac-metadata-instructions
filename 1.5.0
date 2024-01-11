@@ -15,7 +15,7 @@
             "referenceComponentName": "force:relatedListSingleContainer",
             "referenceComponentIdentifier": "relatedListApiName",
             "referenceComponentIdentifierValue": "AttachedContentDocuments",
-            "recordTypes": "Account.command__PersonAccount",
+            "recordTypes": "PersonAccount.command__PersonAccount",
             "profiles": "AC Basic User,AC Read Only,Admin",
             "applicationName": "command__AC_Advisor"
           },
