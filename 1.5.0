@@ -20,7 +20,7 @@
             "applicationName": "command__AC_Advisor"
           },
           "location": {
-            "position": "above"
+            "position": "below"
           }
         }
       ]
