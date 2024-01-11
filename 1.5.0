@@ -581,6 +581,37 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName": "Lead",
+      "instructionTypeName": "command__AC Lead Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-29c",
+          "description": "Remove Estimate Net Worth field from AC Lead Layout ",
+          "actionType": "Field",
+          "actionTypeName": "command__Estimate_Net_Worth__c",
+          "optionsMap": {
+            "operation": "remove"
+          }
+        },
+        {
+          "jiraTicket": "ac-29d",
+          "description": "Add Estimated Net Worth field to AC Lead Layout ",
+          "actionType": "Field",
+          "actionTypeName": "command__Lead_Estimated_Net_Worth__c",
+          "optionsMap": {
+            "operation": "add"
+          },
+          "location": {
+            "position": "above",
+            "reference": "command__Lead_Estimated_Liquid_Saving__c",
+            "section": "Income Planning",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
     }
   ]
 }
