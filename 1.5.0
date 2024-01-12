@@ -149,6 +149,23 @@
           }
         }
       ]
+    },
+    {
+      "instructionTypeName": "AppProfileActionOverride",
+      "taskList": [
+        {
+          "jiraTicket": "ac-",
+          "actionType": "AppProfileActionOverride",
+          "actionTypeName": "AppProfileActionOverride",
+          "description": "Assign lead record page to profiles",
+          "optionsMap": {
+            "operation": "assign page",
+            "recordTypesAndPages": "null,command__Lead_Record_Page,lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Marketing"
+          }
+        }
+      ]
     }
   ]
 }
