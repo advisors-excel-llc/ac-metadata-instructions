@@ -579,6 +579,20 @@
             "column": 0,
             "behavior": "Edit"
           }
+        },
+        {
+          "jiraTicket": "ac-16040a",
+          "description": "Add Primary Campaign Source to Person Account Client Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Primary_Campaign_Source__c",
+          "optionsMap": {
+            "operation": "add"
+          },
+          "location": {
+            "section": "Account Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
         }
       ]
     },
@@ -607,6 +621,20 @@
             "position": "above",
             "reference": "command__Lead_Estimated_Liquid_Saving__c",
             "section": "Income Planning",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-16040b",
+          "description": "Add Primary Campaign Source to Lead AC Client Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Primary_Campaign_Source__c",
+          "optionsMap": {
+            "operation": "add"
+          },
+          "location": {
+            "section": "Lead Information",
             "column": 0,
             "behavior": "Edit"
           }
