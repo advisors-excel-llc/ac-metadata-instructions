@@ -640,6 +640,156 @@
           }
         }
       ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-5626a1",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add client profile picture component to person accounts",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:CaptureImage",
+            "componentIdentifier": "CaptureImage_1",
+            "referenceComponentName": "force:relatedListSingleContainer",
+            "referenceComponentIdentifier": "relatedListApiName",
+            "referenceComponentIdentifierValue": "AttachedContentDocuments",
+            "recordTypes": "PersonAccount.command__PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Advisor"
+          },
+          "location": {
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-5626a2",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add client profile picture component to person accounts",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:CaptureImage",
+            "componentIdentifier": "CaptureImage_1",
+            "referenceComponentName": "force:relatedListSingleContainer",
+            "referenceComponentIdentifier": "relatedListApiName",
+            "referenceComponentIdentifierValue": "AttachedContentDocuments",
+            "recordTypes": "PersonAccount.command__PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Ops"
+          },
+          "location": {
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-5626a3",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add client profile picture component to person accounts",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:CaptureImage",
+            "componentIdentifier": "CaptureImage_1",
+            "referenceComponentName": "force:relatedListSingleContainer",
+            "referenceComponentIdentifier": "relatedListApiName",
+            "referenceComponentIdentifierValue": "AttachedContentDocuments",
+            "recordTypes": "PersonAccount.command__PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Marketing"
+          },
+          "location": {
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-5626b1",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add client profile picture component to leads",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:CaptureImage",
+            "componentIdentifier": "CaptureImage_1",
+            "referenceComponentName": "force:relatedListSingleContainer",
+            "referenceComponentIdentifier": "relatedListApiName",
+            "referenceComponentIdentifierValue": "AttachedContentDocuments",
+            "sObjectsForRecordTypes": "lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Advisor"
+          },
+          "location": {
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-5626b2",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add client profile picture component to leads",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:CaptureImage",
+            "componentIdentifier": "CaptureImage_1",
+            "referenceComponentName": "force:relatedListSingleContainer",
+            "referenceComponentIdentifier": "relatedListApiName",
+            "referenceComponentIdentifierValue": "AttachedContentDocuments",
+            "sObjectsForRecordTypes": "lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Ops"
+          },
+          "location": {
+            "position": "above"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-5626b3",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add client profile picture component to leads",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:CaptureImage",
+            "componentIdentifier": "CaptureImage_1",
+            "referenceComponentName": "force:relatedListSingleContainer",
+            "referenceComponentIdentifier": "relatedListApiName",
+            "referenceComponentIdentifierValue": "AttachedContentDocuments",
+            "sObjectsForRecordTypes": "lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Marketing"
+          },
+          "location": {
+            "position": "above"
+          }
+        }
+      ]
     }
   ]
 }
