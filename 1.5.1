@@ -398,6 +398,30 @@
           ]
         }
       ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "ac-9548",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add Alert banner component to person account client layout",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "command_alertBannerComponent",
+            "referenceComponentName": "runtime_sales_pathassistant:pathAssistant",
+            "referenceComponentIdentifier": "runtime_sales_pathassistant_pathAssistant",
+            "sObjectsForRecordTypes": "PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Advisor, command__AC_Marketing, command__AC_Ops"
+          },
+          "location": {
+            "position": "replace"
+          }
+        }
+      ]
     }
   ]
 }
