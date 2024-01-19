@@ -339,11 +339,27 @@
       "description": "Add HouseHold Related list on the household layout",
       "taskList": [
         {
-          "jiraTicket": "ac-44251a",
+          "jiraTicket": "ac-44251a1",
           "description": "Add related list to enable the Household opportunities on the lighting page",
           "actionType": "RelatedList",
           "actionTypeName": "Opportunity.FinServ__Household__c",
           "optionsMap": {}
+        }
+      ]
+    },
+    {
+      "sObjectName": "Account",
+      "instructionTypeName": "command__AC Account (Household) Layout",
+      "description": "Remove standard Opportunity related list on the household layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-44251a2",
+          "description": "Remove standard opportunity related list  lighting page",
+          "actionType": "RelatedList",
+          "actionTypeName": "RelatedOpportunityList",
+          "optionsMap": {
+            "action": "remove"
+          }
         }
       ]
     },
@@ -358,6 +374,81 @@
           "optionsMap": {
             "picklistValues": "Assets and Liabilities,Financial Goals,Referrals",
             "operation": "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-3971b1",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Replace activities component with custom activities lwc on hh accounts",
+          "optionsMap": {
+            "operation": "replace component",
+            "componentName": "command:activitiesTimeline",
+            "componentIdentifier": "activitiesTimeline_1",
+            "referenceComponentName": "runtime_sales_activities:activityPanel",
+            "referenceComponentIdentifier": "showLegacyActivityComposer",
+            "referenceComponentIdentifierValue": "false",
+            "recordTypes": "Account.FinServ__IndustriesHousehold",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Advisor"
+          },
+          "location": {
+            "position": "replace"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-3971b2",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Replace activities component with custom activities lwc on hh accounts",
+          "optionsMap": {
+            "operation": "replace component",
+            "componentName": "command:activitiesTimeline",
+            "componentIdentifier": "activitiesTimeline_1",
+            "referenceComponentName": "runtime_sales_activities:activityPanel",
+            "referenceComponentIdentifier": "showLegacyActivityComposer",
+            "referenceComponentIdentifierValue": "false",
+            "recordTypes": "Account.FinServ__IndustriesHousehold",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Ops"
+          },
+          "location": {
+            "position": "replace"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-3971b3",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Replace activities component with custom activities lwc on hh accounts",
+          "optionsMap": {
+            "operation": "replace component",
+            "componentName": "command:activitiesTimeline",
+            "componentIdentifier": "activitiesTimeline_1",
+            "referenceComponentName": "runtime_sales_activities:activityPanel",
+            "referenceComponentIdentifier": "showLegacyActivityComposer",
+            "referenceComponentIdentifierValue": "false",
+            "recordTypes": "Account.FinServ__IndustriesHousehold",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Marketing"
+          },
+          "location": {
+            "position": "replace"
           }
         }
       ]
