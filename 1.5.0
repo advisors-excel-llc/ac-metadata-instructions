@@ -70,7 +70,7 @@
           "actionTypeName": "command__Account_Stage__c",
           "optionsMap": {
             "doNotModifyExisting": "true"
-          },
+          },  
           "location": {
             "position": "Below",
             "reference": "Name",
@@ -637,6 +637,53 @@
             "section": "Lead Information",
             "column": 0,
             "behavior": "Edit"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Account",
+      "taskList": [
+        {
+          "jiraTicket": "",
+          "description": "",
+          "actionType": "LeadConvertSettings",
+          "actionTypeName": "none",
+          "optionsMap": {
+            "inputObject": "Lead",
+            "outputObject": "Account",
+            "fieldMappings": "command__Lead_Review_Date__c:FinServ__NextReview__c,
+                                command__Lead_Servicing_Advisors__c:command__Contact_Servicing_Advisor__c,
+                                command__TAX_ID_SSN__c:command__SSN_Tax_ID__c,
+                                command__Lead_Writing_Advisors__c:command__Account_Writing_Advisor__c,
+                                command__Lead_Drvier_License_State__c:command__Account_Driver_License_State__c,
+                                command__Lead_Estimated_Net_Worth__c:command__Estimated_Net_Worth__c,
+                                command__Lead_Estimated_Income__c:command__Account_Estimated_Income__c,
+                                command__Lead_Estimated_IRA_401K__c:command__Account_Estimated_IRA_401K__c,
+                                command__Lead_Estimated_Liquid_Saving__c:command__Estimated_Liquid_Saving__c,
+                                command__Lead_Estimated_Retirement_Age__c:command__Account_Estimated_Retirement_Age__c,
+                                FinServ__ReferredByContact__c:FinServ__ReferredByContact__c,
+                                FinServ__ReferredByUser__c:FinServ__ReferredByUser__c,
+                                command__Lead_Job_Title__c:command__Account_Job_Title__c,
+                                command__Lead_Retirement_Date__c:command__Account_Retirement_Date__c,
+                                command__Alert_Message__c:command__Alert_Message__c,
+                                command__Lead_Birthplace_City__c:command__Account_Birthplace_City__c,
+                                command__Birthplace_State__c:command__Account_Birthplace_State__c,
+                                command__Lead_Client_Since__c:command__Account_Client_Since__c,
+                                FinServ__ConversionDateTime__c:FinServ__ConversionDateTime__c,
+                                command__Default_Client_Stage__c:command__Account_Stage__c,
+                                command__Lead_Do_Not_Email__c:command__Account_Do_Not_Email__c,
+                                command__Lead_Do_Not_Mail__c:command__Account_Do_Not_Mail__c,
+                                command__Lead_Do_Not_Mass_Email__c:command__Account_Do_Not_Mass_Email__c,
+                                command__Lead_Do_Not_Mass_Mail__c:command__Account_Do_Not_Mass_Mail__c,
+                                command__Lead_Do_Not_Mass_Text__c:command__Account_Do_Not_Mass_Text__c,
+                                command__Lead_Do_Not_Text__c:command__Account_Do_Not_Text__c,
+                                command__Lead_DOD__c:command__DOD__c,
+                                command__Lead_Driver_License_Expiration_Date__c:command__Account_Driver_License_Expiration_Date__c,
+                                command__Lead_Driver_License_Issue_Date__c:command__Account_Driver_License_Issue_Date__c,
+                                command__Driver_License_Number__c:command__Account_Driver_License_Number__c,
+                                command__Lead_Rank__c:command__Rank__c,
+                                command__Primary_Campaign_Source__c:command__Primary_Campaign_Source"
           }
         }
       ]
