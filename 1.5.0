@@ -4,8 +4,8 @@
       "sObjectName": "Account",
       "taskList": [
         {
-          "jiraTicket": "",
-          "description": "",
+          "jiraTicket": "ac-51182",
+          "description": "Adds lead conversion field mappings for lead to account",
           "actionType": "LeadConvertSettings",
           "actionTypeName": "none",
           "optionsMap": {
@@ -20,8 +20,8 @@
       "sObjectName": "Contact",
       "taskList": [
         {
-          "jiraTicket": "",
-          "description": "",
+          "jiraTicket": "ac-51182",
+          "description": "Adds lead conversion field mappings for lead to contract",
           "actionType": "LeadConvertSettings",
           "actionTypeName": "none",
           "optionsMap": {
