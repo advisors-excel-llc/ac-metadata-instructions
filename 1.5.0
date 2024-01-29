@@ -1,0 +1,677 @@
+{
+  "instructionList": [
+    {
+      "sObjectName": "Account",
+      "taskList": [
+        {
+          "jiraTicket": "ac-51182",
+          "description": "Adds lead conversion field mappings for lead to account",
+          "actionType": "LeadConvertSettings",
+          "actionTypeName": "none",
+          "optionsMap": {
+            "inputObject": "Lead",
+            "outputObject": "Account",
+            "fieldMappings": "command__Lead_Review_Date__c:FinServ__NextReview__c,command__Lead_Servicing_Advisors__c:command__Contact_Servicing_Advisor__c,command__TAX_ID_SSN__c:command__SSN_Tax_ID__c,command__Lead_Writing_Advisors__c:command__Account_Writing_Advisor__c,command__Lead_Drvier_License_State__c:command__Account_Driver_License_State__c,command__Lead_Estimated_Net_Worth__c:command__Estimated_Net_Worth__c,command__Lead_Estimated_Income__c:command__Account_Estimated_Income__c,command__Lead_Estimated_IRA_401K__c:command__Account_Estimated_IRA_401K__c,command__Lead_Estimated_Liquid_Saving__c:command__Estimated_Liquid_Saving__c,command__Lead_Estimated_Retirement_Age__c:command__Account_Estimated_Retirement_Age__c,FinServ__ReferredByContact__c:FinServ__ReferredByContact__c,FinServ__ReferredByUser__c:FinServ__ReferredByUser__c,command__Lead_Job_Title__c:command__Account_Job_Title__c,command__Lead_Retirement_Date__c:command__Account_Retirement_Date__c,command__Alert_Message__c:command__Alert_Message__c,command__Lead_Birthplace_City__c:command__Account_Birthplace_City__c,command__Birthplace_State__c:command__Account_Birthplace_State__c,command__Lead_Client_Since__c:command__Account_Client_Since__c,FinServ__ConversionDateTime__c:FinServ__ConversionDateTime__c,command__Default_Client_Stage__c:command__Account_Stage__c,command__Lead_Do_Not_Email__c:command__Account_Do_Not_Email__c,command__Lead_Do_Not_Mail__c:command__Account_Do_Not_Mail__c,command__Lead_Do_Not_Mass_Email__c:command__Account_Do_Not_Mass_Email__c,command__Lead_Do_Not_Mass_Mail__c:command__Account_Do_Not_Mass_Mail__c,command__Lead_Do_Not_Mass_Text__c:command__Account_Do_Not_Mass_Text__c,command__Lead_Do_Not_Text__c:command__Account_Do_Not_Text__c,command__Lead_DOD__c:command__DOD__c,command__Lead_Driver_License_Expiration_Date__c:command__Account_Driver_License_Expiration_Date__c,command__Lead_Driver_License_Issue_Date__c:command__Account_Driver_License_Issue_Date__c,command__Driver_License_Number__c:command__Account_Driver_License_Number__c,command__Lead_Rank__c:command__Rank__c,command__Primary_Campaign_Source__c:command__Primary_Campaign_Source__c"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Contact",
+      "taskList": [
+        {
+          "jiraTicket": "ac-51182",
+          "description": "Adds lead conversion field mappings for lead to contract",
+          "actionType": "LeadConvertSettings",
+          "actionTypeName": "none",
+          "optionsMap": {
+            "inputObject": "Lead",
+            "outputObject": "Contact",
+            "fieldMappings": "FinServ__Employer__c:FinServ__CurrentEmployer__c,command__Lead_Gender__c:FinServ__Gender__c,command__Lead_Martial_Status__c:FinServ__MaritalStatus__c,command__Preferred_Name__c:FinServ__PreferredName__c"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "AC Basic User",
+      "taskList": [
+        {
+          "jiraTicket": "AC-26710a",
+          "description": "Adjust Digital Experiences app visibility for AC Basic User",
+          "actionType": "ProfileApplication",
+          "actionTypeName": "standard__SalesforceCMS",
+          "optionsMap": {
+            "displayApplication": "false"
+          }
+        },
+        {
+          "jiraTicket": "AC-26710b",
+          "description": "Adjust AAKonsult app visibility for AC Basic User",
+          "actionType": "ProfileApplication",
+          "actionTypeName": "AAKCS__AAkonsult_Campaign_Status_Lightning",
+          "optionsMap": {
+            "displayApplication": "false"
+          }
+        },
+        {
+          "jiraTicket": "AC-26710c",
+          "description": "Adjust AAKonsult app visibility for AC Basic User",
+          "actionType": "ProfileApplication",
+          "actionTypeName": "AAKCS__AAkonsult_Campaign_Status",
+          "optionsMap": {
+            "displayApplication": "false"
+          }
+        },
+        {
+          "jiraTicket": "AC-26710d",
+          "description": "Adjust Chatter app visibility for AC Basic User",
+          "actionType": "ProfileApplication",
+          "actionTypeName": "standard__Chatter",
+          "optionsMap": {
+            "displayApplication": "false"
+          }
+        },
+        {
+          "jiraTicket": "AC-26710e",
+          "description": "Adjust Lightning Usage app visibility for AC Basic User",
+          "actionType": "ProfileApplication",
+          "actionTypeName": "standard__LightningInstrumentation",
+          "optionsMap": {
+            "displayApplication": "false"
+          }
+        },
+        {
+          "jiraTicket": "AC-26710f",
+          "description": "Adjust Your Account app visibility for AC Basic User",
+          "actionType": "ProfileApplication",
+          "actionTypeName": "standard__OnlineSales",
+          "optionsMap": {
+            "displayApplication": "false"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Account",
+      "instructionTypeName": "command__AC Account (Household) Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-23908a",
+          "description": "Add Stage field below AccountName in household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Account_Stage__c",
+          "optionsMap": {
+            "doNotModifyExisting": "true"
+          },  
+          "location": {
+            "position": "Below",
+            "reference": "Name",
+            "section": "Account Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-23908b",
+          "description": "Add Rank field below Stage in household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Rank__c",
+          "optionsMap": {
+            "doNotModifyExisting": "true"
+          },
+          "location": {
+            "position": "Below",
+            "reference": "command__Account_Stage__c",
+            "section": "Account Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Campaign",
+      "description": "Add new picklist values to Type",
+      "taskList": [
+        {
+          "jiraTicket": "ac-210",
+          "description": "Add Radio,Television,Social Media,Workshop values to Type",
+          "actionType": "PicklistValueStandard",
+          "actionTypeName": "Type",
+          "optionsMap": {
+            "picklistValues": "Radio,Television,Social Media,Workshop",
+            "operation": "add"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Account",
+      "instructionTypeName": "command__AC Account (Household) Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-44589a",
+          "description": "Adding/updating the Address information  section and properties",
+          "actionType": "LayoutSection",
+          "actionTypeName": "Address Information",
+          "location": {
+            "reference": "Contact Information"
+          },
+          "optionsMap": {
+            "customLabel": true,
+            "detailHeading": true,
+            "editHeading": false,
+            "style": "TwoColumnsLeftToRight"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589b",
+          "description": "Adding the primary phone field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Account_Primary_Phone__c",
+          "location": {
+            "section": "Contact Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589c",
+          "description": "Adding the Phone field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "Phone",
+          "location": {
+            "position": "below",
+            "reference": "command__Account_Primary_Phone__c",
+            "section": "Contact Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589d",
+          "description": "Adding the Do Not Call field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Do_Not_Call__c",
+          "location": {
+            "section": "Contact Information",
+            "column": 1,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589e",
+          "description": "Adding the Do not Text field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Account_Do_Not_Text__c",
+          "location": {
+            "position": "below",
+            "reference": "command__Do_Not_Call__c",
+            "section": "Contact Information",
+            "column": 1,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589f",
+          "description": "Adding the Do not Mass Text field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Account_Do_Not_Mass_Text__c",
+          "location": {
+            "position": "below",
+            "section": "Contact Information",
+            "reference": "command__Account_Do_Not_Text__c",
+            "column": 1,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589g",
+          "description": "Adding the Do not Mass Email field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Account_Do_Not_Mass_Email__c",
+          "location": {
+            "position": "below",
+            "section": "Contact Information",
+            "reference": "command__Account_Do_Not_Mass_Text__c",
+            "column": 1,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589h",
+          "description": "Adding the Mobile field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Mobile__c",
+          "location": {
+            "position": "below",
+            "reference": "Phone",
+            "section": "Contact Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589i",
+          "description": "Adding the Email field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__BusinessEmail__c",
+          "location": {
+            "position": "below",
+            "reference": "command__Mobile__c",
+            "section": "Contact Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589j",
+          "description": "Adding the Website field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "Website",
+          "location": {
+            "position": "below",
+            "reference": "command__BusinessEmail__c",
+            "section": "Contact Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589k",
+          "description": "Adding the BillingAddress field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "BillingAddress",
+          "location": {
+            "section": "Address Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589l",
+          "description": "Adding the field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Account_Do_Not_Mail__c",
+          "location": {
+            "position": "below",
+            "reference": "BillingAddress",
+            "section": "Address Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589m",
+          "description": "Adding the Other Address field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Other_address__c",
+          "location": {
+            "section": "Address Information",
+            "column": 1,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589n",
+          "description": "Adding the Do Not Mass Mail field on the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Account_Do_Not_Mass_Mail__c",
+          "location": {
+            "position": "below",
+            "reference": "command__Other_address__c",
+            "section": "Address Information",
+            "column": 1,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-44589p",
+          "description": "Remove Shipping Addres field from the Household Layout",
+          "actionType": "Field",
+          "actionTypeName": "ShippingAddress",
+          "optionsMap": {
+            "operation": "remove"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Account",
+      "instructionType": "Modify",
+      "instructionTypeName": "FieldLevelSecurity",
+      "taskList": [
+        {
+          "jiraTicket": "ac-45969a",
+          "description": "Update do not call field level security",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "PersonDoNotCall",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-45969b",
+          "description": "Update do not call field level security",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "PersonDoNotCall",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Account",
+      "instructionTypeName": "command__AC Account (Household) Layout",
+      "description": "Add HouseHold Related list on the household layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-44251a",
+          "description": "Add related list to enable the Household opportunities on the lighting page",
+          "actionType": "RelatedList",
+          "actionTypeName": "Opportunity.FinServ__Household__c",
+          "optionsMap": {}
+        }
+      ]
+    },
+    {
+      "sObjectName": "AccountContactRelation",
+      "taskList": [
+        {
+          "jiraTicket": "AC-3971a",
+          "description": "Deactivate the Assets and Liabilities,Financial Goals,Referrals picklist values form Rollup field",
+          "actionType": "PicklistValueCustom",
+          "actionTypeName": "FinServ__Rollups__c",
+          "optionsMap": {
+            "picklistValues": "Assets and Liabilities,Financial Goals,Referrals",
+            "operation": "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Opportunity",
+      "instructionType": "Modify",
+      "instructionTypeName": "FieldLevelSecurity",
+      "taskList": [
+        {
+          "jiraTicket": "ac-46016",
+          "description": "Update household field level security",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Household__c",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "AccountContactRelation",
+      "taskList": [
+        {
+          "jiraTicket": "AC-20076",
+          "description": "Add notes to household rollups",
+          "actionType": "PicklistValueCustom",
+          "actionTypeName": "FinServ__Rollups__c",
+          "optionsMap": {
+            "picklistValues": "Notes"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Lead",
+      "instructionTypeName": "Standard_Lead_Duplicate_Rule",
+      "taskList": [
+        {
+          "jiraTicket": "AC-1813a",
+          "description": "Add Lead.Lead_First_Last_Name_Compare matching rule to Standard Lead Duplicate Rule",
+          "actionType": "DuplicateRule",
+          "actionTypeName": "Standard_Lead_Duplicate_Rule",
+          "optionsMap": {
+            "matchingRules": "Lead,Lead_First_Last_Name_Compare",
+            "operation": "add matching rule"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "PersonAccount",
+      "instructionTypeName": "Standard_Person_Account_Duplicate_Rule",
+      "taskList": [
+        {
+          "jiraTicket": "AC-1813b",
+          "description": "PersonAccount.Person_Account_Matching_First_Last matching rule to Standard Person Duplicate Rule",
+          "actionType": "DuplicateRule",
+          "actionTypeName": "Standard_Person_Account_Duplicate_Rule",
+          "optionsMap": {
+            "matchingRules": "PersonAccount,Person_Account_Matching_First_Last",
+            "operation": "add matching rule"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "PersonAccount",
+      "instructionTypeName": "Person_Account_Matching_First_Last",
+      "taskList": [
+        {
+          "jiraTicket": "AC-37821a",
+          "description": "Enable command__Person_Account_Matching_First_Last matching rule",
+          "actionType": "MatchingRule",
+          "actionTypeName": "Person_Account_Matching_First_Last",
+          "optionsMap": {
+            "ruleStatus": "Active"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Lead",
+      "instructionTypeName": "Lead_First_Last_Name_Compare",
+      "taskList": [
+        {
+          "jiraTicket": "AC-37821b",
+          "description": "Enable Lead_First_Last_Name_Compare matching rule",
+          "actionType": "MatchingRule",
+          "actionTypeName": "Lead_First_Last_Name_Compare",
+          "optionsMap": {
+            "ruleStatus": "Active"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Contact",
+      "taskList": [
+        {
+          "jiraTicket": "ac-48636a",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__PreferredName__c",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636b",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__CurrentEmployer__c",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636c",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Gender__c",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636d",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__PreferredName__c",
+          "optionsMap": {
+            "profileName": "AC Read Only",
+            "readable": "true",
+            "editable": "false"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636e",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__CurrentEmployer__c",
+          "optionsMap": {
+            "profileName": "AC Read Only",
+            "readable": "true",
+            "editable": "false"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636f",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Gender__c",
+          "optionsMap": {
+            "profileName": "AC Read Only",
+            "readable": "true",
+            "editable": "false"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636h",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__PreferredName__c",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636i",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__CurrentEmployer__c",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          }
+        },
+        {
+          "jiraTicket": "ac-48636j",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "FinServ__Gender__c",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "PersonAccount",
+      "instructionTypeName": "command__Client",
+      "taskList": [
+        {
+          "jiraTicket": "ac-29a",
+          "description": "Remove Estimate Net Worth field from Person Account Client Layout ",
+          "actionType": "Field",
+          "actionTypeName": "command__Estimate_Net_Worth__c",
+          "optionsMap": {
+            "operation": "remove"
+          }
+        },
+        {
+          "jiraTicket": "ac-29b",
+          "description": "Add Estimated Net Worth field to Person Account Client Layout ",
+          "actionType": "Field",
+          "actionTypeName": "command__Estimated_Net_Worth__c",
+          "optionsMap": {
+            "operation": "add"
+          },
+          "location": {
+            "position": "above",
+            "reference": "command__Estimated_Liquid_Saving__c",
+            "section": "Income Planning",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-16040a",
+          "description": "Add Primary Campaign Source to Person Account Client Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Primary_Campaign_Source__c",
+          "optionsMap": {
+            "operation": "add"
+          },
+          "location": {
+            "section": "Account Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Lead",
+      "instructionTypeName": "command__AC Lead Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-29c",
+          "description": "Remove Estimate Net Worth field from AC Lead Layout ",
+          "actionType": "Field",
+          "actionTypeName": "command__Estimate_Net_Worth__c",
+          "optionsMap": {
+            "operation": "remove"
+          }
+        },
+        {
+          "jiraTicket": "ac-29d",
+          "description": "Add Estimated Net Worth field to AC Lead Layout ",
+          "actionType": "Field",
+          "actionTypeName": "command__Lead_Estimated_Net_Worth__c",
+          "optionsMap": {
+            "operation": "add"
+          },
+          "location": {
+            "position": "above",
+            "reference": "command__Lead_Estimated_Liquid_Saving__c",
+            "section": "Income Planning",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        },
+        {
+          "jiraTicket": "ac-16040b",
+          "description": "Add Primary Campaign Source to Lead AC Client Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Primary_Campaign_Source__c",
+          "optionsMap": {
+            "operation": "add"
+          },
+          "location": {
+            "section": "Lead Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
+    }
+  ]
+}
