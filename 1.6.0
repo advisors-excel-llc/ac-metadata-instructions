@@ -2,15 +2,15 @@
   "instructionList": [
     {
       "instructionTypeName": "DeleteField",
+      "sObjectName": "FinServ__FinancialAccount__c",
       "taskList": [
         {
           "jiraTicket": "ac-50792",
           "actionType": "DeleteField",
           "actionTypeName": "DeleteField",
-          "sObjectName": "FinServ__FinancialAccount__c",
           "description": "AC Package: Financial Account Object: DNU field Clean up ",
           "optionsMap": {
-            "requestedFieldsToDelete" : "command_DTCC_Account_Value_c,command__DTCC_Actuarial_Present_Value__c,command__DTCC_Calculated_RMD_Value__c,command__DTCC_Cost_Basis__c,command__DTCC_Daily_Tracking_Value__c,command__DTCC_Gross_Death_Benefit__c,command__DTCC_Guaranteed_Protection_Amount__c,command__DTCC_Income_Payment_Base__c,command__DTCC_Initial_Purchase_Amount__c,command__DTCC_Issue_Effective__c,command__DTCC_Last_Update__c,command__DTCC_Maturity__c,command__DTCC_Net_Death_Benefit__c,command__DTCC_Policy_Number__c,command__DTCC_Pre_TEFRA_Cost__c,command__DTCC_Received__c,command__DTCC_Status__c,command__DTCC_Surrender_Value__c,command__DTCC_Total_Contribution_Since_Inception__c,command__DTCC_Year_End_Value__c"
+            "requestedFieldsToDelete" : "command__DTCC_Account_Value_c,command__DTCC_Actuarial_Present_Value__c,command__DTCC_Calculated_RMD_Value__c,command__DTCC_Cost_Basis__c,command__DTCC_Daily_Tracking_Value__c,command__DTCC_Gross_Death_Benefit__c,command__DTCC_Guaranteed_Protection_Amount__c,command__DTCC_Income_Payment_Base__c,command__DTCC_Initial_Purchase_Amount__c,command__DTCC_Issue_Effective__c,command__DTCC_Last_Update__c,command__DTCC_Maturity__c,command__DTCC_Net_Death_Benefit__c,command__DTCC_Policy_Number__c,command__DTCC_Pre_TEFRA_Cost__c,command__DTCC_Received__c,command__DTCC_Status__c,command__DTCC_Surrender_Value__c,command__DTCC_Total_Contribution_Since_Inception__c,command__DTCC_Year_End_Value__c"
           }
         }
       ]
