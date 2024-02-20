@@ -606,7 +606,7 @@
           "jiraTicket": "ac-29a",
           "description": "Remove Estimate Net Worth field from Person Account Client Layout ",
           "actionType": "Field",
-          "actionTypeName": "command__Estimate_Net_Worth__c",
+          "actionTypeName": "command__Lead_Estimate_Net_Worth__c",
           "optionsMap": {
             "operation": "remove"
           }
@@ -651,7 +651,7 @@
           "jiraTicket": "ac-29c",
           "description": "Remove Estimate Net Worth field from AC Lead Layout ",
           "actionType": "Field",
-          "actionTypeName": "command__Estimate_Net_Worth__c",
+          "actionTypeName": "command__Lead_Estimate_Net_Worth__c",
           "optionsMap": {
             "operation": "remove"
           }
