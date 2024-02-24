@@ -687,6 +687,344 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName": "PersonAccount",
+      "instructionTypeName": "command__Client",
+      "taskList": [
+        {
+          "jiraTicket": "ac-9548a",
+          "description": "Add Alert Message Field to Person Account Client Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Alert_Message__c",
+          "location": {
+            "position": "Below",
+            "reference": "Description",
+            "section": "Description Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Lead",
+      "instructionTypeName": "command__AC Lead Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-9548b",
+          "description": "Add Alert Message Field to Lead Layout",
+          "actionType": "Field",
+          "actionTypeName": "command__Alert_Message__c",
+          "location": {
+            "position": "Below",
+            "reference": "Description",
+            "section": "Description Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548c1",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to person accounts",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "false",
+            "recordTypes": "PersonAccount.command__PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Advisor"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548c2",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to person accounts",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "true",
+            "recordTypes": "PersonAccount.command__PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Advisor"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548d1",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to person accounts",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "false",
+            "recordTypes": "PersonAccount.command__PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Ops"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548d2",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to person accounts",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "true",
+            "recordTypes": "PersonAccount.command__PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Ops"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548e1",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to person accounts",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "false",
+            "recordTypes": "PersonAccount.command__PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Marketing"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548e2",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to person accounts",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "true",
+            "recordTypes": "PersonAccount.command__PersonAccount",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Marketing"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548f1",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to leads",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "false",
+            "sObjectsForRecordTypes": "lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Advisor"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548f2",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to leads",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "true",
+            "sObjectsForRecordTypes": "lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Advisor"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548g1",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to leads",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "false",
+            "sObjectsForRecordTypes": "lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Ops"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548g2",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to leads",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "true",
+            "sObjectsForRecordTypes": "lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Ops"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548h1",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to leads",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "false",
+            "sObjectsForRecordTypes": "lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Marketing"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "FlexiPageComponent",
+      "taskList": [
+        {
+          "jiraTicket": "AC-9548h2",
+          "actionType": "FlexiPageComponent",
+          "actionTypeName": "FlexiPageComponent",
+          "description": "Add alert banner component to leads",
+          "optionsMap": {
+            "operation": "add component",
+            "componentName": "command:alertBannerComponent",
+            "componentIdentifier": "alertBannerComponent_1",
+            "referenceComponentName": "force:highlightsPanel",
+            "referenceComponentIdentifier": "hideChatterActions",
+            "referenceComponentIdentifierValue": "false",
+            "sObjectsForRecordTypes": "lead",
+            "profiles": "AC Basic User,AC Read Only,Admin",
+            "applicationName": "command__AC_Marketing"
+          },
+          "location": {
+            "position": "below"
+          }
+        }
+      ]
     }
   ]
 }
