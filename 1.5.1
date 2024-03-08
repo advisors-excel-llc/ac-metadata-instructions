@@ -1067,6 +1067,24 @@
           ]
         }
       ]
+    },
+    {
+      "sObjectName": "Contract",
+      "instructionType": "Modify",
+      "instructionTypeName": "FieldLevelSecurity",
+      "taskList": [
+        {
+          "jiraTicket": "ac-46595c2",
+          "description": "Make name field visible for contracts",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "Name",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          }
+        }
+      ]
     }
   ]
 }
