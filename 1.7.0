@@ -14,6 +14,42 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName": "FinServ__FinancialAccount__c",
+      "description": "All Record Types- Rework Status Field Values",
+      "taskList": [
+        {
+          "jiraTicket": "ac-3853",
+          "description": "Remove unwanted picklist options from status field",
+          "actionType": "PicklistValueCustom",
+          "actionTypeName": "FinServ__Status__c",
+          "optionsMap": {
+              "picklistValues": "Await 1035 Funds,Held,Held At AE, Paid,Pre-Screen,Received,Returned,Reversed,Withdrawn",
+              "operation": "deactivate"
+          }
+        },
+          {
+            "jiraTicket": "ac-3853",
+            "description": "Add new picklist values to status field",
+            "actionType": "PicklistValueCustom",
+            "actionTypeName": "FinServ__Status__c",
+            "optionsMap": {
+                "picklistValues": "Free Looked",
+                "operation": "add"
+            }
+          },
+          {
+            "jiraTicket": "ac-3853",
+            "description": "Reorder Picklist options for status field",
+            "actionType": "PicklistValueCustom",
+            "actionTypeName": "FinServ__Status__c",
+            "optionsMap": {
+                "picklistValues": "In Process,Submitted,Approved,Declined,Pending,Issued,In Force,Lapse Pending,Lapsed,Open,Cancelled,Free Looked,Annuitized,Closed,Death Claim,Opportunity,Proposal,Application,Postponed,Paid,On Hold,Charge-off,Lost,Paid out,Active,Expired,Waiting on Signatures,Sent to AEW,Opened at Custodian,Funded,Submitted to AEWM,Submitted to Custodian,Opened,Held at AE",
+                "operation": "sort"
+            }
+          }
+      ]
     }
   ]
 }
