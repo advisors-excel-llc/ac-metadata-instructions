@@ -48,7 +48,7 @@
             "operation": "create",
             "oauthScope": "refresh_token api",
             "authProvider": "AdvisorsCommandAuthAPIProvider",
-            "protocol": "OAuth 2.0",
+            "protocol": "Oauth",
             "useBaseUrl": "True"
           }
         }
