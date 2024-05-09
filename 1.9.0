@@ -35,6 +35,24 @@
           }
         }
       ]
+    },
+    {
+      "jiraTicket": "ac-53424",
+      "description": "Creates the AdvisorsCommandAuthAPI Named Credential",
+      "instructionTypeName": "AdvisorsCommandAuthAPINamedCredential",
+      "taskList": [
+        {
+          "actionType": "NamedCredential",
+          "actionTypeName": "none",
+          "optionsMap": {
+            "operation": "create",
+            "oauthScope": "refresh_token api",
+            "authProvider": "AdvisorsCommandAuthAPIProvider",
+            "protocol": "OAuth 2.0",
+            "useBaseUrl": "True"
+          }
+        }
+      ]
     }
   ]
 }
