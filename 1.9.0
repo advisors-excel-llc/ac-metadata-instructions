@@ -31,7 +31,6 @@
             "referenceConnectedApp": "command__AdvisorsCommandAuthAPI2",
             "defaultScopes": "refresh_token api",
             "providerType": "Salesforce",
-            "removeNamespace": "True",
             "setCallBackURL": "True"
           }
         }
