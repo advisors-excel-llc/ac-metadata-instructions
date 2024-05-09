@@ -4,10 +4,11 @@
       "jiraTicket": "ac-53424",
       "description": "Adds the AdvisorsCommandAuthAPI connected app",
       "instructionTypeName": "AdvisorsCommandAuthAPI2",
-      "actionType": "ConnectedApp",
-      "actionTypeName": "none",
+
       "taskList": [
         {
+          "actionType": "ConnectedApp",
+          "actionTypeName": "none",
           "optionsMap": {
             "operation": "create",
             "contactEmail": "deploy@advisorsexcel.com",
