@@ -12,6 +12,7 @@
             "operation": "create",
             "contactEmail": "deploy@advisorsexcel.com",
             "callBackUrl": "temp:value",
+            "removeNamespace": "True",
             "scopes": "Api,RefreshToken,Full"
           }
         }
@@ -30,6 +31,7 @@
             "referenceConnectedApp": "AdvisorsCommandAuthAPI2",
             "defaultScopes": "refresh_token api",
             "providerType": "Salesforce",
+            "removeNamespace": "True",
             "setCallBackURL": "True"
           }
         }
