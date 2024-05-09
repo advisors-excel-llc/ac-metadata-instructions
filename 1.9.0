@@ -4,7 +4,6 @@
       "jiraTicket": "ac-53424",
       "description": "Adds the AdvisorsCommandAuthAPI connected app",
       "instructionTypeName": "AdvisorsCommandAuthAPI2",
-
       "taskList": [
         {
           "actionType": "ConnectedApp",
@@ -17,6 +16,24 @@
           }
         }
       ]
-    }
+    },
+    {
+      "jiraTicket": "ac-53424",
+      "description": "Creates the AdvisorsCommandAuthAPI Auth Provider",
+      "instructionTypeName": "AdvisorsCommandAuthAPIProvider",
+      "taskList": [
+        {
+          "actionType": "AuthProvider",
+          "actionTypeName": "none",
+          "optionsMap": {
+            "operation": "create",
+            "referenceConnectedApp": "AdvisorsCommandAuthAPI2",
+            "defaultScopes": "refresh_token api",
+            "providerType": "Salesforce",
+            "setCallBackURL": "True"
+          }
+        }
+      ]
+    },
   ]
 }
