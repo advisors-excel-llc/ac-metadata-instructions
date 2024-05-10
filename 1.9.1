@@ -1,0 +1,40 @@
+{
+  "instructionList": [
+    {
+      "jiraTicket": "ac-53424a",
+      "description": "Creates the AdvisorsCommandAuthAPI Auth Provider",
+      "instructionTypeName": "AdvisorsCommandAuthAPIProvider",
+      "taskList": [
+        {
+          "actionType": "AuthProvider",
+          "actionTypeName": "none",
+          "optionsMap": {
+            "operation": "create",
+            "referenceConnectedApp": "command__AdvisorsCommandAuthAPI",
+            "defaultScopes": "refresh_token api",
+            "providerType": "Salesforce",
+            "setCallBackURL": "True"
+          }
+        }
+      ]
+    },
+    {
+      "jiraTicket": "ac-53424b",
+      "description": "Creates the AdvisorsCommandAuthAPI Named Credential",
+      "instructionTypeName": "AdvisorsCommandAuthAPINamedCredential",
+      "taskList": [
+        {
+          "actionType": "NamedCredential",
+          "actionTypeName": "none",
+          "optionsMap": {
+            "operation": "create",
+            "oauthScope": "refresh_token api",
+            "authProvider": "AdvisorsCommandAuthAPIProvider",
+            "protocol": "Oauth",
+            "useBaseUrl": "True"
+          }
+        }
+      ]
+    }
+  ]
+}
