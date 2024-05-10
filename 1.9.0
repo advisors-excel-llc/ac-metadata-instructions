@@ -3,7 +3,7 @@
     {
       "jiraTicket": "ac-53424",
       "description": "Adds the AdvisorsCommandAuthAPI connected app",
-      "instructionTypeName": "AdvisorsCommandAuthAPI2",
+      "instructionTypeName": "AdvisorsCommandAPIAuth",
       "taskList": [
         {
           "actionType": "ConnectedApp",
