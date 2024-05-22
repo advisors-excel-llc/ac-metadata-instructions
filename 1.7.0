@@ -25,7 +25,7 @@
           "actionType": "PicklistValueCustom",
           "actionTypeName": "FinServ__Status__c",
           "optionsMap": {
-              "picklistValues": "Await 1035 Funds,Held,Held At AE, Paid,Pre-Screen,Received,Returned,Reversed,Withdrawn",
+              "picklistValues": "Held,Paid,Pre-Screen,Proposal,Received,Returned,Reversed,Withdrawn,Opportunity,Application,Postponed,On Hold,Lost,Paid out,Active,Expired,Waiting on Signatures,Sent to AEW,Opened at Custodian,Funded,Submitted to AEWM,Submitted to Custodian,Opened",
               "operation": "deactivate"
           }
         },
@@ -45,7 +45,7 @@
             "actionType": "PicklistValueCustom",
             "actionTypeName": "FinServ__Status__c",
             "optionsMap": {
-                "picklistValues": "In Process,Submitted,Approved,Declined,Pending,Issued,In Force,Lapse Pending,Lapsed,Open,Cancelled,Free Looked,Annuitized,Closed,Death Claim,Opportunity,Proposal,Application,Postponed,Paid,On Hold,Charge-off,Lost,Paid out,Active,Expired,Waiting on Signatures,Sent to AEW,Opened at Custodian,Funded,Submitted to AEWM,Submitted to Custodian,Opened,Held at AE",
+                "picklistValues": "In Process,Submitted,Held at AE,Approved,Await 1035 Funds,Declined,Pending,Issued,In Force,Open,Cancelled,Lapse Pending,Lapsed,Free Looked,Annuitized,Closed,Death Claim",
                 "operation": "sort"
             }
           }
