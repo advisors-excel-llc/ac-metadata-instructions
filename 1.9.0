@@ -1,42 +1,106 @@
 {
   "instructionList":[
     {
-      "sObjectName":"FinServ__FinancialAccount__c",
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Annuity_Role",
       "taskList":[
         {
-          "jiraTicket":"AC-20154",
-          "actionType":"PicklistValueCustom",
-          "actionTypeName":"command__Account_Type__c",
-          "optionsMap":{
-            "sortList":true,
-            "picklistValues":"401(A),403(B),457,529,Contributory IRA,Conversion Roth,Custodial,Defined Benefit Plan,Foundation,Health Savings Account,Joint,Joint Tenant,SAR Sep Plan,Simplified Employee Pension Plan,Transfer on Death"
-          }
-        }
-      ]
-    },
-    {
-      "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"command__AUM",
-      "taskList":[
-        {
-          "jiraTicket":"AC-20154",
+          "jiraTicket":"AC-55368",
           "actionType":"RecordTypePicklist",
-          "actionTypeName":"command__Account_Type__c",
+          "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
-            "picklistValues":"401(A),403(B),457,529,Contributory IRA,Conversion Roth,Custodial,Defined Benefit Plan,Foundation,Health Savings Account,Joint,Joint Tenant,SAR Sep Plan,Simplified Employee Pension Plan,Transfer on Death"
+            "operation" : "add",
+            "picklistValues":"Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
           }
         }
       ]
     },
     {
-      "sObjectName":"FinServ__FinancialAccount__c",
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Life_Role",
       "taskList":[
         {
-          "jiraTicket":"AC-20154",
-          "actionType":"PicklistValueCustom",
-          "actionTypeName":"FinServ__Status__c",
+          "jiraTicket":"AC-55368",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
-            "picklistValues":"Approved,Await 1035 Funds,Held at AE,Lapse Pending,Lapsed"
+            "operation" : "add",
+            "picklistValues":"Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__AUM_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Alternative_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "remove",
+            "picklistValues":"Accountant,Additional Owner,Administrator,Advisor,Annuitant,Appoint/ Remove Authority,Authorized Agent,Authorized Agent/ Beneficial Owner,Authorized Individual,Authorized Signer,Business Manager,Committee Member,Control Person,Corporation,Cosigner,Custodian,Deceased Grantor,Decedent,Discretionary,Foundation,Full Authority,Grantor,Insured,Interested Party,Minor Primary Owner,Original Depositor,Other,Power of Attorney,Proprietor,TOD Beneficiary,Trustee,Writing Advisor,Servicing Advisor,Joint Annuitant,Primary Insured,Additional Insured,Primary Beneficiary,Contingent Beneficiary,Owner,Single,Single with TOD,Joint,Joint with TOD,Trust"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Alternative_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Primary Owner,Joint Owner,Beneficial Owner,Minor Primary Owner,Conservator,Guardian,Single with TOD,Joint with TOD"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Other_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Other_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "remove",
+            "picklistValues":"Annuitant,Joint Annuitant"
           }
         }
       ]
