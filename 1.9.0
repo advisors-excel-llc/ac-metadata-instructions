@@ -5,7 +5,7 @@
       "instructionTypeName":"command__Annuity_Role",
       "taskList":[
         {
-          "jiraTicket":"AC-55368",
+          "jiraTicket":"AC-55368a",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
@@ -20,7 +20,7 @@
       "instructionTypeName":"command__Life_Role",
       "taskList":[
         {
-          "jiraTicket":"AC-55368a",
+          "jiraTicket":"AC-55368b",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
@@ -35,7 +35,7 @@
       "instructionTypeName":"command__AUM_Role",
       "taskList":[
         {
-          "jiraTicket":"AC-55368b",
+          "jiraTicket":"AC-55368c",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
@@ -47,10 +47,25 @@
     },
     {
       "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__AUM_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368d",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "remove",
+            "picklistValues":"Owner"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
       "instructionTypeName":"command__Alternative_Role",
       "taskList":[
         {
-          "jiraTicket":"AC-55368c",
+          "jiraTicket":"AC-55368e",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
@@ -65,7 +80,7 @@
       "instructionTypeName":"command__Alternative_Role",
       "taskList":[
         {
-          "jiraTicket":"AC-55368d",
+          "jiraTicket":"AC-55368f",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
@@ -80,7 +95,7 @@
       "instructionTypeName":"command__Other_Role",
       "taskList":[
         {
-          "jiraTicket":"AC-55368",
+          "jiraTicket":"AC-55368g",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
@@ -95,7 +110,7 @@
       "instructionTypeName":"command__Other_Role",
       "taskList":[
         {
-          "jiraTicket":"AC-55368e",
+          "jiraTicket":"AC-55368h",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
