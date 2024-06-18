@@ -1,6 +1,84 @@
 {
   "instructionList":[
     {
+       "sObjectName": "FinServ__FinancialAccount__c",
+       "instructionTypeName": "command__Financial Account (Annuity) Layout",
+       "taskList": [
+         {
+           "jiraTicket": "ac-20649a",
+           "description": "Adding the rich text Description field",
+           "actionType": "field",
+           "actionTypeName": "command__Description__c",
+           "location": {
+             "section": "Description",
+             "column" : 0,
+             "behavior" : "Edit"
+            }
+         },
+         {
+           "jiraTicket": "ac-20649b",
+           "description": "Removing the FinServ Description field",
+           "actionType": "field",
+           "actionTypeName": "FinServ__Description__c",
+           "optionsMap": {
+             "operation": "remove"
+           }
+         }
+       ]
+    },
+    {
+       "sObjectName": "FinServ__FinancialAccount__c",
+       "instructionTypeName": "command__Financial Account (REIT/Mutual Fund/Other) Layout",
+       "taskList": [
+         {
+           "jiraTicket": "ac-20649c",
+           "description": "Adding the rich text Description field",
+           "actionType": "field",
+           "actionTypeName": "command__Description__c",
+           "location": {
+             "section": "Description",
+             "column" : 0,
+             "behavior" : "Edit"
+            }
+         },
+         {
+           "jiraTicket": "ac-20649d",
+           "description": "Removing the FinServ Description field",
+           "actionType": "field",
+           "actionTypeName": "FinServ__Description__c",
+           "optionsMap": {
+             "operation": "remove"
+           }
+         }
+       ]
+    },
+    {
+       "sObjectName": "FinServ__FinancialAccount__c",
+       "instructionTypeName": "command__Financial Account(Life) Layout",
+       "taskList": [
+         {
+           "jiraTicket": "ac-20649e",
+           "description": "Adding the rich text Description field",
+           "actionType": "field",
+           "actionTypeName": "command__Description__c",
+           "location": {
+             "section": "Description",
+             "column" : 0,
+             "behavior" : "Edit"
+            }
+         },
+         {
+           "jiraTicket": "ac-20649f",
+           "description": "Removing the FinServ Description field",
+           "actionType": "field",
+           "actionTypeName": "FinServ__Description__c",
+           "optionsMap": {
+             "operation": "remove"
+           }
+         }
+       ]
+    },
+    {
       "sObjectName":"FinServ__FinancialAccountRole__c",
       "instructionTypeName":"command__Annuity_Role",
       "taskList":[
