@@ -1,6 +1,21 @@
 {
   "instructionList":[
     {
+       "instructionTypeName": "recordFieldMapper",
+       "taskList": [
+         {
+           "jiraTicket": "ac-57039",
+           "description": "Map data from FinServ Description to custom Description field",
+           "actionType": "RecordFieldMapper",
+           "actionTypeName": "Query",
+           "optionsMap": {
+             "query": "SELECT command__Description__c,FinServ__Description__c,Id FROM FinServ__FinancialAccount__c",
+             "bundledFields": "command__Description__c:FinServ__Description__c"
+           }
+         }
+       ]
+    },
+    {
        "sObjectName": "FinServ__FinancialAccount__c",
        "instructionTypeName": "command__Financial Account (Annuity) Layout",
        "taskList": [
