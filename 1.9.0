@@ -197,6 +197,44 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName": "Task",
+      "instructionTypeName": "command__AC Task Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-55530a",
+          "description": "Adding the Maintain Owner field",
+          "actionType": "field",
+          "actionTypeName": "command__Maintain_Owner__c",
+          "location": {
+            "position": "Below",
+            "reference": "Priority",
+            "section": "Task Information",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Event",
+      "instructionTypeName": "Event Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-55530b",
+          "description": "Adding the Maintain Owner field",
+          "actionType": "field",
+          "actionTypeName": "command__Maintain_Owner__c",
+          "location": {
+            "position": "Below",
+            "reference": "WhatId",
+            "section": "Calendar Event Details",
+            "column": 0,
+            "behavior": "Edit"
+          }
+        }
+      ]
     }
   ]
 }
