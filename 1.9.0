@@ -1,6 +1,21 @@
 {
   "instructionList":[
     {
+       "sObjectName":"Task",
+       "description": "Add new picklist value to Status",
+       "taskList":[
+         {
+           "jiraTicket":"ac-48131",
+           "actionType":"PicklistValueStandard",
+           "actionTypeName":"Status",
+           "optionsMap":{
+             "operation" : "add",
+             "picklistValues":"In Progress"
+           }
+         }
+       ]
+    },
+    {
        "sObjectName": "FinServ__FinancialAccount__c",
        "instructionTypeName": "command__Financial Account (Annuity) Layout",
        "taskList": [
