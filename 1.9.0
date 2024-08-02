@@ -228,6 +228,25 @@
           }
         }
       ]
+    },
+    {
+      "sobjectName":"Lead",
+      "instructionTypeName": "mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58367",
+          "description": "Create new Lead List View",
+          "actionType": "ListView",
+          "actionTypeName": "createListView",
+          "optionsMap": {
+            "fullName": "Lead.TodaysLeads",
+            "label": "Today's Leads",
+            "filterScope": "Everything",
+            "filters": "LEAD.CREATED_DATE:equals:TODAY",
+            "columns": "FULL_NAME,Lead_Writing_Advisors__c,Lead_Servicing_Advisors__c,Lead_Birthdate__c,LEAD.CITY,LEAD.STATE"
+          }
+        }
+      ]
     }
   ]
 }
