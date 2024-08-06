@@ -243,7 +243,7 @@
             "label": "Today's Leads",
             "filterScope": "Everything",
             "filters": "LEAD.CREATED_DATE:equals:TODAY",
-            "columns": "FULL_NAME,Lead_Writing_Advisors__c,Lead_Servicing_Advisors__c,Lead_Birthdate__c,LEAD.CITY,LEAD.STATE"
+            "columns": "FULL_NAME,LEAD.STATE,LEAD.EMAIL,LEAD.STATUS,LEAD.CREATED_DATE"
           }
         }
       ]
