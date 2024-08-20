@@ -258,6 +258,20 @@
           }
         }
       ]
+    },
+    {
+      "description": "Update Activity Settings to disable enableClickCreateEvents, enableListViewScheduling, and enableDragAndDropScheduling",
+      "taskList": [
+        {
+          "jiraTicket": "ac-57218",
+          "actionType": "ActivitySetting",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "settingsFullName": "Activities",
+            "incomingSettings": "enableClickCreateEvents:false,enableListViewScheduling:false,enableDragAndDropScheduling:false"
+          }
+        }
+      ]
     }
   ]
 }
