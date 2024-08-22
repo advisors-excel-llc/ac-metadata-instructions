@@ -258,6 +258,40 @@
           }
         }
       ]
+    },
+    {
+      "sobjectName":"Campaign",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59235",
+          "description": "Delete AllActiveCampaigns List View",
+          "actionType": "deleteListView",
+          "optionsMap": {
+            "fullName": "Campaign.AllActiveCampaigns",
+            "filterScope": "Everything",
+            "operation": "delete"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"Campaign",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59235",
+          "description": "Delete AllActiveCampaigns List View",
+          "actionType": "deleteListView",
+          "optionsMap": {
+            "fullName": "Campaign.AllActiveCampaigns",
+            "label": "All Active Campaigns",
+            "filterScope": "Everything",
+            "filters": "CAMPAIGN.ACTIVE:equals:1",
+            "columns": "CAMPAIGN.NAME,CAMPAIGN.START_DATE,CAMPAIGN.END_DATE,CAMPAIGN.CAMPAIGN_TYPE,CAMPAIGN.STATUS,CORE.USERS.FIRST_NAME,CORE.USERS.LAST_NAME"
+          }
+        }
+      ]
     }
   ]
 }
