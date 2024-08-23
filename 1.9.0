@@ -237,9 +237,8 @@
           "jiraTicket": "AC-58367",
           "description": "Create new Lead List View",
           "actionType": "ListView",
-          "actionTypeName": "createListView",
+          "actionTypeName": "Lead.TodaysLeads",
           "optionsMap": {
-            "fullName": "Lead.TodaysLeads",
             "label": "Today's Leads",
             "filterScope": "Everything",
             "filters": "LEAD.CREATED_DATE:equals:TODAY",
