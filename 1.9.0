@@ -281,7 +281,7 @@
         {
           "jiraTicket": "AC-59235b",
           "description": "Delete AllActiveCampaigns List View",
-          "actionType": "deleteListView",
+          "actionType": "ListView",
           "actionTypeName": "Campaign.AllActiveCampaigns",
           "optionsMap": {
             "label": "All Active Campaigns",
