@@ -264,12 +264,11 @@
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
-          "jiraTicket": "AC-59235",
+          "jiraTicket": "AC-59235a",
           "description": "Delete AllActiveCampaigns List View",
-          "actionType": "deleteListView",
+          "actionType": "ListView",
+          "actionTypeName": "Campaign.AllActiveCampaigns",
           "optionsMap": {
-            "fullName": "Campaign.AllActiveCampaigns",
-            "filterScope": "Everything",
             "operation": "delete"
           }
         }
@@ -280,11 +279,11 @@
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
-          "jiraTicket": "AC-59235",
+          "jiraTicket": "AC-59235b",
           "description": "Delete AllActiveCampaigns List View",
           "actionType": "deleteListView",
+          "actionTypeName": "Campaign.AllActiveCampaigns",
           "optionsMap": {
-            "fullName": "Campaign.AllActiveCampaigns",
             "label": "All Active Campaigns",
             "filterScope": "Everything",
             "filters": "CAMPAIGN.ACTIVE:equals:1",
