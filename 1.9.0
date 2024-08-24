@@ -280,7 +280,7 @@
       "taskList":[
         {
           "jiraTicket": "AC-59235b",
-          "description": "Delete AllActiveCampaigns List View",
+          "description": "Add AllActiveCampaigns List View",
           "actionType": "ListView",
           "actionTypeName": "Campaign.AllActiveCampaigns",
           "optionsMap": {
