@@ -230,31 +230,36 @@
       ]
     },
     {
-      "description": "Update Account Settings to change showViewHierarchyLink to false",
+      "sobjectName":"Lead",
+      "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
-          "jiraTicket":"ac-48131",
-          "actionType":"AccountSetting",
-          "actionTypeName":"None",
-          "optionsMap":{
-            "operation" : "update",
-            "settingName" : "Account",
-            "showViewHierarchyLink" : "false"
-          }
-        }
-      ]
-    },
-    {
-      "description": "Update quote settings to be disabled",
+          "jiraTicket": "AC-58367",
+          "description": "Create new Lead List View",
+          "actionType": "ListView",
+          "actionTypeName": "Lead.TodaysLeads",
+          "optionsMap": {
+            "label": "Today's Leads",
+            "filterScope": "Everything",
+            "filters": "LEAD.CREATED_DATE:equals:TODAY",
+            "columns": "FULL_NAME,LEAD.STATE,LEAD.EMAIL,LEAD.PHONE,LEAD.STATUS,LEAD.CREATED_DATE,CREATEDBY_USER.ALIAS"
+           }
+         }
+       ]
+     },
+     {
+      "sobjectName":"Campaign",
+      "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
-          "jiraTicket":"ac-57219",
-          "actionType":"QuoteSetting",
-          "actionTypeName":"None",
-          "optionsMap":{
-            "operation" : "update",
-            "settingName" : "Quote",
-            "settingEnabled" : "false"
+          "jiraTicket": "AC-58366",
+          "description": "Create new Campaign Hierarchy View",
+          "actionType": "ListView",
+          "actionTypeName": "Campaign.Org_Campaign_Hierarchy",
+          "optionsMap": {
+            "label": "Campaign Hierarchy",
+            "filterScope": "Everything",
+            "columns":"CAMPAIGN.NAME,CAMPAIGN.TOTAL_NUM_LEADS,CAMPAIGN.TOT_CONTACTS,TOT_NUM_SENT,CAMPAIGN.TOT_OPPORTUNITIES,CAMPAIGN.TOT_NUM_RESPONSES,TOT_AMOUNT_ALL,TOT_AMOUNT_WON,CAMPAIGN.TOT_WON_OPPORTUNITIES"
           }
         }
       ]
@@ -288,6 +293,50 @@
             "filterScope": "Everything",
             "filters": "CAMPAIGN.ACTIVE:equals:1",
             "columns": "CAMPAIGN.NAME,CAMPAIGN.START_DATE,CAMPAIGN.END_DATE,CAMPAIGN.CAMPAIGN_TYPE,CAMPAIGN.STATUS,CORE.USERS.FIRST_NAME,CORE.USERS.LAST_NAME"
+           }
+         }
+       ]
+     },
+     {
+      "description": "Update Account Settings to change showViewHierarchyLink to false",
+      "taskList":[
+        {
+          "jiraTicket":"ac-48131",
+          "actionType":"AccountSetting",
+          "actionTypeName":"None",
+          "optionsMap":{
+            "operation" : "update",
+            "settingName" : "Account",
+            "showViewHierarchyLink" : "false"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Update quote settings to be disabled",
+      "taskList":[
+        {
+          "jiraTicket":"ac-57219",
+          "actionType":"QuoteSetting",
+          "actionTypeName":"None",
+          "optionsMap":{
+            "operation" : "update",
+            "settingName" : "Quote",
+            "settingEnabled" : "false"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Update Activity Settings to disable enableClickCreateEvents, enableListViewScheduling, and enableDragAndDropScheduling",
+      "taskList": [
+        {
+          "jiraTicket": "ac-57218",
+          "actionType": "ActivitySetting",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "settingsFullName": "Activities",
+            "incomingSettings": "enableClickCreateEvents:false,enableListViewScheduling:false,enableDragAndDropScheduling:false"
           }
         }
       ]
