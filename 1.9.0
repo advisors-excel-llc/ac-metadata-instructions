@@ -248,6 +248,23 @@
        ]
      },
      {
+      "sobjectName":"Campaign",
+      "instructionTypeName": "mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58366",
+          "description": "Create new Campaign Hierarchy View",
+          "actionType": "ListView",
+          "actionTypeName": "Campaign.Org_Campaign_Hierarchy",
+          "optionsMap": {
+            "label": "Campaign Hierarchy",
+            "filterScope": "Everything",
+            "columns":"CAMPAIGN.NAME,CAMPAIGN.TOTAL_NUM_LEADS,CAMPAIGN.TOT_CONTACTS,TOT_NUM_SENT,CAMPAIGN.TOT_OPPORTUNITIES,CAMPAIGN.TOT_NUM_RESPONSES,TOT_AMOUNT_ALL,TOT_AMOUNT_WON,CAMPAIGN.TOT_WON_OPPORTUNITIES"
+          }
+        }
+      ]
+    },
+     {
       "description": "Update Account Settings to change showViewHierarchyLink to false",
       "taskList":[
         {
