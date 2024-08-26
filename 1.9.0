@@ -340,6 +340,36 @@
           }
         }
       ]
+    },
+    {
+       "sObjectName":"Contact",
+       "description": "Add new picklist value to FinServ__Gender__c",
+       "taskList":[
+         {
+           "jiraTicket":"ac-59247a",
+           "actionType":"PicklistValueCustom",
+           "actionTypeName":"FinServ__Gender__c",
+           "optionsMap":{
+             "operation" : "add",
+             "picklistValues":"Decline to Specify"
+           }
+         }
+       ]
+    },
+    {
+       "sObjectName":"Contact",
+       "description": "Add new picklist values to FinServ__MaritalStatus__c",
+       "taskList":[
+         {
+           "jiraTicket":"ac-59247b",
+           "actionType":"PicklistValueCustom",
+           "actionTypeName":"FinServ__MaritalStatus__c",
+           "optionsMap":{
+             "operation" : "add",
+             "picklistValues":"Life Partner,Other"
+           }
+         }
+       ]
     }
   ]
 }
