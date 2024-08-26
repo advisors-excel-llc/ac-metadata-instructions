@@ -230,6 +230,24 @@
       ]
     },
     {
+      "sobjectName":"Lead",
+      "instructionTypeName": "mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58367",
+          "description": "Create new Lead List View",
+          "actionType": "ListView",
+          "actionTypeName": "Lead.TodaysLeads",
+          "optionsMap": {
+            "label": "Today's Leads",
+            "filterScope": "Everything",
+            "filters": "LEAD.CREATED_DATE:equals:TODAY",
+            "columns": "FULL_NAME,LEAD.STATE,LEAD.EMAIL,LEAD.PHONE,LEAD.STATUS,LEAD.CREATED_DATE,CREATEDBY_USER.ALIAS"
+           }
+         }
+       ]
+     },
+     {
       "description": "Update Account Settings to change showViewHierarchyLink to false",
       "taskList":[
         {
