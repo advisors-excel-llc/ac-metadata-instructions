@@ -342,6 +342,20 @@
       ]
     },
     {
+       "sObjectName":"Task",
+       "description": "Add help text to RecurrenceInterval",
+       "taskList":[
+         {
+           "jiraTicket":"ac-59356",
+           "actionType":"ModifyField",
+           "actionTypeName":"RecurrenceInterval",
+           "optionsMap":{
+             "inlineHelpText":"In Days. Ex: This task should recur every 7 days. (Weekly)"
+           } 
+         } 
+       ] 
+     },
+     {
        "sObjectName":"Contact",
        "description": "Add new picklist value to FinServ__Gender__c",
        "taskList":[
@@ -355,8 +369,8 @@
            }
          }
        ]
-    },
-    {
+     },
+     {
        "sObjectName":"Contact",
        "description": "Add new picklist values to FinServ__MaritalStatus__c",
        "taskList":[
@@ -370,6 +384,6 @@
            }
          }
        ]
-    }
+     }
   ]
 }
