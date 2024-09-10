@@ -265,7 +265,7 @@
       ]
     },
     {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
@@ -280,7 +280,7 @@
       ]
     },
     {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
@@ -354,8 +354,8 @@
            } 
          } 
        ] 
-     },
-     {
+    },
+    {
        "sObjectName":"Contact",
        "description": "Add new picklist value to FinServ__Gender__c",
        "taskList":[
@@ -369,8 +369,8 @@
            }
          }
        ]
-     },
-     {
+    },
+    {
        "sObjectName":"Contact",
        "description": "Add new picklist values to FinServ__MaritalStatus__c",
        "taskList":[
@@ -384,6 +384,38 @@
            }
          }
        ]
-     }
+    },
+    {
+       "sObjectName":"Opportunity",
+       "instructionTypeName":"mdTaskListView",
+       "taskList":[
+          {
+            "jiraTicket": "AC-59402a",
+            "description": "Delete AllOpportunities List View",
+            "actionType": "ListView",
+            "actionTypeName": "Opportunity.AllOpportunities",
+            "optionsMap": {
+              "operation": "delete"
+            }
+          }
+       ]
+    },
+    {
+       "sObjectName":"Opportunity",
+       "instructionTypeName":"mdTaskListView",
+       "taskList":[
+          {
+             "jiraTicket": "AC-59402b",
+             "description": "Add AllOpportunities List View",
+             "actionType": "ListView",
+             "actionTypeName": "Opportunity.AllOpportunities",
+             "optionsMap": {
+               "label": "All Opportunities",
+               "filterScope": "Everything",
+               "columns": "OPPORTUNITY.NAME,ACCOUNT.NAME,OPPORTUNITY.RECORDTYPE,OPPORTUNITY.AMOUNT,OPPORTUNITY.CLOSE_DATE,OPPORTUNITY.STAGE_NAME,CORE.USERS.ALIAS"
+             }
+          }
+       ]
+    }
   ]
 }
