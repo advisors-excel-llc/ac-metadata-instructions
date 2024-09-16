@@ -384,6 +384,66 @@
            }
          }
        ]
-     }
+     },
+    {
+      "description": "Gearset - Opportunity field history tracking",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59409a",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "AccountId,Amount,CampaignId,CloseDate,Description,LeadSource,Name,NextStep,StageName,Type",
+            "objectName": "Opportunity"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Opportunity field history tracking",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59409b",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field feed history",
+            "incomingFields": "Name",
+            "objectName": "Opportunity"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Campaign - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59239a",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "ActualCost,BudgetedCost,EndDate,ExpectedResponse,ExpectedRevenue,Name,NumberSent,ParentId,StartDate,Status,Type",
+            "objectName": "Campaign "
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Campaign - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59239b",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "disable field history",
+            "incomingFields": "CampaignMemberRecordTypeId,Description,IsActive,OwnerId",
+            "objectName": "Campaign "
+          }
+        }
+      ]
+    }
   ]
 }
