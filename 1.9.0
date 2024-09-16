@@ -425,7 +425,7 @@
           "optionsMap": {
             "operation": "enable field history",
             "incomingFields": "ActualCost,BudgetedCost,EndDate,ExpectedResponse,ExpectedRevenue,Name,NumberSent,ParentId,StartDate,Status,Type",
-            "objectName": "Campaign "
+            "objectName": "Campaign"
           }
         }
       ]
@@ -440,7 +440,7 @@
           "optionsMap": {
             "operation": "disable field history",
             "incomingFields": "CampaignMemberRecordTypeId,Description,IsActive,OwnerId",
-            "objectName": "Campaign "
+            "objectName": "Campaign"
           }
         }
       ]
