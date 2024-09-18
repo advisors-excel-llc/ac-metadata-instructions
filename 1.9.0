@@ -354,8 +354,8 @@
            } 
          } 
        ] 
-     },
-     {
+    },
+    {
        "sObjectName":"Contact",
        "description": "Add new picklist value to FinServ__Gender__c",
        "taskList":[
@@ -369,8 +369,8 @@
            }
          }
        ]
-     },
-     {
+    },
+    {
        "sObjectName":"Contact",
        "description": "Add new picklist values to FinServ__MaritalStatus__c",
        "taskList":[
@@ -384,6 +384,21 @@
            }
          }
        ]
-     }
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "description":"Set RelatedAccountOrContactRequired to inactive",
+      "taskList":[
+        {
+          "jiraTicket":"ac-60465",
+          "actionType":"ValidationRule",
+          "actionTypeName":"RelatedAccountOrContactRequired",
+          "namespace":"FinServ",
+          "optionsMap":{
+            "active":"false"
+          }
+        }
+      ]
+    }
   ]
 }
