@@ -230,7 +230,7 @@
       ]
     },
     {
-      "sobjectName":"Lead",
+      "sObjectName":"Lead",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
@@ -248,7 +248,7 @@
        ]
      },
      {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
@@ -265,7 +265,7 @@
       ]
     },
     {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
@@ -280,7 +280,7 @@
       ]
     },
     {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
@@ -400,6 +400,165 @@
              "columns": "NAME,command__Policy_Number__c,FinServ__Status__c,FinServ__RecordTypeName__c,command__Carrier__c,FinServ__ProductName__c,command__FinancialAccount_Expected_Initial_Amount__c,command__FinancialAccount_Writing_Advisor__c,command__Financial_Servicing_Advisors__c,LAST_ACTIVITY,command__Financial_Account_Effective_Date__c,command__Financial_Source__c,command__Tax_Qualification__c"
            }
          }
+       ]
+    },
+    {
+       "sObjectName":"command__Premium__c",
+       "description": "Add new picklist value to Source_of_Funds__c",
+       "taskList":[
+         {
+           "jiraTicket":"ac-59410a",
+           "actionType":"PicklistValueCustom",
+           "actionTypeName":"command__Source_of_Funds__c",
+           "optionsMap":{
+             "operation" : "add",
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+           }
+         }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Alternative",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410b",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Annuity",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410c",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_AUM",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410d",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Life",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410e",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Other",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410f",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Incoming_Funds",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410g",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Outgoing_Funds",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410h",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Paid",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410i",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+           }
+        ]
+    },
+    {
+       "sObjectName":"Opportunity",
+       "instructionTypeName":"mdTaskListView",
+       "taskList":[
+          {
+            "jiraTicket": "AC-59402a",
+            "description": "Delete AllOpportunities List View",
+            "actionType": "ListView",
+            "actionTypeName": "Opportunity.AllOpportunities",
+            "optionsMap": {
+              "operation": "delete"
+            }
+          }
+       ]
+    },
+    {
+       "sObjectName":"Opportunity",
+       "instructionTypeName":"mdTaskListView",
+       "taskList":[
+          {
+             "jiraTicket": "AC-59402b",
+             "description": "Add AllOpportunities List View",
+             "actionType": "ListView",
+             "actionTypeName": "Opportunity.AllOpportunities",
+             "optionsMap": {
+               "label": "All Opportunities",
+               "filterScope": "Everything",
+               "columns": "OPPORTUNITY.NAME,ACCOUNT.NAME,OPPORTUNITY.RECORDTYPE,OPPORTUNITY.AMOUNT,OPPORTUNITY.CLOSE_DATE,OPPORTUNITY.STAGE_NAME,CORE.USERS.ALIAS"
+             }
+          }
        ]
     }
   ]
