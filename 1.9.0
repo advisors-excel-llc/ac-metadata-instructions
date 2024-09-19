@@ -230,7 +230,7 @@
       ]
     },
     {
-      "sobjectName":"Lead",
+      "sObjectName":"Lead",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
@@ -248,7 +248,7 @@
        ]
      },
      {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
@@ -265,7 +265,7 @@
       ]
     },
     {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
@@ -280,7 +280,7 @@
       ]
     },
     {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
@@ -354,7 +354,7 @@
            } 
          } 
        ] 
-     },
+    },
     {
        "sObjectName":"Contact",
        "description": "Add new picklist value to FinServ__Gender__c",
@@ -508,6 +508,38 @@
              "actionTypeName": "command__Source_of_Funds__c",
              "optionsMap": {
                  "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+           }
+        ]
+    },
+    {
+       "sObjectName":"Opportunity",
+       "instructionTypeName":"mdTaskListView",
+       "taskList":[
+          {
+            "jiraTicket": "AC-59402a",
+            "description": "Delete AllOpportunities List View",
+            "actionType": "ListView",
+            "actionTypeName": "Opportunity.AllOpportunities",
+            "optionsMap": {
+              "operation": "delete"
+            }
+          }
+       ]
+    },
+    {
+       "sObjectName":"Opportunity",
+       "instructionTypeName":"mdTaskListView",
+       "taskList":[
+          {
+             "jiraTicket": "AC-59402b",
+             "description": "Add AllOpportunities List View",
+             "actionType": "ListView",
+             "actionTypeName": "Opportunity.AllOpportunities",
+             "optionsMap": {
+               "label": "All Opportunities",
+               "filterScope": "Everything",
+               "columns": "OPPORTUNITY.NAME,ACCOUNT.NAME,OPPORTUNITY.RECORDTYPE,OPPORTUNITY.AMOUNT,OPPORTUNITY.CLOSE_DATE,OPPORTUNITY.STAGE_NAME,CORE.USERS.ALIAS"
              }
           }
        ]
