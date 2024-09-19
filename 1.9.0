@@ -230,7 +230,7 @@
       ]
     },
     {
-      "sobjectName":"Lead",
+      "sObjectName":"Lead",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
@@ -248,7 +248,7 @@
        ]
      },
      {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
@@ -384,6 +384,133 @@
            }
          }
        ]
+    },
+    {
+       "sObjectName":"command__Premium__c",
+       "description": "Add new picklist value to Source_of_Funds__c",
+       "taskList":[
+         {
+           "jiraTicket":"ac-59410a",
+           "actionType":"PicklistValueCustom",
+           "actionTypeName":"command__Source_of_Funds__c",
+           "optionsMap":{
+             "operation" : "add",
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+           }
+         }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Alternative",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410b",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Annuity",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410c",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_AUM",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410d",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Life",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410e",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Other",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410f",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Incoming_Funds",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410g",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Outgoing_Funds",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410h",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Paid",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410i",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+           }
+        ]
     },
     {
        "sObjectName":"Opportunity",
