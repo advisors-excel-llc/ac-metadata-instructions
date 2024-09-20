@@ -672,6 +672,20 @@
           }
         }
       ]
+    },
+    {
+     "sObjectName":"Account",
+     "instructionTypeName":"FinServ__IndustriesHousehold",
+     "taskList":[
+        {
+           "jiraTicket":"AC-23908",
+           "actionType":"RecordTypePicklist",
+           "actionTypeName":"command__Rank__c",
+           "optionsMap":{
+              "picklistValues":"A+,A,B+,B,C,D"
+           }
+        }
+     ]
     }
   ]
 }
