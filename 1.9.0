@@ -401,6 +401,21 @@
            }
          }
        ]
+   },
+   {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "description":"Set RelatedAccountOrContactRequired to inactive",
+      "taskList":[
+        {
+          "jiraTicket":"ac-60465",
+          "actionType":"ValidationRule",
+          "actionTypeName":"RelatedAccountOrContactRequired",
+          "namespace":"FinServ",
+          "optionsMap":{
+            "active":"false"
+          }
+        }
+      ]
     },
     {
        "sObjectName":"command__Premium__c",
