@@ -386,6 +386,23 @@
        ]
     },
     {
+       "sobjectName":"FinServ__FinancialAccount__c",
+       "instructionTypeName":"ListView",
+       "taskList":[
+         {
+           "jiraTicket": "AC-60473",
+           "description": "Add All_Financial_Accounts List View",
+           "actionType": "ListView",
+           "actionTypeName": "FinServ__FinancialAccount__c.All_Financial_Accounts",
+           "optionsMap": {
+             "label": "All Financial Accounts",
+             "filterScope": "Everything",
+             "columns": "NAME,command__Policy_Number__c,FinServ__Status__c,FinServ__RecordTypeName__c,command__Carrier__c,FinServ__ProductName__c,command__FinancialAccount_Expected_Initial_Amount__c,command__FinancialAccount_Writing_Advisor__c,command__Financial_Servicing_Advisors__c,LAST_ACTIVITY,command__Financial_Account_Effective_Date__c,command__Financial_Source__c,command__Tax_Qualification__c"
+           }
+         }
+       ]
+   },
+   {
       "sObjectName":"FinServ__FinancialAccountRole__c",
       "description":"Set RelatedAccountOrContactRequired to inactive",
       "taskList":[
