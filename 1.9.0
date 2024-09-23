@@ -575,6 +575,21 @@
              }
           }
        ]
+    },
+    {
+      "description": "Gearset - Account - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-58903",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "Name,PersonBirthdate,PersonMailingAddress,PersonOtherAddress,PersonOtherPhone,Phone",
+            "objectName": "Account"
+          }
+        }
+      ]
     }
   ]
 }
