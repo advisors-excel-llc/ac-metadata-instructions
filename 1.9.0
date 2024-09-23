@@ -575,6 +575,21 @@
              }
           }
        ]
+    },
+    {
+      "description": "Gearset - Financial Account - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-60534",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "FinServ__TaxStatus__c,FinServ__Status__c,FinServ__Description__c,FinServ__FinancialAccountNumber__c,FinServ__OpenDate__c,Name",
+            "objectName": "FinServ__FinancialAccount__c"
+          }
+        }
+      ]
     }
   ]
 }
