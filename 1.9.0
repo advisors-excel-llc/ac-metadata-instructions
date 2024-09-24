@@ -237,17 +237,17 @@
           "jiraTicket": "AC-58367",
           "description": "Create new Lead List View",
           "actionType": "ListView",
-          "actionTypeName": "Lead.TodaysLeads",
+         "actionTypeName": "Lead.TodaysLeads",
           "optionsMap": {
             "label": "Today's Leads",
             "filterScope": "Everything",
             "filters": "LEAD.CREATED_DATE:equals:TODAY",
             "columns": "FULL_NAME,LEAD.STATE,LEAD.EMAIL,LEAD.PHONE,LEAD.STATUS,LEAD.CREATED_DATE,CREATEDBY_USER.ALIAS"
-           }
-         }
-       ]
-     },
-     {
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"Campaign",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
@@ -342,33 +342,33 @@
       ]
     },
     {
-       "sObjectName":"Task",
-       "description": "Add help text to RecurrenceInterval",
-       "taskList":[
-         {
-           "jiraTicket":"ac-59356",
-           "actionType":"ModifyField",
-           "actionTypeName":"RecurrenceInterval",
-           "optionsMap":{
-             "inlineHelpText":"In Days. Ex: This task should recur every 7 days. (Weekly)"
-           } 
-         } 
-       ] 
+      "sObjectName":"Task",
+      "description": "Add help text to RecurrenceInterval",
+      "taskList":[
+        {
+          "jiraTicket":"ac-59356",
+          "actionType":"ModifyField",
+          "actionTypeName":"RecurrenceInterval",
+          "optionsMap":{
+            "inlineHelpText":"In Days. Ex: This task should recur every 7 days. (Weekly)"
+          }
+        }
+      ]
     },
     {
-       "sObjectName":"Contact",
-       "description": "Add new picklist value to FinServ__Gender__c",
-       "taskList":[
-         {
-           "jiraTicket":"ac-59247a",
-           "actionType":"PicklistValueCustom",
-           "actionTypeName":"FinServ__Gender__c",
-           "optionsMap":{
-             "operation" : "add",
-             "picklistValues":"Decline to Specify"
-           }
-         }
-       ]
+      "sObjectName":"Contact",
+      "description": "Add new picklist value to FinServ__Gender__c",
+      "taskList":[
+        {
+          "jiraTicket":"ac-59247a",
+          "actionType":"PicklistValueCustom",
+          "actionTypeName":"FinServ__Gender__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Decline to Specify"
+          }
+        }
+      ]
     },
     {
        "sObjectName":"Contact",
@@ -383,8 +383,8 @@
              "picklistValues":"Life Partner,Other"
            }
          }
-       ]
-     },
+      ]
+    },
     {
       "description": "Gearset - Opportunity field history tracking",
       "taskList": [
@@ -446,11 +446,26 @@
       ]
     },
     {
+      "sobjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-60473a",
+          "description": "Delete All_Financial_Accounts List View",
+          "actionType": "ListView",
+          "actionTypeName": "FinServ__FinancialAccount__c.All_Financial_Accounts",
+          "optionsMap": {
+            "operation":"delete"
+          }
+        }
+      ]
+    },
+    {
        "sobjectName":"FinServ__FinancialAccount__c",
        "instructionTypeName":"ListView",
        "taskList":[
          {
-           "jiraTicket": "AC-60473",
+           "jiraTicket": "AC-60473b",
            "description": "Add All_Financial_Accounts List View",
            "actionType": "ListView",
            "actionTypeName": "FinServ__FinancialAccount__c.All_Financial_Accounts",
@@ -461,8 +476,8 @@
            }
          }
        ]
-   },
-   {
+    },
+    {
       "sObjectName":"FinServ__FinancialAccountRole__c",
       "description":"Set RelatedAccountOrContactRequired to inactive",
       "taskList":[
@@ -507,60 +522,60 @@
        ]
     },
     {
-       "sObjectName" : "command__Premium__c",
-       "instructionTypeName" : "command__Funding_Annuity",
-       "taskList": [
-          {
-             "jiraTicket": "ac-59410c",
-             "actionType": "RecordTypePicklist",
-             "actionTypeName": "command__Source_of_Funds__c",
-             "optionsMap": {
-                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
-             }
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Funding_Annuity",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410c",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+            "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
           }
-       ]
+        }
+      ]
     },
     {
-       "sObjectName" : "command__Premium__c",
-       "instructionTypeName" : "command__Funding_AUM",
-       "taskList": [
-          {
-             "jiraTicket": "ac-59410d",
-             "actionType": "RecordTypePicklist",
-             "actionTypeName": "command__Source_of_Funds__c",
-             "optionsMap": {
-                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
-             }
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Funding_AUM",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410d",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+              "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
           }
-       ]
+        }
+      ]
     },
     {
-       "sObjectName" : "command__Premium__c",
-       "instructionTypeName" : "command__Funding_Life",
-       "taskList": [
-          {
-             "jiraTicket": "ac-59410e",
-             "actionType": "RecordTypePicklist",
-             "actionTypeName": "command__Source_of_Funds__c",
-             "optionsMap": {
-                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
-             }
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Funding_Life",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410e",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
           }
-       ]
+        }
+      ]
     },
     {
-       "sObjectName" : "command__Premium__c",
-       "instructionTypeName" : "command__Funding_Other",
-       "taskList": [
-          {
-             "jiraTicket": "ac-59410f",
-             "actionType": "RecordTypePicklist",
-             "actionTypeName": "command__Source_of_Funds__c",
-             "optionsMap": {
-                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
-             }
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Funding_Other",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410f",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
           }
-       ]
+        }
+      ]
     },
     {
        "sObjectName" : "command__Premium__c",
@@ -577,64 +592,64 @@
        ]
     },
     {
-       "sObjectName" : "command__Premium__c",
-       "instructionTypeName" : "command__Outgoing_Funds",
-       "taskList": [
-          {
-             "jiraTicket": "ac-59410h",
-             "actionType": "RecordTypePicklist",
-             "actionTypeName": "command__Source_of_Funds__c",
-             "optionsMap": {
-                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
-             }
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Outgoing_Funds",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410h",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
           }
-       ]
+        }
+      ]
     },
     {
-       "sObjectName" : "command__Premium__c",
-       "instructionTypeName" : "command__Paid",
-       "taskList": [
-          {
-             "jiraTicket": "ac-59410i",
-             "actionType": "RecordTypePicklist",
-             "actionTypeName": "command__Source_of_Funds__c",
-             "optionsMap": {
-                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
-             }
-           }
-        ]
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Paid",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410i",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+          }
+        }
+      ]
     },
     {
-       "sObjectName":"Opportunity",
-       "instructionTypeName":"mdTaskListView",
-       "taskList":[
-          {
-            "jiraTicket": "AC-59402a",
-            "description": "Delete AllOpportunities List View",
-            "actionType": "ListView",
-            "actionTypeName": "Opportunity.AllOpportunities",
-            "optionsMap": {
-              "operation": "delete"
-            }
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59402a",
+          "description": "Delete AllOpportunities List View",
+          "actionType": "ListView",
+          "actionTypeName": "Opportunity.AllOpportunities",
+          "optionsMap": {
+             "operation": "delete"
           }
-       ]
+        }
+      ]
     },
     {
-       "sObjectName":"Opportunity",
-       "instructionTypeName":"mdTaskListView",
-       "taskList":[
-          {
-             "jiraTicket": "AC-59402b",
-             "description": "Add AllOpportunities List View",
-             "actionType": "ListView",
-             "actionTypeName": "Opportunity.AllOpportunities",
-             "optionsMap": {
-               "label": "All Opportunities",
-               "filterScope": "Everything",
-               "columns": "OPPORTUNITY.NAME,ACCOUNT.NAME,OPPORTUNITY.RECORDTYPE,OPPORTUNITY.AMOUNT,OPPORTUNITY.CLOSE_DATE,OPPORTUNITY.STAGE_NAME,CORE.USERS.ALIAS"
-             }
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59402b",
+          "description": "Add AllOpportunities List View",
+          "actionType": "ListView",
+          "actionTypeName": "Opportunity.AllOpportunities",
+          "optionsMap": {
+            "label": "All Opportunities",
+            "filterScope": "Everything",
+            "columns": "OPPORTUNITY.NAME,ACCOUNT.NAME,OPPORTUNITY.RECORDTYPE,OPPORTUNITY.AMOUNT,OPPORTUNITY.CLOSE_DATE,OPPORTUNITY.STAGE_NAME,CORE.USERS.ALIAS"
           }
-       ]
+        }
+      ]
     }
   ]
 }
