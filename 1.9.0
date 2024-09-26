@@ -351,9 +351,9 @@
            "actionTypeName":"RecurrenceInterval",
            "optionsMap":{
              "inlineHelpText":"In Days. Ex: This task should recur every 7 days. (Weekly)"
-            }
-          }
-        ]
+           }
+         }
+       ]
     },
     {
        "sObjectName":"Contact",
