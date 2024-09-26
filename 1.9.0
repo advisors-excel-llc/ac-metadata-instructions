@@ -351,9 +351,9 @@
            "actionTypeName":"RecurrenceInterval",
            "optionsMap":{
              "inlineHelpText":"In Days. Ex: This task should recur every 7 days. (Weekly)"
-           } 
-         } 
-       ] 
+           }
+         }
+       ]
     },
     {
        "sObjectName":"Contact",
@@ -446,11 +446,26 @@
       ]
     },
     {
+      "sobjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-60473a",
+          "description": "Delete All_Financial_Accounts List View",
+          "actionType": "ListView",
+          "actionTypeName": "FinServ__FinancialAccount__c.All_Financial_Accounts",
+          "optionsMap": {
+            "operation":"delete"
+          }
+        }
+      ]
+    },
+    {
        "sobjectName":"FinServ__FinancialAccount__c",
        "instructionTypeName":"ListView",
        "taskList":[
          {
-           "jiraTicket": "AC-60473",
+           "jiraTicket": "AC-60473b",
            "description": "Add All_Financial_Accounts List View",
            "actionType": "ListView",
            "actionTypeName": "FinServ__FinancialAccount__c.All_Financial_Accounts",
