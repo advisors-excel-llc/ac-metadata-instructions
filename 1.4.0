@@ -455,13 +455,13 @@
                "jiraTicket":"AC-653",
                "actionType":"FieldSet",
                "actionTypeName":"FinServ__FinancialAccount__c.command__Financial_Account_BasicInfo_AUM_Set",
-               "actionTypeLabel":"Name,command__FinancialAccount_Custodian__r.Name,command__Model__c,command__Account_Type__c,command__Account_Value__c,FinServ__OpenDate__c,FinServ__Status__c"
+               "actionTypeLabel":"Name,command__FinancialAccount_Custodian__r.Name,command__Account_Type__c,command__Account_Value__c,FinServ__OpenDate__c,FinServ__Status__c"
             },
             {
                "jiraTicket":"AC-653",
                "actionType":"FieldSet",
                "actionTypeName":"FinServ__FinancialAccount__c.command__Financial_Account_BasicInfo_Life_Set",
-               "actionTypeLabel":"Name,command__Carrier__r.Name,FinServ__ProductName__r.Name,command__Mode__c,command__Modal_Premium__c,command__Death_Benefit__c,command__Issued_Date__c,FinServ__Status__c"
+               "actionTypeLabel":"Name,command__Carrier__r.Name,FinServ__ProductName__r.Name,command__Mode__c,command__Death_Benefit__c,command__Issued_Date__c,FinServ__Status__c"
             }
          ]
       }
