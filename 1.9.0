@@ -402,6 +402,21 @@
          }
        ]
      },
+     {
+      "description": "Gearset - Lead - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59398",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "FinServ__ReferredByContact,Address,Email,MobilePhone,Name,Phone,Status",
+            "objectName": "Lead"
+          }
+        }
+      ]
+    },
     {
       "description": "Gearset - Opportunity field history tracking",
       "taskList": [
