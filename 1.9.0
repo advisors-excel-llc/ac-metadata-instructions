@@ -1,6 +1,23 @@
 {
   "instructionList":[
     {
+       "sObjectName":"FinServ__FinancialAccount__c",
+       "taskList":[
+         {
+            "jiraTicket":"AC-61139a",
+            "actionType":"FieldSet",
+            "actionTypeName":"FinServ__FinancialAccount__c.command__Financial_Account_BasicInfo_AUM_Set",
+            "actionTypeLabel":"Name,command__FinancialAccount_Custodian__r.Name,command__Model__c,command__Account_Type__c,command__Account_Value__c,FinServ__OpenDate__c,FinServ__Status__c"
+         },
+         {
+            "jiraTicket":"AC-61139b",
+            "actionType":"FieldSet",
+            "actionTypeName":"FinServ__FinancialAccount__c.command__Financial_Account_BasicInfo_Life_Set",
+            "actionTypeLabel":"Name,command__Carrier__r.Name,FinServ__ProductName__r.Name,command__Mode__c,command__Modal_Premium__c,command__Death_Benefit__c,command__Issued_Date__c,FinServ__Status__c"
+         }
+       ]
+    },
+    {
        "sObjectName":"Task",
        "description": "Add new picklist value to Status",
        "taskList":[
@@ -230,7 +247,7 @@
       ]
     },
     {
-      "sobjectName":"Lead",
+      "sObjectName":"Lead",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
@@ -248,7 +265,7 @@
        ]
      },
      {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
         {
@@ -265,7 +282,7 @@
       ]
     },
     {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
@@ -280,7 +297,7 @@
       ]
     },
     {
-      "sobjectName":"Campaign",
+      "sObjectName":"Campaign",
       "instructionTypeName":"mdTaskListView",
       "taskList":[
         {
@@ -351,11 +368,11 @@
            "actionTypeName":"RecurrenceInterval",
            "optionsMap":{
              "inlineHelpText":"In Days. Ex: This task should recur every 7 days. (Weekly)"
-           } 
-         } 
-       ] 
-     },
-     {
+           }
+         }
+       ]
+    },
+    {
        "sObjectName":"Contact",
        "description": "Add new picklist value to FinServ__Gender__c",
        "taskList":[
@@ -369,8 +386,8 @@
            }
          }
        ]
-     },
-     {
+    },
+    {
        "sObjectName":"Contact",
        "description": "Add new picklist values to FinServ__MaritalStatus__c",
        "taskList":[
@@ -385,7 +402,7 @@
          }
        ]
      },
-    {
+     {
       "description": "Gearset - Lead - Update Field History",
       "taskList": [
         {
@@ -396,6 +413,287 @@
             "operation": "enable field history",
             "incomingFields": "FinServ__ReferredByContact,Address,Email,MobilePhone,Name,Phone,Status",
             "objectName": "Lead"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Opportunity field history tracking",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59409a",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "AccountId,Amount,CampaignId,CloseDate,Description,LeadSource,Name,NextStep,StageName,Type",
+            "objectName": "Opportunity"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Opportunity field history tracking",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59409b",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field feed history",
+            "incomingFields": "Name",
+            "objectName": "Opportunity"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Campaign - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59239a",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "ActualCost,BudgetedCost,EndDate,ExpectedResponse,ExpectedRevenue,Name,NumberSent,ParentId,StartDate,Status,Type",
+            "objectName": "Campaign"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Campaign - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59239b",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "disable field history",
+            "incomingFields": "CampaignMemberRecordTypeId,Description,IsActive,OwnerId",
+            "objectName": "Campaign"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-60473a",
+          "description": "Delete All_Financial_Accounts List View",
+          "actionType": "ListView",
+          "actionTypeName": "FinServ__FinancialAccount__c.All_Financial_Accounts",
+          "optionsMap": {
+            "operation":"delete"
+          }
+        }
+      ]
+    },
+    {
+       "sobjectName":"FinServ__FinancialAccount__c",
+       "instructionTypeName":"ListView",
+       "taskList":[
+         {
+           "jiraTicket": "AC-60473b",
+           "description": "Add All_Financial_Accounts List View",
+           "actionType": "ListView",
+           "actionTypeName": "FinServ__FinancialAccount__c.All_Financial_Accounts",
+           "optionsMap": {
+             "label": "All Financial Accounts",
+             "filterScope": "Everything",
+             "columns": "NAME,command__Policy_Number__c,FinServ__Status__c,FinServ__RecordTypeName__c,command__Carrier__c,FinServ__ProductName__c,command__FinancialAccount_Expected_Initial_Amount__c,command__FinancialAccount_Writing_Advisor__c,command__Financial_Servicing_Advisors__c,LAST_ACTIVITY,command__Financial_Account_Effective_Date__c,command__Financial_Source__c,command__Tax_Qualification__c"
+           }
+         }
+       ]
+   },
+   {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "description":"Set RelatedAccountOrContactRequired to inactive",
+      "taskList":[
+        {
+          "jiraTicket":"ac-60465",
+          "actionType":"ValidationRule",
+          "actionTypeName":"RelatedAccountOrContactRequired",
+          "namespace":"FinServ",
+          "optionsMap":{
+            "active":"false"
+          }
+        }
+      ]
+    },
+    {
+       "sObjectName":"command__Premium__c",
+       "description": "Add new picklist value to Source_of_Funds__c",
+       "taskList":[
+         {
+           "jiraTicket":"ac-59410a",
+           "actionType":"PicklistValueCustom",
+           "actionTypeName":"command__Source_of_Funds__c",
+           "optionsMap":{
+             "operation" : "add",
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+           }
+         }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Alternative",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410b",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Annuity",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410c",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_AUM",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410d",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Life",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410e",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Funding_Other",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410f",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Incoming_Funds",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410g",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Outgoing_Funds",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410h",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+          }
+       ]
+    },
+    {
+       "sObjectName" : "command__Premium__c",
+       "instructionTypeName" : "command__Paid",
+       "taskList": [
+          {
+             "jiraTicket": "ac-59410i",
+             "actionType": "RecordTypePicklist",
+             "actionTypeName": "command__Source_of_Funds__c",
+             "optionsMap": {
+                 "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+             }
+           }
+        ]
+    },
+    {
+       "sObjectName":"Opportunity",
+       "instructionTypeName":"mdTaskListView",
+       "taskList":[
+          {
+            "jiraTicket": "AC-59402a",
+            "description": "Delete AllOpportunities List View",
+            "actionType": "ListView",
+            "actionTypeName": "Opportunity.AllOpportunities",
+            "optionsMap": {
+              "operation": "delete"
+            }
+          }
+       ]
+    },
+    {
+       "sObjectName":"Opportunity",
+       "instructionTypeName":"mdTaskListView",
+       "taskList":[
+          {
+             "jiraTicket": "AC-59402b",
+             "description": "Add AllOpportunities List View",
+             "actionType": "ListView",
+             "actionTypeName": "Opportunity.AllOpportunities",
+             "optionsMap": {
+               "label": "All Opportunities",
+               "filterScope": "Everything",
+               "columns": "OPPORTUNITY.NAME,ACCOUNT.NAME,OPPORTUNITY.RECORDTYPE,OPPORTUNITY.AMOUNT,OPPORTUNITY.CLOSE_DATE,OPPORTUNITY.STAGE_NAME,CORE.USERS.ALIAS"
+             }
+          }
+       ]
+    },
+    {
+      "description": "Gearset - Financial Account - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-60534",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "FinServ__TaxStatus__c,FinServ__Status__c,FinServ__Description__c,FinServ__FinancialAccountNumber__c,FinServ__OpenDate__c,Name",
+            "objectName": "FinServ__FinancialAccount__c"
           }
         }
       ]
