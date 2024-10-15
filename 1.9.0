@@ -306,13 +306,13 @@
           "actionType": "ListView",
           "actionTypeName": "Campaign.AllActiveCampaigns",
           "optionsMap": {
-           "label": "All Active Campaigns",
-           "filterScope": "Everything",
-           "filters": "CAMPAIGN.ACTIVE:equals:1",
-           "columns": "CAMPAIGN.NAME,CAMPAIGN.START_DATE,CAMPAIGN.END_DATE,CAMPAIGN.CAMPAIGN_TYPE,CAMPAIGN.STATUS,CORE.USERS.FIRST_NAME,CORE.USERS.LAST_NAME"
+            "label": "All Active Campaigns",
+            "filterScope": "Everything",
+            "filters": "CAMPAIGN.ACTIVE:equals:1",
+            "columns": "CAMPAIGN.NAME,CAMPAIGN.START_DATE,CAMPAIGN.END_DATE,CAMPAIGN.CAMPAIGN_TYPE,CAMPAIGN.STATUS,CORE.USERS.FIRST_NAME,CORE.USERS.LAST_NAME"
           }
-         }
-       ]
+        }
+      ]
     },
     {
       "description": "Update Account Settings to change showViewHierarchyLink to false",
