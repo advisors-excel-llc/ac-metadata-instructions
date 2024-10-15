@@ -543,14 +543,14 @@
       "sObjectName" : "command__Premium__c",
       "instructionTypeName" : "command__Funding_Alternative",
       "taskList": [
-         {
-            "jiraTicket": "ac-59410b",
-            "actionType": "RecordTypePicklist",
-            "actionTypeName": "command__Source_of_Funds__c",
-            "optionsMap": {
-                "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
-            }
-         }
+        {
+          "jiraTicket": "ac-59410b",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+          }
+        }
       ]
     },
     {
