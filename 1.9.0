@@ -697,6 +697,36 @@
           }
         }
       ]
+    },
+    {
+       "sObjectName":"FinServ__FinancialAccount__c",
+       "description": "Remove picklist values from Status field",
+       "taskList":[
+         {
+           "jiraTicket":"ac-3853a",
+           "actionType":"PicklistValueCustom",
+           "actionTypeName":"FinServ__Status__c",
+           "optionsMap":{
+             "operation" : "deactivate",
+             "picklistValues":"Held,Paid,Pre-Screen,Proposal,Received,Returned,Reversed,Withdrawn,Opportunity,Application,Postponed,On Hold,Charge-off,Lost,Paid out,Active,Expired,Waiting on Signatures,Sent to AEW,Opened at Custodian,Funded,Submitted to AEWM,Submitted to Custodian,Opened"
+           }
+         }
+       ]
+    },
+    {
+       "sObjectName":"FinServ__FinancialAccount__c",
+       "description": "Remove picklist values from Status field",
+       "taskList":[
+         {
+           "jiraTicket":"ac-3853b",
+           "actionType":"PicklistValueCustom",
+           "actionTypeName":"FinServ__Status__c",
+           "optionsMap":{
+             "operation" : "add",
+             "picklistValues":"Free Looked"
+           }
+         }
+       ]
     }
   ]
 }
