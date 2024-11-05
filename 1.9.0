@@ -757,6 +757,34 @@
           }
         }
       ]
+    },
+    {
+      "instructionTypeName":"PermissionSetUserPermissions",
+      "description":"Add user permissions to Report permission set",
+      "taskList":[
+        {
+          "jiraTicket":"ac-62886",
+          "actionType":"PermissionSetUserPermissions",
+          "actionTypeName":"AC_Dashboard_and_Report_Admin",
+          "actionTypeLabel":"AC Dashboard and Report Admin",
+          "optionsMap":{
+            "label":"AC Dashboard and Report Admin",
+            "CanUseNewDashboardBuilder":"true",
+            "CreateCustomizeDashboards":"true",
+            "CreateCustomizeReports":"true",
+            "CreateDashboardFolders":"true",
+            "CreateReportFolders":"true",
+            "EditMyDashboards":"true",
+            "EditMyReports":"true",
+            "ManageDashbdsInPubFolders":"true",
+            "ManageDynamicDashboards":"true",
+            "ManageReportsInPubFolders":"true",
+            "RunReports":"true",
+            "ViewPublicDashboards":"true",
+            "ViewPublicReports":"true"
+          }
+        }
+      ]
     }
   ]
 }
