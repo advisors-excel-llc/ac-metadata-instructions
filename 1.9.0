@@ -768,7 +768,6 @@
           "actionTypeName":"AC_Dashboard_and_Report_Admin",
           "actionTypeLabel":"AC Dashboard and Report Admin",
           "optionsMap":{
-            "label":"AC Dashboard and Report Admin",
             "CanUseNewDashboardBuilder":"true",
             "CreateCustomizeDashboards":"true",
             "CreateCustomizeReports":"true",
