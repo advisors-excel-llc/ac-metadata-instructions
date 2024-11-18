@@ -389,7 +389,7 @@
     },
     {
       "sObjectName":"PersonAccount",
-      "instructionTypeName":"command__PersonAccount",
+      "instructionTypeName":"PersonAccount",
       "taskList":[
         {
           "jiraTicket":"ac-59247b",
@@ -419,7 +419,7 @@
     },
     {
       "sObjectName":"PersonAccount",
-      "instructionTypeName":"command__PersonAccount",
+      "instructionTypeName":"PersonAccount",
       "taskList":[
         {
           "jiraTicket":"ac-59247d",
