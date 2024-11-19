@@ -760,7 +760,7 @@
     },
     {
       "instructionTypeName":"PermissionSetUserPermissions",
-      "description":"Add user permissions to Report permission set",
+      "description":"Create new Dashboard and Report Permission Set",
       "taskList":[
         {
           "jiraTicket":"ac-62886",
