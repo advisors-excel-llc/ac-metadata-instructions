@@ -725,6 +725,7 @@
             "incomingFields": "FinServ__TaxStatus__c,FinServ__Status__c,FinServ__Description__c,FinServ__FinancialAccountNumber__c,FinServ__OpenDate__c,Name",
             "objectName": "FinServ__FinancialAccount__c"
           }
+        }
        ]
     },
     {
@@ -738,6 +739,7 @@
             "operation": "enable field history",
             "incomingFields": "Name,PersonBirthdate,PersonMailingAddress,PersonOtherAddress,PersonOtherPhone,Phone",
             "objectName": "Account"
+          }
         }
       ]
     },
