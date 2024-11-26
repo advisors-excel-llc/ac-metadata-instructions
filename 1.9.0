@@ -641,38 +641,10 @@
     },
     {
       "sObjectName" : "command__Premium__c",
-      "instructionTypeName" : "command__Incoming_Funds",
-      "taskList": [
-        {
-          "jiraTicket": "ac-59410g",
-          "actionType": "RecordTypePicklist",
-          "actionTypeName": "command__Source_of_Funds__c",
-          "optionsMap": {
-            "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
-          }
-        }
-      ]
-    },
-    {
-      "sObjectName" : "command__Premium__c",
-      "instructionTypeName" : "command__Outgoing_Funds",
-      "taskList": [
-        {
-          "jiraTicket": "ac-59410h",
-          "actionType": "RecordTypePicklist",
-          "actionTypeName": "command__Source_of_Funds__c",
-          "optionsMap": {
-            "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
-          }
-        }
-      ]
-    },
-    {
-      "sObjectName" : "command__Premium__c",
       "instructionTypeName" : "command__Paid",
       "taskList": [
         {
-          "jiraTicket": "ac-59410i",
+          "jiraTicket": "ac-59410g",
           "actionType": "RecordTypePicklist",
           "actionTypeName": "command__Source_of_Funds__c",
           "optionsMap": {
