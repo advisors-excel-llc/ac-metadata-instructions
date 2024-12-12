@@ -771,6 +771,37 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName":"AccountContactRelationship",
+      "description": "Add new picklist value to AccountContactRelationship Role",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64577",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Roles",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Business User,Decision Maker,Economic Buyer,Economic Decision Maker,Evaluator,
+            Executive Sponsor,Household Head,Household Member,Influencer,Technical Buyer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"AccountContactRelationship",
+      "description": "Add new picklist value to AccountContactRelationship Role",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64577",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Roles",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Client,Dependent,Domestic Partner,Spouse,Grantor,Beneficiary,Board Member,Employee"
+          }
+        }
+      ]
     }
   ]
 }
