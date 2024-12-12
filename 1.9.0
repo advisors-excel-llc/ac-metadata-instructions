@@ -771,6 +771,21 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "description": "Update Stage Picklist Values",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64579",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"StageName",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Negotiation,Develop Proposal,Client Presentation,Initiate Transfer,Discovery"
+          }
+        }
+      ]
     }
   ]
 }
