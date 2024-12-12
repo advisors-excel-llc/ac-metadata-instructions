@@ -771,6 +771,21 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName":"CampaignMember",
+      "description": "Add new picklist value to CampaignMember Status",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Planned,Received"
+          }
+        }
+      ]
     }
   ]
 }
