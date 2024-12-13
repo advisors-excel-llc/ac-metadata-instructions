@@ -773,11 +773,26 @@
       ]
     },
     {
+      "sObjectName":"Account",
+      "description": "Add new picklist value to Source",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63412a",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"AccountSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"PersonAccount",
       "instructionTypeName":"command__PersonAccount",
       "taskList":[
         {
-          "jiraTicket":"AC-63412",
+          "jiraTicket":"AC-63412b",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"AccountSource",
           "optionsMap":{
@@ -789,7 +804,7 @@
     },
     {
       "sObjectName":"Account",
-      "instructionTypeName":"FinServ__Household",
+      "instructionTypeName":"FinServ__IndustriesHousehold",
       "taskList":[
         {
           "jiraTicket":"AC-63412",
@@ -804,11 +819,41 @@
     },
     {
       "sObjectName":"Lead",
+      "description": "Add new picklist value to Source",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63412c",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
       "instructionTypeName":"FinServ__General",
       "taskList":[
         {
-          "jiraTicket":"AC-63412",
+          "jiraTicket":"AC-63412d",
           "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "description": "Add new picklist value to Source",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63412e",
+          "actionType":"PicklistValueStandard",
           "actionTypeName":"LeadSource",
           "optionsMap":{
             "operation" : "add",
@@ -822,7 +867,7 @@
       "instructionTypeName":"command__Annuity",
       "taskList":[
         {
-          "jiraTicket":"AC-63412",
+          "jiraTicket":"AC-63412f",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"LeadSource",
           "optionsMap":{
@@ -837,7 +882,7 @@
       "instructionTypeName":"command__AUM",
       "taskList":[
         {
-          "jiraTicket":"AC-63412",
+          "jiraTicket":"AC-63412g",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"LeadSource",
           "optionsMap":{
@@ -852,7 +897,7 @@
       "instructionTypeName":"command__Life",
       "taskList":[
         {
-          "jiraTicket":"AC-63412",
+          "jiraTicket":"AC-63412h",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"LeadSource",
           "optionsMap":{
@@ -867,8 +912,23 @@
       "instructionTypeName":"FinServ__General",
       "taskList":[
         {
-          "jiraTicket":"AC-63412",
+          "jiraTicket":"AC-63412i",
           "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Contact",
+      "description": "Add new picklist value to Source",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63412j",
+          "actionType":"PicklistValueStandard",
           "actionTypeName":"LeadSource",
           "optionsMap":{
             "operation" : "add",
@@ -882,7 +942,7 @@
       "instructionTypeName":"FinServ__Business",
       "taskList":[
         {
-          "jiraTicket":"AC-63412",
+          "jiraTicket":"AC-63412k",
           "actionType":"RecordTypePicklist",
           "actionTypeName":"LeadSource",
           "optionsMap":{
