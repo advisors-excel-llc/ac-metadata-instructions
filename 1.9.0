@@ -777,7 +777,7 @@
       "description": "Add new picklist value to AccountContactRelationship Role",
       "taskList":[
         {
-          "jiraTicket":"ac-64577",
+          "jiraTicket":"ac-64577a",
           "actionType":"PicklistValueStandard",
           "actionTypeName":"Roles",
           "optionsMap":{
@@ -793,7 +793,7 @@
       "description": "Add new picklist value to AccountContactRelationship Role",
       "taskList":[
         {
-          "jiraTicket":"ac-64577",
+          "jiraTicket":"ac-64577b",
           "actionType":"PicklistValueStandard",
           "actionTypeName":"Roles",
           "optionsMap":{
