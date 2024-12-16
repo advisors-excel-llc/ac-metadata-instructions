@@ -779,7 +779,7 @@
         {
           "jiraTicket":"ac-64579",
           "actionType":"PicklistValueStandard",
-          "actionTypeName":"StageName",
+          "actionTypeName":"Stage",
           "optionsMap":{
             "operation" : "deactivate",
             "picklistValues":"Negotiation,Develop Proposal,Client Presentation,Initiate Transfer,Discovery"
