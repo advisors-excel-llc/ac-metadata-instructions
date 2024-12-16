@@ -773,6 +773,36 @@
       ]
     },
     {
+      "sObjectName":"AccountContactMulti",
+      "description": "Add new picklist value to AccountContactRelationship Role",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64577a",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Roles",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Business User,Decision Maker,Economic Buyer,Economic Decision Maker,Evaluator,Executive Sponsor,Household Head,Household Member,Influencer,Technical Buyer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"AccountContactMulti",
+      "description": "Add new picklist value to AccountContactRelationship Role",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64577b",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Roles",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Client,Dependent,Domestic Partner,Spouse,Grantor,Beneficiary,Board Member,Employee"
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"PersonAccount",
       "instructionTypeName":"UpdateRecordTypeLabel",
       "description":"Update Record Type Label of Person Account to Client",
