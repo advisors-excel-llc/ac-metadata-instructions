@@ -794,7 +794,7 @@
         {
           "jiraTicket":"AC-63412b",
           "actionType":"RecordTypePicklist",
-          "actionTypeName":"Source",
+          "actionTypeName":"LeadSource",
           "optionsMap":{
             "operation" : "add",
             "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
