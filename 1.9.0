@@ -773,6 +773,141 @@
       ]
     },
     {
+      "sObjectName":"Lead",
+      "description": "Add new picklist value to Source",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64312a",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Source",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
+      "instructionTypeName":"FinServ__General",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312b",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+          }
+        ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__Annuity",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312c",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__AUM",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312d",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__Life",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312e",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"FinServ__General",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312f",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Contact",
+      "instructionTypeName":"FinServ__IndustriesBusiness",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312g",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"PersonAccount",
+      "instructionTypeName":"command__PersonAccount",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312h",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"AccountSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Account",
+      "instructionTypeName":"FinServ__IndustriesHousehold",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312i",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"AccountSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"AccountContactMulti",
       "description": "Add new picklist value to AccountContactRelationship Role",
       "taskList":[
