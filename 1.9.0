@@ -786,6 +786,19 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName":"PersonAccount",
+      "instructionTypeName":"UpdateRecordTypeLabel",
+      "description":"Update Record Type Label of Person Account to Client",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63969",
+          "actionType":"UpdateRecordTypeLabel",
+          "actionTypeName":"PersonAccount",
+          "actionTypeLabel":"Client"
+        }
+      ]
     }
   ]
 }
