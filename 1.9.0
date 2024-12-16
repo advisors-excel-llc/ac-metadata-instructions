@@ -773,6 +773,81 @@
       ]
     },
     {
+      "sObjectName":"CampaignMember",
+      "description": "Add new picklist value to CampaignMember Status",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578a",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Planned,Received"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "description": "Removed picklist value from campaign status",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578b",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Aborted"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "description": "Add new picklist value to Campaign Status",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578c",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Cancelled"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "description": " Remove picklist values from type field",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578d",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Type",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Event,Demo Signup / Trial,Email,Search,Thought Leadership,Website Direct,Other,Radio,Television,Workshop"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "description": "Add picklist values from type field",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578e",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Type",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Client Event,Direct Mail,Educational Class,Email Drip,Radio Show,Seminar,TV Show,Webinar"
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"Opportunity",
       "description": "Update Stage Picklist Values",
       "taskList":[
