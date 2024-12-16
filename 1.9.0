@@ -807,7 +807,7 @@
       "description": "Add new picklist value to Campaign Status",
       "taskList":[
         {
-          "jiraTicket":"ac-64578b",
+          "jiraTicket":"ac-64578c",
           "actionType":"PicklistValueStandard",
           "actionTypeName":"Status",
           "optionsMap":{
@@ -822,7 +822,7 @@
       "description": " Remove picklist values from type field",
       "taskList":[
         {
-          "jiraTicket":"ac-64578c",
+          "jiraTicket":"ac-64578d",
           "actionType":"PicklistValueStandard",
           "actionTypeName":"Type",
           "optionsMap":{
@@ -837,7 +837,7 @@
       "description": "Add picklist values from type field",
       "taskList":[
         {
-          "jiraTicket":"ac-64578c",
+          "jiraTicket":"ac-64578e",
           "actionType":"PicklistValueStandard",
           "actionTypeName":"Type",
           "optionsMap":{
