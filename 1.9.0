@@ -784,6 +784,21 @@
           "actionTypeLabel":"Client"
         }
       ]
+    },
+    {
+      "sObjectName":"Task",
+      "description": "Update Status Picklist Values",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64627",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Not Started"
+          }
+        }
+      ]
     }
   ]
 }
