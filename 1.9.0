@@ -803,6 +803,81 @@
         ]
     },
     {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__Annuity",
+      "taskList":[
+        {
+          "jiraTicket":"AC-63412c",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__AUM",
+      "taskList":[
+        {
+          "jiraTicket":"AC-63412d",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__Life",
+      "taskList":[
+        {
+          "jiraTicket":"AC-63412e",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"FinServ__General",
+      "taskList":[
+        {
+          "jiraTicket":"AC-63412f",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Contact",
+      "instructionTypeName":"FinServ__Business",
+      "taskList":[
+        {
+          "jiraTicket":"AC-63412g",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"PersonAccount",
       "instructionTypeName":"UpdateRecordTypeLabel",
       "description":"Update Record Type Label of Person Account to Client",
