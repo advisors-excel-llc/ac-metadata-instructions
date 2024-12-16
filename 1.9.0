@@ -827,8 +827,7 @@
           "actionTypeName":"Type",
           "optionsMap":{
             "operation" : "deactivate",
-            "picklistValues":"Event,Demo Signup / Trial,Email,Search,Thought Leadership,Website Direct,Other,Radio,
-            Television,Workshop"
+            "picklistValues":"Event,Demo Signup / Trial,Email,Search,Thought Leadership,Website Direct,Other,Radio,Television,Workshop"
           }
         }
       ]
