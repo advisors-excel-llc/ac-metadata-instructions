@@ -773,6 +773,21 @@
       ]
     },
     {
+      "sObjectName":"Opportunity",
+      "description": "Update Stage Picklist Values",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64579",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Stage",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Negotiation,Develop Proposal,Client Presentation,Initiate Transfer,Discovery"
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"Lead",
       "description": "Add new picklist value to Source",
       "taskList":[
