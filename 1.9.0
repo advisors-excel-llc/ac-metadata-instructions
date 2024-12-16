@@ -848,6 +848,186 @@
       ]
     },
     {
+      "sObjectName":"Opportunity",
+      "description": "Update Stage Picklist Values",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64579",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Stage",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Negotiation,Develop Proposal,Client Presentation,Initiate Transfer,Discovery"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
+      "description": "Add new picklist value to Source",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64312a",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Source",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
+      "instructionTypeName":"FinServ__General",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312b",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+          }
+        ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__Annuity",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312c",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__AUM",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312d",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__Life",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312e",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"FinServ__General",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312f",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Contact",
+      "instructionTypeName":"FinServ__IndustriesBusiness",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312g",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"PersonAccount",
+      "instructionTypeName":"command__PersonAccount",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312h",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"AccountSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Account",
+      "instructionTypeName":"FinServ__IndustriesHousehold",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312i",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"AccountSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"AccountContactMulti",
+      "description": "Add new picklist value to AccountContactRelationship Role",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64577a",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Roles",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Business User,Decision Maker,Economic Buyer,Economic Decision Maker,Evaluator,Executive Sponsor,Household Head,Household Member,Influencer,Technical Buyer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"AccountContactMulti",
+      "description": "Add new picklist value to AccountContactRelationship Role",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64577b",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Roles",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Client,Dependent,Domestic Partner,Spouse,Grantor,Beneficiary,Board Member,Employee"
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"PersonAccount",
       "instructionTypeName":"UpdateRecordTypeLabel",
       "description":"Update Record Type Label of Person Account to Client",
@@ -857,6 +1037,21 @@
           "actionType":"UpdateRecordTypeLabel",
           "actionTypeName":"PersonAccount",
           "actionTypeLabel":"Client"
+        }
+      ]
+    },
+    {
+      "sObjectName":"Task",
+      "description": "Update Status Picklist Values",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64627",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Not Started"
+          }
         }
       ]
     }
