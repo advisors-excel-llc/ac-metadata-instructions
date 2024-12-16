@@ -771,7 +771,7 @@
           }
         }
       ]
-    }
+    },
     {
       "sObjectName":"Lead",
       "description": "Add new picklist value to Source",
