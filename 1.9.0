@@ -773,7 +773,7 @@
       ]
     },
     {
-      "sObjectName":"AccountContactRelationship",
+      "sObjectName":"AccountContactMulti",
       "description": "Add new picklist value to AccountContactRelationship Role",
       "taskList":[
         {
@@ -782,14 +782,13 @@
           "actionTypeName":"Roles",
           "optionsMap":{
             "operation" : "add",
-            "picklistValues":"Business User,Decision Maker,Economic Buyer,Economic Decision Maker,Evaluator,
-            Executive Sponsor,Household Head,Household Member,Influencer,Technical Buyer"
+            "picklistValues":"Business User,Decision Maker,Economic Buyer,Economic Decision Maker,Evaluator,Executive Sponsor,Household Head,Household Member,Influencer,Technical Buyer"
           }
         }
       ]
     },
     {
-      "sObjectName":"AccountContactRelationship",
+      "sObjectName":"AccountContactMulti",
       "description": "Add new picklist value to AccountContactRelationship Role",
       "taskList":[
         {
