@@ -1054,6 +1054,59 @@
           }
         }
       ]
+    },
+    {
+      "sobjectName":"Account",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58891a",
+          "description": "Add All Prospects list view",
+          "actionType": "ListView",
+          "actionTypeName": "Account.All_Prospects",
+          "optionsMap": {
+            "label": "All Prospects",
+            "filterScope": "Everything",
+            "filters": "ACCOUNT.RECORDTYPE:equals:PersonAccount.PersonAccount,Account.command__Account_Stage__c:equals:Prospect",
+            "columns": "ACCOUNT.NAME,PC_FIRST_NAME,PC_LAST_NAME,command__Account_Writing_Advisor__c,command__Contact_Servicing_Advisor__c,command__Account_Stage__c,command__Rank__c,PC_BIRTHDATE,PC_ADDRESS2_CITY,PC_ADDRESS2_STATE,PC_ADDRESS2_ZIP,ACCOUNT.LAST_ACTIVITY,PC_LEAD_SOURCE"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"Account",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58891b",
+          "description": "Add All Clients list view",
+          "actionType": "ListView",
+          "actionTypeName": "Account.AllClients",
+          "optionsMap": {
+            "label": "All Clients",
+            "filterScope": "Everything",
+            "filters": "ACCOUNT.RECORDTYPE:equals:PersonAccount.PersonAccount,Account.command__Account_Stage__c:equals:Client",
+            "columns": "ACCOUNT.NAME,PC_FIRST_NAME,PC_LAST_NAME,command__Account_Writing_Advisor__c,command__Contact_Servicing_Advisor__c,command__Account_Stage__c,command__Rank__c,PC_BIRTHDATE,PC_ADDRESS2_CITY,PC_ADDRESS2_STATE,PC_ADDRESS2_ZIP,ACCOUNT.LAST_ACTIVITY,PC_LEAD_SOURCE"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"Account",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58891c",
+          "description": "Add All Account list view",
+          "actionType": "ListView",
+          "actionTypeName": "Account.AllAccounts",
+          "optionsMap": {
+            "label": "All Accounts",
+            "filterScope": "Everything",
+            "columns": "ACCOUNT.NAME,PC_LAST_NAME,ACCOUNT.PHONE1,BusinessEmail__c,ACCOUNT.TYPE,ACCOUNT.RECORDTYPE"
+          }
+        }
+      ]
     }
   ]
 }
