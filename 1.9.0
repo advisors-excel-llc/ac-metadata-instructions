@@ -1041,6 +1041,172 @@
       ]
     },
     {
+      "description": "Add page layout assignment for Client layout to Basic User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970a",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"PersonAccount-Client",
+          "actionTypeLabel":"PersonAccount.PersonAccount",
+          "optionsMap":{
+            "profileName":"AC Basic User"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Client layout to Admin User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970b",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"PersonAccount-Client",
+          "actionTypeLabel":"PersonAccount.PersonAccount",
+          "optionsMap":{
+            "profileName":"Admin"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Household layout to Basic User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970c",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Account-AC Account %28Household%29 Layout",
+          "actionTypeLabel":"Account.FinServ__IndustriesHousehold",
+          "optionsMap":{
+            "profileName":"AC Basic User"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Household layout to Admin User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970d",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Account-AC Account %28Household%29 Layout",
+          "actionTypeLabel":"Account.FinServ__IndustriesHousehold",
+          "optionsMap":{
+            "profileName":"Admin"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Lead layout to Basic User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970e",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Lead-AC Lead Layout",
+          "actionTypeLabel":"Lead.FinServ__General",
+          "optionsMap":{
+            "profileName":"AC Basic User"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Lead layout to Admin User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970f",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Lead-AC Lead Layout",
+          "actionTypeLabel":"Lead.FinServ__General",
+          "optionsMap":{
+            "profileName":"Admin"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Task layout to Basic User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970g",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Task-AC Task Layout",
+          "actionTypeLabel":"Task.FinServ__AdvisorTask",
+          "optionsMap":{
+            "profileName":"AC Basic User"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Task layout to Admin User",
+      "instructionTypeName":"Admin",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970h",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Task-AC Task Layout",
+          "actionTypeLabel":"Task.FinServ__AdvisorTask",
+          "optionsMap":{
+            "profileName":"Admin"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Task layout to Basic User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970i",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Task-AC Task Layout",
+          "optionsMap":{
+            "profileName":"AC Basic User"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Task layout to Admin User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970j",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Task-AC Task Layout",
+          "optionsMap":{
+            "profileName":"Admin"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Campaign layout to Basic User",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970k",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Campaign-AC Campaign Layout",
+          "optionsMap":{
+            "profileName":"AC Basic User"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Add page layout assignment for Campaign layout to Admin User",
+      "instructionTypeName":"Admin",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63970l",
+          "actionType":"PageLayoutAssignment",
+          "actionTypeName":"Campaign-AC Campaign Layout",
+          "optionsMap":{
+            "profileName":"Admin"
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"Task",
       "description": "Update Status Picklist Values",
       "taskList":[
