@@ -1201,7 +1201,7 @@
           "actionType":"PageLayoutAssignment",
           "actionTypeName":"Campaign-AC Campaign Layout",
           "optionsMap":{
-            "profileName":"AC Basic User"
+            "profileName":"Admin"
           }
         }
       ]
