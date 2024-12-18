@@ -1046,7 +1046,7 @@
         {
           "jiraTicket":"ac-63970a",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"PersonAccount-Client",
+          "actionTypeName":"PersonAccount-command__Client",
           "actionTypeLabel":"PersonAccount.PersonAccount",
           "optionsMap":{
             "profileName":"AC Basic User"
@@ -1060,7 +1060,7 @@
         {
           "jiraTicket":"ac-63970b",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"PersonAccount-Client",
+          "actionTypeName":"PersonAccount-command__Client",
           "actionTypeLabel":"PersonAccount.PersonAccount",
           "optionsMap":{
             "profileName":"Admin"
@@ -1074,7 +1074,7 @@
         {
           "jiraTicket":"ac-63970c",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Account-AC Account %28Household%29 Layout",
+          "actionTypeName":"Account-command__AC Account %28Household%29 Layout",
           "actionTypeLabel":"Account.FinServ__IndustriesHousehold",
           "optionsMap":{
             "profileName":"AC Basic User"
@@ -1088,7 +1088,7 @@
         {
           "jiraTicket":"ac-63970d",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Account-AC Account %28Household%29 Layout",
+          "actionTypeName":"Account-command__AC Account %28Household%29 Layout",
           "actionTypeLabel":"Account.FinServ__IndustriesHousehold",
           "optionsMap":{
             "profileName":"Admin"
@@ -1102,7 +1102,7 @@
         {
           "jiraTicket":"ac-63970e",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Lead-AC Lead Layout",
+          "actionTypeName":"Lead-command__AC Lead Layout",
           "actionTypeLabel":"Lead.FinServ__General",
           "optionsMap":{
             "profileName":"AC Basic User"
@@ -1116,7 +1116,7 @@
         {
           "jiraTicket":"ac-63970f",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Lead-AC Lead Layout",
+          "actionTypeName":"Lead-command__AC Lead Layout",
           "actionTypeLabel":"Lead.FinServ__General",
           "optionsMap":{
             "profileName":"Admin"
@@ -1130,7 +1130,7 @@
         {
           "jiraTicket":"ac-63970g",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Task-AC Task Layout",
+          "actionTypeName":"Task-command__AC Task Layout",
           "actionTypeLabel":"Task.FinServ__AdvisorTask",
           "optionsMap":{
             "profileName":"AC Basic User"
@@ -1145,7 +1145,7 @@
         {
           "jiraTicket":"ac-63970h",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Task-AC Task Layout",
+          "actionTypeName":"Task-command__AC Task Layout",
           "actionTypeLabel":"Task.FinServ__AdvisorTask",
           "optionsMap":{
             "profileName":"Admin"
@@ -1159,7 +1159,7 @@
         {
           "jiraTicket":"ac-63970i",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Task-AC Task Layout",
+          "actionTypeName":"Task-command__AC Task Layout",
           "optionsMap":{
             "profileName":"AC Basic User"
           }
@@ -1172,7 +1172,7 @@
         {
           "jiraTicket":"ac-63970j",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Task-AC Task Layout",
+          "actionTypeName":"Task-command__AC Task Layout",
           "optionsMap":{
             "profileName":"Admin"
           }
@@ -1185,7 +1185,7 @@
         {
           "jiraTicket":"ac-63970k",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Campaign-AC Campaign Layout",
+          "actionTypeName":"Campaign-command__AC Campaign Layout",
           "optionsMap":{
             "profileName":"AC Basic User"
           }
@@ -1199,7 +1199,7 @@
         {
           "jiraTicket":"ac-63970l",
           "actionType":"PageLayoutAssignment",
-          "actionTypeName":"Campaign-AC Campaign Layout",
+          "actionTypeName":"Campaign-command__AC Campaign Layout",
           "optionsMap":{
             "profileName":"Admin"
           }
