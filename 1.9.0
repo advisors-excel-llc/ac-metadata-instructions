@@ -1333,7 +1333,7 @@
           "actionType": "FieldLevelSecurity",
           "actionTypeName": "HierarchyAmountAllOpportunities",
           "optionsMap": {
-            "profileName": "Admin",
+            "profileName": "System Administrator",
             "readable": "true",
             "editable": "true"
           },
