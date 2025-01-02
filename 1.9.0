@@ -1273,6 +1273,110 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName": "Campaign",
+      "instructionTypeName": "FieldLevelSecurity",
+      "taskList": [
+        {
+          "jiraTicket": "ac-45969a",
+          "description": "Update Campaign Hierarchy FLS",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "HierarchyAmountAllOpportunities",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          },
+          "subTaskList": [
+            {
+              "jiraTicket": "ac-45969b",
+              "actionTypeName": "HierarchyAmountWonOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969c",
+              "actionTypeName": "HierarchyExpectedRevenue"
+            },
+            {
+              "jiraTicket": "ac-45969d",
+              "actionTypeName": "HierarchyNumberOfContacts"
+            },
+            {
+              "jiraTicket": "ac-45969e",
+              "actionTypeName": "HierarchyNumberOfConvertedLeads"
+            },
+            {
+              "jiraTicket": "ac-45969f",
+              "actionTypeName": "HierarchyNumberOfLeads"
+            },
+            {
+              "jiraTicket": "ac-45969g",
+              "actionTypeName": "HierarchyNumberOfOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969h",
+              "actionTypeName": "HierarchyNumberOfResponses"
+            },
+            {
+              "jiraTicket": "ac-45969i",
+              "actionTypeName": "HierarchyNumberOfWonOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969j",
+              "actionTypeName": "HierarchyNumberSent"
+            }
+          ]
+        },
+        {
+          "jiraTicket": "ac-45969k",
+          "description": "Update Campaign Hierarchy FLS",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "HierarchyAmountAllOpportunities",
+          "optionsMap": {
+            "profileName": "Admin",
+            "readable": "true",
+            "editable": "true"
+          },
+          "subTaskList": [
+            {
+              "jiraTicket": "ac-45969l",
+              "actionTypeName": "HierarchyAmountWonOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969m",
+              "actionTypeName": "HierarchyExpectedRevenue"
+            },
+            {
+              "jiraTicket": "ac-45969n",
+              "actionTypeName": "HierarchyNumberOfContacts"
+            },
+            {
+              "jiraTicket": "ac-45969o",
+              "actionTypeName": "HierarchyNumberOfConvertedLeads"
+            },
+            {
+              "jiraTicket": "ac-45969p",
+              "actionTypeName": "HierarchyNumberOfLeads"
+            },
+            {
+              "jiraTicket": "ac-45969q",
+              "actionTypeName": "HierarchyNumberOfOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969r",
+              "actionTypeName": "HierarchyNumberOfResponses"
+            },
+            {
+              "jiraTicket": "ac-45969s",
+              "actionTypeName": "HierarchyNumberOfWonOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969t",
+              "actionTypeName": "HierarchyNumberSent"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
