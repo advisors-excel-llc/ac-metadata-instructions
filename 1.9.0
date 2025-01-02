@@ -265,56 +265,6 @@
        ]
     },
     {
-      "sObjectName":"Campaign",
-      "instructionTypeName": "mdTaskListView",
-      "taskList":[
-        {
-          "jiraTicket": "AC-58366",
-          "description": "Create new Campaign Hierarchy View",
-          "actionType": "ListView",
-          "actionTypeName": "Campaign.Org_Campaign_Hierarchy",
-          "optionsMap": {
-            "label": "Campaign Hierarchy",
-            "filterScope": "Everything",
-            "columns":"CAMPAIGN.NAME,CAMPAIGN.TOTAL_NUM_LEADS,CAMPAIGN.TOT_CONTACTS,TOT_NUM_SENT,CAMPAIGN.TOT_OPPORTUNITIES,CAMPAIGN.TOT_NUM_RESPONSES,TOT_AMOUNT_ALL,TOT_AMOUNT_WON,CAMPAIGN.TOT_WON_OPPORTUNITIES"
-          }
-        }
-      ]
-    },
-    {
-      "sObjectName":"Campaign",
-      "instructionTypeName":"mdTaskListView",
-      "taskList":[
-        {
-          "jiraTicket": "AC-59235a",
-          "description": "Delete AllActiveCampaigns List View",
-          "actionType": "ListView",
-          "actionTypeName": "Campaign.AllActiveCampaigns",
-          "optionsMap": {
-            "operation": "delete"
-          }
-        }
-      ]
-    },
-    {
-      "sObjectName":"Campaign",
-      "instructionTypeName":"mdTaskListView",
-      "taskList":[
-        {
-          "jiraTicket": "AC-59235b",
-          "description": "Add AllActiveCampaigns List View",
-          "actionType": "ListView",
-          "actionTypeName": "Campaign.AllActiveCampaigns",
-          "optionsMap": {
-            "label": "All Active Campaigns",
-            "filterScope": "Everything",
-            "filters": "CAMPAIGN.ACTIVE:equals:1",
-            "columns": "CAMPAIGN.NAME,CAMPAIGN.START_DATE,CAMPAIGN.END_DATE,CAMPAIGN.CAMPAIGN_TYPE,CAMPAIGN.STATUS,CORE.USERS.FIRST_NAME,CORE.USERS.LAST_NAME"
-          }
-        }
-      ]
-    },
-    {
       "description": "Update Account Settings to change showViewHierarchyLink to false",
       "taskList":[
         {
@@ -1375,6 +1325,56 @@
               "actionTypeName": "HierarchyNumberSent"
             }
           ]
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "instructionTypeName": "mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58366",
+          "description": "Create new Campaign Hierarchy View",
+          "actionType": "ListView",
+          "actionTypeName": "Campaign.Org_Campaign_Hierarchy",
+          "optionsMap": {
+            "label": "Campaign Hierarchy",
+            "filterScope": "Everything",
+            "columns":"CAMPAIGN.NAME,CAMPAIGN.TOTAL_NUM_LEADS,CAMPAIGN.TOT_CONTACTS,TOT_NUM_SENT,CAMPAIGN.TOT_OPPORTUNITIES,CAMPAIGN.TOT_NUM_RESPONSES,TOT_AMOUNT_ALL,TOT_AMOUNT_WON,CAMPAIGN.TOT_WON_OPPORTUNITIES"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59235a",
+          "description": "Delete AllActiveCampaigns List View",
+          "actionType": "ListView",
+          "actionTypeName": "Campaign.AllActiveCampaigns",
+          "optionsMap": {
+            "operation": "delete"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59235b",
+          "description": "Add AllActiveCampaigns List View",
+          "actionType": "ListView",
+          "actionTypeName": "Campaign.AllActiveCampaigns",
+          "optionsMap": {
+            "label": "All Active Campaigns",
+            "filterScope": "Everything",
+            "filters": "CAMPAIGN.ACTIVE:equals:1",
+            "columns": "CAMPAIGN.NAME,CAMPAIGN.START_DATE,CAMPAIGN.END_DATE,CAMPAIGN.CAMPAIGN_TYPE,CAMPAIGN.STATUS,CORE.USERS.FIRST_NAME,CORE.USERS.LAST_NAME"
+          }
         }
       ]
     }
