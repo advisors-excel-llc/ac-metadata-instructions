@@ -979,12 +979,12 @@
     },
     {
       "sObjectName":"PersonAccount",
-      "instructionTypeName":"UpdateRecordTypeLabel",
+      "instructionTypeName":"RecordTypeUpdates",
       "description":"Update Record Type Label of Person Account to Client",
       "taskList":[
         {
           "jiraTicket":"ac-63969",
-          "actionType":"UpdateRecordTypeLabel",
+          "actionType":"RecordTypeUpdates",
           "actionTypeName":"PersonAccount",
           "actionTypeLabel":"Client"
         }
