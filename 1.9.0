@@ -979,14 +979,17 @@
     },
     {
       "sObjectName":"PersonAccount",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Update Record Type Label of Person Account to Client",
       "taskList":[
         {
           "jiraTicket":"ac-63969",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"PersonAccount",
-          "actionTypeLabel":"Client"
+          "actionTypeLabel":"Client",
+          "optionsMap":{
+            "operation" : "Update Label"
+          }
         }
       ]
     },
@@ -1380,180 +1383,180 @@
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Auto Loan Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998a",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__AutoLoan",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Bank Account Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998b",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__BankingAccount",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Checking Account Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998c",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__CheckingAccount",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Credit Card Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998d",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__CreditCard",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate General Account Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998e",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__General",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate HELOC Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998f",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__HELOC",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Insurance Policy Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998g",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__InsurancePolicy",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Investment Account Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998h",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__InvestmentAccount",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Loan Account Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998i",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__LoanAccount",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Mortgage Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998j",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__Mortgage",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Savings Account Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998k",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__SavingsAccount",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
     },
     {
       "sObjectName":"FinServ__FinancialAccount__c",
-      "instructionTypeName":"RecordTypeUpdates",
+      "instructionTypeName":"RecordType",
       "description":"Deactivate Treasury Service Record Type",
       "taskList":[
         {
           "jiraTicket":"ac-64998l",
-          "actionType":"RecordTypeUpdates",
+          "actionType":"RecordType",
           "actionTypeName":"FinServ__TreasuryService",
           "optionsMap":{
-            "deactivate" : "true"
+            "operation" : "deactivate"
           }
         }
       ]
