@@ -1391,7 +1391,7 @@
           "actionType":"RecordType",
           "actionTypeName":"FinServ__AutoLoan",
           "optionsMap":{
-            "operation" : deactivate"
+            "operation" : "deactivate"
           }
         }
       ]
