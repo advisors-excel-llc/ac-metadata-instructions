@@ -1222,7 +1222,7 @@
           "optionsMap": {
             "label": "All Accounts",
             "filterScope": "Everything",
-            "columns": "ACCOUNT.NAME,PC_LAST_NAME,ACCOUNT.PHONE1,BusinessEmail__c,ACCOUNT.TYPE,ACCOUNT.RECORDTYPE"
+            "columns": "ACCOUNT.NAME,PC_LAST_NAME,ACCOUNT.PHONE1,command__BusinessEmail__c,ACCOUNT.TYPE,ACCOUNT.RECORDTYPE"
           }
         }
       ]
