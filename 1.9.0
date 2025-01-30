@@ -247,6 +247,36 @@
       ]
     },
     {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Advisor_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368i",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Writing Advisor,Servicing Advisor"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Advisor_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368j",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "remove",
+            "picklistValues":"Accountant,Additional Owner,Administrator,Advisor,Annuitant,Appoint %2F Remove Authority,Authorized Agent,Authorized Agent %2F Beneficial Owner,Authorized Individual,Authorized Signer,Beneficial Owner,Business Manager,Committee Member,Conservator,Control Person,Corporation,Cosigner,Custodian,Deceased Grantor,Decedent,Discretionary,Foundation,Full Authority,Grantor,Guardian,Insured,Interested Party,Joint Owner,Minor Primary Owner,Original Depositor,Other,Power of Attorney,Primary Owner,Proprietor,TOD Beneficiary,Trustee,Joint Annuitant,Primary Insured,Additional Insured,Primary Beneficiary,Contingent Beneficiary,Owner,Single,Single with TOD,Joint,Joint with TOD,Trust"
+          }
+        }
+      ]
+    },
+    {
       "sObjectName":"Lead",
       "instructionTypeName": "mdTaskListView",
       "taskList":[
@@ -777,7 +807,7 @@
           "actionTypeName":"Type",
           "optionsMap":{
             "operation" : "deactivate",
-            "picklistValues":"Event,Demo Signup / Trial,Email,Search,Thought Leadership,Website Direct,Other,Radio,Television,Workshop"
+            "picklistValues":"Event,Demo Signup %2F Trial,Email,Search,Thought Leadership,Website Direct,Other,Radio,Television,Workshop"
           }
         }
       ]
@@ -919,7 +949,7 @@
     },
     {
       "sObjectName":"PersonAccount",
-      "instructionTypeName":"command__PersonAccount",
+      "instructionTypeName":"PersonAccount",
       "taskList":[
         {
           "jiraTicket":"AC-64312h",
