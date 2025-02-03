@@ -1590,6 +1590,23 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName":"Lead",
+      "instructionTypeName": "ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-69352",
+          "description": "Create All Open Leads List View",
+          "actionType": "ListView",
+          "actionTypeName": "Lead.AllOpenLeads",
+          "optionsMap": {
+            "label": "All Open Leads",
+            "filterScope": "Everything",
+            "columns": "FULL_NAME,command__Lead_Writing_Advisors__c,command__Lead_Servicing_Advisors__c,LEAD.STATUS,command__Lead_Birthdate__c,LEAD.CITY,LEAD.STATE,LEAD.ZIP,LEAD.LEAD_SOURCE,LEAD.LAST_ACTIVITY"
+          }
+        }
+      ]
     }
   ]
 }
