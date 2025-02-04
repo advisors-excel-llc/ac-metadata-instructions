@@ -1607,6 +1607,81 @@
           }
         }
       ]
+    },
+    {
+      "sObjectName":"Lead",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Business Referral Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-66618a",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__BusinessReferral",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Person Referral Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-66618b",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__Referral",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Retirement Planning Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-66618c",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__RetirementPlanning",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Wallet Share Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-66618d",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__WalletShareOpportunity",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Retirement Planning Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-66618e",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__RetirementPlanning",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
     }
   ]
 }
