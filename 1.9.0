@@ -458,36 +458,6 @@
       ]
     },
     {
-      "description": "Gearset - Campaign - Update Field History",
-      "taskList": [
-        {
-          "jiraTicket": "ac-59239a",
-          "actionType": "FieldHistory",
-          "actionTypeName": "None",
-          "optionsMap": {
-            "operation": "enable field history",
-            "incomingFields": "ActualCost,BudgetedCost,EndDate,ExpectedResponse,ExpectedRevenue,Name,NumberSent,ParentId,StartDate,Status,Type",
-            "objectName": "Campaign"
-          }
-        }
-      ]
-    },
-    {
-      "description": "Gearset - Campaign - Update Field History",
-      "taskList": [
-        {
-          "jiraTicket": "ac-59239b",
-          "actionType": "FieldHistory",
-          "actionTypeName": "None",
-          "optionsMap": {
-            "operation": "disable field history",
-            "incomingFields": "CampaignMemberRecordTypeId,Description,IsActive,OwnerId",
-            "objectName": "Campaign"
-          }
-        }
-      ]
-    },
-    {
       "sobjectName":"FinServ__FinancialAccount__c",
       "instructionTypeName":"ListView",
       "taskList":[
