@@ -136,7 +136,7 @@
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
             "operation" : "add",
-            "picklistValues":"Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+            "picklistValues":"Primary Owner,Joint Owner,Annuitant,Joint Annuitant,Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
           }
         }
       ]
@@ -151,7 +151,7 @@
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
             "operation" : "add",
-            "picklistValues":"Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+            "picklistValues":"Primary Owner,Primary Insured,Joint Owner,Additional Insured,Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
           }
         }
       ]
@@ -166,7 +166,7 @@
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
             "operation" : "add",
-            "picklistValues":"Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+            "picklistValues":"Primary Owner,Joint Owner,Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
           }
         }
       ]
@@ -226,7 +226,7 @@
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
             "operation" : "add",
-            "picklistValues":"Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+            "picklistValues":"Primary Owner,Joint Owner,Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
           }
         }
       ]
