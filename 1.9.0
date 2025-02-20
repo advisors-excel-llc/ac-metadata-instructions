@@ -1,0 +1,1446 @@
+{
+  "instructionList":[
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "taskList":[
+        {
+           "jiraTicket":"AC-61139a",
+           "actionType":"FieldSet",
+           "actionTypeName":"FinServ__FinancialAccount__c.command__Financial_Account_BasicInfo_AUM_Set",
+           "actionTypeLabel":"Name,command__FinancialAccount_Custodian__r.Name,command__Model__c,command__Account_Type__c,command__Account_Value__c,FinServ__OpenDate__c,FinServ__Status__c"
+        },
+        {
+           "jiraTicket":"AC-61139b",
+           "actionType":"FieldSet",
+           "actionTypeName":"FinServ__FinancialAccount__c.command__Financial_Account_BasicInfo_Life_Set",
+           "actionTypeLabel":"Name,command__Carrier__r.Name,FinServ__ProductName__r.Name,command__Mode__c,command__Modal_Premium__c,command__Death_Benefit__c,command__Issued_Date__c,FinServ__Status__c"
+        }
+      ]
+    },
+    {
+      "sObjectName":"Task",
+      "description": "Add new picklist value to Status",
+      "taskList":[
+        {
+          "jiraTicket":"ac-48131",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"In Progress"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName": "recordFieldMapper",
+      "taskList": [
+        {
+          "jiraTicket": "ac-57039",
+          "description": "Map data from FinServ Description to custom Description field",
+          "actionType": "RecordFieldMapper",
+          "actionTypeName": "Query",
+          "optionsMap": {
+            "incomingObject": "FinServ__FinancialAccount__c",
+            "sourceField": "FinServ__Description__c",
+            "destinationField": "command__Description__c"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "FinServ__FinancialAccount__c",
+      "instructionTypeName": "command__Financial Account (Annuity) Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-20649a",
+          "description": "Adding the rich text Description field",
+          "actionType": "field",
+          "actionTypeName": "command__Description__c",
+          "location": {
+            "section": "Description",
+            "column" : 0,
+            "behavior" : "Edit"
+           }
+        },
+        {
+          "jiraTicket": "ac-20649b",
+          "description": "Removing the FinServ Description field",
+          "actionType": "field",
+          "actionTypeName": "FinServ__Description__c",
+          "optionsMap": {
+            "operation": "remove"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "FinServ__FinancialAccount__c",
+      "instructionTypeName": "command__Financial Account (REIT/Mutual Fund/Other) Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-20649c",
+          "description": "Adding the rich text Description field",
+          "actionType": "field",
+          "actionTypeName": "command__Description__c",
+          "location": {
+            "section": "Description",
+            "column" : 0,
+            "behavior" : "Edit"
+           }
+        },
+        {
+          "jiraTicket": "ac-20649d",
+          "description": "Removing the FinServ Description field",
+          "actionType": "field",
+          "actionTypeName": "FinServ__Description__c",
+          "optionsMap": {
+            "operation": "remove"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "FinServ__FinancialAccount__c",
+      "instructionTypeName": "command__Financial Account(Life) Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-20649e",
+          "description": "Adding the rich text Description field",
+          "actionType": "field",
+          "actionTypeName": "command__Description__c",
+          "location": {
+            "section": "Description",
+            "column" : 0,
+            "behavior" : "Edit"
+           }
+        },
+        {
+          "jiraTicket": "ac-20649f",
+          "description": "Removing the FinServ Description field",
+          "actionType": "field",
+          "actionTypeName": "FinServ__Description__c",
+          "optionsMap": {
+            "operation": "remove"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Annuity_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368a",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Primary Owner,Joint Owner,Annuitant,Joint Annuitant,Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Life_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368b",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Primary Owner,Primary Insured,Joint Owner,Additional Insured,Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__AUM_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368c",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Primary Owner,Joint Owner,Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__AUM_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368d",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "remove",
+            "picklistValues":"Owner"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Alternative_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368e",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Primary Owner,Joint Owner,Beneficial Owner,Minor Primary Owner,Conservator,Guardian,Single with TOD,Joint with TOD"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Alternative_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368f",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "remove",
+            "picklistValues":"Accountant,Additional Owner,Administrator,Advisor,Annuitant,Appoint/ Remove Authority,Authorized Agent,Authorized Agent/ Beneficial Owner,Authorized Individual,Authorized Signer,Business Manager,Committee Member,Control Person,Corporation,Cosigner,Custodian,Deceased Grantor,Decedent,Discretionary,Foundation,Full Authority,Grantor,Insured,Interested Party,Original Depositor,Other,Power of Attorney,Proprietor,TOD Beneficiary,Trustee,Writing Advisor,Servicing Advisor,Joint Annuitant,Primary Insured,Additional Insured,Primary Beneficiary,Contingent Beneficiary,Owner,Single,Trust"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Other_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368g",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Primary Owner,Joint Owner,Beneficial Owner,Minor Primary Owner,Conservator,Guardian"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Other_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368h",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "remove",
+            "picklistValues":"Annuitant,Joint Annuitant"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Advisor_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368i",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Writing Advisor,Servicing Advisor"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "instructionTypeName":"command__Advisor_Role",
+      "taskList":[
+        {
+          "jiraTicket":"AC-55368j",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Role__c",
+          "optionsMap":{
+            "operation" : "remove",
+            "picklistValues":"Accountant,Additional Owner,Administrator,Advisor,Annuitant,Appoint %2F Remove Authority,Authorized Agent,Authorized Agent %2F Beneficial Owner,Authorized Individual,Authorized Signer,Beneficial Owner,Business Manager,Committee Member,Conservator,Control Person,Corporation,Cosigner,Custodian,Deceased Grantor,Decedent,Discretionary,Foundation,Full Authority,Grantor,Guardian,Insured,Interested Party,Joint Owner,Minor Primary Owner,Original Depositor,Other,Power of Attorney,Primary Owner,Proprietor,TOD Beneficiary,Trustee,Joint Annuitant,Primary Insured,Additional Insured,Primary Beneficiary,Contingent Beneficiary,Owner,Single,Single with TOD,Joint,Joint with TOD,Trust"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
+      "instructionTypeName": "mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58367",
+          "description": "Create new Lead List View",
+          "actionType": "ListView",
+          "actionTypeName": "Lead.TodaysLeads",
+          "optionsMap": {
+            "label": "Today's Leads",
+            "filterScope": "Everything",
+            "filters": "LEAD.CREATED_DATE:equals:TODAY",
+            "columns": "FULL_NAME,LEAD.STATE,LEAD.EMAIL,LEAD.PHONE,LEAD.STATUS,LEAD.CREATED_DATE,CREATEDBY_USER.ALIAS"
+           }
+         }
+       ]
+    },
+    {
+      "description": "Update Account Settings to change showViewHierarchyLink to false",
+      "taskList":[
+        {
+          "jiraTicket":"ac-48131",
+          "actionType":"AccountSetting",
+          "actionTypeName":"None",
+          "optionsMap":{
+            "operation" : "update",
+            "settingName" : "Account",
+            "showViewHierarchyLink" : "false"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Update quote settings to be disabled",
+      "taskList":[
+        {
+          "jiraTicket":"ac-57219",
+          "actionType":"QuoteSetting",
+          "actionTypeName":"None",
+          "optionsMap":{
+            "operation" : "update",
+            "settingName" : "Quote",
+            "settingEnabled" : "false"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Update Activity Settings to disable enableClickCreateEvents, enableListViewScheduling, and enableDragAndDropScheduling",
+      "taskList": [
+        {
+          "jiraTicket": "ac-57218",
+          "actionType": "ActivitySetting",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "settingsFullName": "Activities",
+            "incomingSettings": "enableClickCreateEvents:false,enableListViewScheduling:false,enableDragAndDropScheduling:false"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Task",
+      "description": "Add help text to RecurrenceInterval",
+      "taskList":[
+        {
+          "jiraTicket":"ac-59356",
+          "actionType":"ModifyField",
+          "actionTypeName":"RecurrenceInterval",
+          "optionsMap":{
+            "inlineHelpText":"In Days. Ex: This task should recur every 7 days. (Weekly)"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Contact",
+      "description": "Add new picklist value to FinServ__Gender__c",
+      "taskList":[
+        {
+          "jiraTicket":"ac-59247a",
+          "actionType":"PicklistValueCustom",
+          "actionTypeName":"FinServ__Gender__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Decline to Specify"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"PersonAccount",
+      "instructionTypeName":"PersonAccount",
+      "taskList":[
+        {
+          "jiraTicket":"ac-59247b",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__Gender__pc",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Decline to Specify"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Contact",
+      "description": "Add new picklist values to FinServ__MaritalStatus__c",
+      "taskList":[
+        {
+          "jiraTicket":"ac-59247c",
+          "actionType":"PicklistValueCustom",
+          "actionTypeName":"FinServ__MaritalStatus__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Life Partner,Other"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"PersonAccount",
+      "instructionTypeName":"PersonAccount",
+      "taskList":[
+        {
+          "jiraTicket":"ac-59247d",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"FinServ__MaritalStatus__pc",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Life Partner,Other"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Lead - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59398",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "FinServ__ReferredByContact,Address,Email,MobilePhone,Name,Phone,Status",
+            "objectName": "Lead"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Opportunity field history tracking",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59409a",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "AccountId,Amount,CampaignId,CloseDate,Description,LeadSource,Name,NextStep,StageName,Type",
+            "objectName": "Opportunity"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Opportunity field history tracking",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59409b",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field feed history",
+            "incomingFields": "Name",
+            "objectName": "Opportunity"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-60473a",
+          "description": "Delete All_Financial_Accounts List View",
+          "actionType": "ListView",
+          "actionTypeName": "FinServ__FinancialAccount__c.All_Financial_Accounts",
+          "optionsMap": {
+            "operation":"delete"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-60473b",
+          "description": "Add All_Financial_Accounts List View",
+          "actionType": "ListView",
+          "actionTypeName": "FinServ__FinancialAccount__c.All_Financial_Accounts",
+          "optionsMap": {
+            "label": "All Financial Accounts",
+            "filterScope": "Everything",
+            "columns": "NAME,command__Policy_Number__c,FinServ__Status__c,FinServ__RecordTypeName__c,command__Carrier__c,FinServ__ProductName__c,command__FinancialAccount_Expected_Initial_Amount__c,command__FinancialAccount_Writing_Advisor__c,command__Financial_Servicing_Advisors__c,LAST_ACTIVITY,command__Financial_Account_Effective_Date__c,command__Financial_Source__c,command__Tax_Qualification__c"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccountRole__c",
+      "description":"Set RelatedAccountOrContactRequired to inactive",
+      "taskList":[
+        {
+          "jiraTicket":"ac-60465",
+          "actionType":"ValidationRule",
+          "actionTypeName":"RelatedAccountOrContactRequired",
+          "namespace":"FinServ",
+          "optionsMap":{
+            "active":"false"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"command__Premium__c",
+      "description": "Add new picklist value to Source_of_Funds__c",
+      "taskList":[
+        {
+          "jiraTicket":"ac-59410a",
+          "actionType":"PicklistValueCustom",
+          "actionTypeName":"command__Source_of_Funds__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Funding_Alternative",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410b",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Funding_Annuity",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410c",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+              "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Funding_AUM",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410d",
+          "actionType": "RecordTypePicklist",
+           "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+             "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Funding_Life",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410e",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+            "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Funding_Other",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410f",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+            "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName" : "command__Premium__c",
+      "instructionTypeName" : "command__Paid",
+      "taskList": [
+        {
+          "jiraTicket": "ac-59410g",
+          "actionType": "RecordTypePicklist",
+          "actionTypeName": "command__Source_of_Funds__c",
+          "optionsMap": {
+            "picklistValues":"Agent Ordered Funds,Cash On Delivery,Cash with App,Transfer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59402a",
+          "description": "Delete AllOpportunities List View",
+          "actionType": "ListView",
+          "actionTypeName": "Opportunity.AllOpportunities",
+          "optionsMap": {
+            "operation": "delete"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59402b",
+          "description": "Add AllOpportunities List View",
+          "actionType": "ListView",
+          "actionTypeName": "Opportunity.AllOpportunities",
+          "optionsMap": {
+             "label": "All Opportunities",
+             "filterScope": "Everything",
+             "columns": "OPPORTUNITY.NAME,ACCOUNT.NAME,OPPORTUNITY.RECORDTYPE,OPPORTUNITY.AMOUNT,OPPORTUNITY.CLOSE_DATE,OPPORTUNITY.STAGE_NAME,CORE.USERS.ALIAS"
+          }
+        }
+      ]
+    },
+    {
+      "description": "Gearset - Financial Account - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-60534",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "FinServ__TaxStatus__c,FinServ__Status__c,FinServ__Description__c,FinServ__FinancialAccountNumber__c,FinServ__OpenDate__c,Name",
+            "objectName": "FinServ__FinancialAccount__c"
+          }
+        }
+       ]
+    },
+    {
+      "description": "Gearset - Account - Update Field History",
+      "taskList": [
+        {
+          "jiraTicket": "ac-58903",
+          "actionType": "FieldHistory",
+          "actionTypeName": "None",
+          "optionsMap": {
+            "operation": "enable field history",
+            "incomingFields": "Name,PersonBirthdate,PersonMailingAddress,PersonOtherAddress,PersonOtherPhone,Phone",
+            "objectName": "Account"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "description": "Remove picklist values from Status field",
+      "taskList":[
+        {
+          "jiraTicket":"ac-3853a",
+          "actionType":"PicklistValueCustom",
+          "actionTypeName":"FinServ__Status__c",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Held,Paid,Pre-Screen,Proposal,Received,Returned,Reversed,Withdrawn,Opportunity,Application,Postponed,On Hold,Charge-off,Lost,Paid out,Active,Expired,Waiting on Signatures,Sent to AEW,Opened at Custodian,Funded,Submitted to AEWM,Submitted to Custodian,Opened"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "description": "Remove picklist values from Status field",
+      "taskList":[
+        {
+          "jiraTicket":"ac-3853b",
+          "actionType":"PicklistValueCustom",
+          "actionTypeName":"FinServ__Status__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Free Looked"
+          }
+        }
+      ]
+    },
+    {
+      "instructionTypeName":"PermissionSetUserPermissions",
+      "description":"Create new Dashboard and Report Permission Set",
+      "taskList":[
+        {
+          "jiraTicket":"ac-62886",
+          "actionType":"PermissionSetUserPermissions",
+          "actionTypeName":"AC_Dashboard_and_Report_Admin",
+          "actionTypeLabel":"AC Dashboard and Report Admin",
+          "optionsMap":{
+            "CanUseNewDashboardBuilder":"true",
+            "CreateCustomizeDashboards":"true",
+            "CreateCustomizeReports":"true",
+            "CreateDashboardFolders":"true",
+            "CreateReportFolders":"true",
+            "EditMyDashboards":"true",
+            "EditMyReports":"true",
+            "ManageDashbdsInPubFolders":"true",
+            "ManageDynamicDashboards":"true",
+            "ManageReportsInPubFolders":"true",
+            "RunReports":"true",
+            "ViewPublicDashboards":"true",
+            "ViewPublicReports":"true"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"CampaignMember",
+      "description": "Add new picklist value to CampaignMember Status",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578a",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Planned,Received"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "description": "Removed picklist value from campaign status",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578b",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Aborted"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "description": "Add new picklist value to Campaign Status",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578c",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Cancelled"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "description": " Remove picklist values from type field",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578d",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Type",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Event,Demo Signup %2F Trial,Email,Search,Thought Leadership,Website Direct,Other,Radio,Television,Workshop"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "description": "Add picklist values from type field",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64578e",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Type",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Client Event,Direct Mail,Educational Class,Email Drip,Radio Show,Seminar,TV Show,Webinar"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "description": "Update Stage Picklist Values",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64579",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Stage",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Negotiation,Develop Proposal,Client Presentation,Initiate Transfer,Discovery"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
+      "description": "Add new picklist value to Source",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64312a",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Source",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
+      "instructionTypeName":"FinServ__General",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312b",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+          }
+        ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__Annuity",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312c",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__AUM",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312d",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"command__Life",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312e",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"FinServ__General",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312f",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Contact",
+      "instructionTypeName":"FinServ__IndustriesBusiness",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312g",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"LeadSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"PersonAccount",
+      "instructionTypeName":"PersonAccount",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312h",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"AccountSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Account",
+      "instructionTypeName":"FinServ__IndustriesHousehold",
+      "taskList":[
+        {
+          "jiraTicket":"AC-64312i",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"AccountSource",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Walk In,Twitter,Facebook,Social Media,Customer Referral"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"AccountContactMulti",
+      "description": "Add new picklist value to AccountContactRelationship Role",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64577a",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Roles",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Business User,Decision Maker,Economic Buyer,Economic Decision Maker,Evaluator,Executive Sponsor,Household Head,Household Member,Influencer,Technical Buyer"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"AccountContactMulti",
+      "description": "Add new picklist value to AccountContactRelationship Role",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64577b",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Roles",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Client,Dependent,Domestic Partner,Spouse,Grantor,Beneficiary,Board Member,Employee"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"PersonAccount",
+      "instructionTypeName":"RecordType",
+      "description":"Update Record Type Label of Person Account to Client",
+      "taskList":[
+        {
+          "jiraTicket":"ac-63969",
+          "actionType":"RecordType",
+          "actionTypeName":"PersonAccount",
+          "actionTypeLabel":"Client",
+          "optionsMap":{
+            "operation" : "Update Label"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Task",
+      "description": "Update Status Picklist Values",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64627",
+          "actionType":"PicklistValueStandard",
+          "actionTypeName":"Status",
+          "optionsMap":{
+            "operation" : "deactivate",
+            "picklistValues":"Not Started"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"Account",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58891a",
+          "description": "Add All Prospects list view",
+          "actionType": "ListView",
+          "actionTypeName": "Account.All_Prospects",
+          "optionsMap": {
+            "label": "All Prospects",
+            "filterScope": "Everything",
+            "filters": "ACCOUNT.RECORDTYPE:equals:PersonAccount.PersonAccount,Account.command__Account_Stage__c:equals:Prospect",
+            "columns": "ACCOUNT.NAME,PC_FIRST_NAME,PC_LAST_NAME,command__Account_Writing_Advisor__c,command__Contact_Servicing_Advisor__c,command__Account_Stage__c,command__Rank__c,PC_BIRTHDATE,PC_ADDRESS2_CITY,PC_ADDRESS2_STATE,PC_ADDRESS2_ZIP,ACCOUNT.LAST_ACTIVITY,PC_LEAD_SOURCE"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"Account",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58891b",
+          "description": "Add All Clients list view",
+          "actionType": "ListView",
+          "actionTypeName": "Account.AllClients",
+          "optionsMap": {
+            "label": "All Clients",
+            "filterScope": "Everything",
+            "filters": "ACCOUNT.RECORDTYPE:equals:PersonAccount.PersonAccount,Account.command__Account_Stage__c:equals:Client",
+            "columns": "ACCOUNT.NAME,PC_FIRST_NAME,PC_LAST_NAME,command__Account_Writing_Advisor__c,command__Contact_Servicing_Advisor__c,command__Account_Stage__c,command__Rank__c,PC_BIRTHDATE,PC_ADDRESS2_CITY,PC_ADDRESS2_STATE,PC_ADDRESS2_ZIP,ACCOUNT.LAST_ACTIVITY,PC_LEAD_SOURCE"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"Account",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58891c",
+          "description": "Add All Account list view",
+          "actionType": "ListView",
+          "actionTypeName": "Account.AllAccounts",
+          "optionsMap": {
+            "label": "All Accounts",
+            "filterScope": "Everything",
+            "columns": "ACCOUNT.NAME,PC_LAST_NAME,ACCOUNT.PHONE1,command__BusinessEmail__c,ACCOUNT.TYPE,ACCOUNT.RECORDTYPE"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName": "Campaign",
+      "instructionTypeName": "FieldLevelSecurity",
+      "taskList": [
+        {
+          "jiraTicket": "ac-45969a",
+          "description": "Update Campaign Hierarchy FLS",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "HierarchyAmountAllOpportunities",
+          "optionsMap": {
+            "profileName": "AC Basic User",
+            "readable": "true",
+            "editable": "true"
+          },
+          "subTaskList": [
+            {
+              "jiraTicket": "ac-45969b",
+              "actionTypeName": "HierarchyAmountWonOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969c",
+              "actionTypeName": "HierarchyExpectedRevenue"
+            },
+            {
+              "jiraTicket": "ac-45969d",
+              "actionTypeName": "HierarchyNumberOfContacts"
+            },
+            {
+              "jiraTicket": "ac-45969e",
+              "actionTypeName": "HierarchyNumberOfConvertedLeads"
+            },
+            {
+              "jiraTicket": "ac-45969f",
+              "actionTypeName": "HierarchyNumberOfLeads"
+            },
+            {
+              "jiraTicket": "ac-45969g",
+              "actionTypeName": "HierarchyNumberOfOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969h",
+              "actionTypeName": "HierarchyNumberOfResponses"
+            },
+            {
+              "jiraTicket": "ac-45969i",
+              "actionTypeName": "HierarchyNumberOfWonOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969j",
+              "actionTypeName": "HierarchyNumberSent"
+            }
+          ]
+        },
+        {
+          "jiraTicket": "ac-45969k",
+          "description": "Update Campaign Hierarchy FLS",
+          "actionType": "FieldLevelSecurity",
+          "actionTypeName": "HierarchyAmountAllOpportunities",
+          "optionsMap": {
+            "profileName": "System Administrator",
+            "readable": "true",
+            "editable": "true"
+          },
+          "subTaskList": [
+            {
+              "jiraTicket": "ac-45969l",
+              "actionTypeName": "HierarchyAmountWonOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969m",
+              "actionTypeName": "HierarchyExpectedRevenue"
+            },
+            {
+              "jiraTicket": "ac-45969n",
+              "actionTypeName": "HierarchyNumberOfContacts"
+            },
+            {
+              "jiraTicket": "ac-45969o",
+              "actionTypeName": "HierarchyNumberOfConvertedLeads"
+            },
+            {
+              "jiraTicket": "ac-45969p",
+              "actionTypeName": "HierarchyNumberOfLeads"
+            },
+            {
+              "jiraTicket": "ac-45969q",
+              "actionTypeName": "HierarchyNumberOfOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969r",
+              "actionTypeName": "HierarchyNumberOfResponses"
+            },
+            {
+              "jiraTicket": "ac-45969s",
+              "actionTypeName": "HierarchyNumberOfWonOpportunities"
+            },
+            {
+              "jiraTicket": "ac-45969t",
+              "actionTypeName": "HierarchyNumberSent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "instructionTypeName": "mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-58366",
+          "description": "Create new Campaign Hierarchy View",
+          "actionType": "ListView",
+          "actionTypeName": "Campaign.Org_Campaign_Hierarchy",
+          "optionsMap": {
+            "label": "Campaign Hierarchy",
+            "filterScope": "Everything",
+            "columns":"CAMPAIGN.NAME,CAMPAIGN.TOTAL_NUM_LEADS,CAMPAIGN.TOT_CONTACTS,TOT_NUM_SENT,CAMPAIGN.TOT_OPPORTUNITIES,CAMPAIGN.TOT_NUM_RESPONSES,TOT_AMOUNT_ALL,TOT_AMOUNT_WON,CAMPAIGN.TOT_WON_OPPORTUNITIES"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59235a",
+          "description": "Delete AllActiveCampaigns List View",
+          "actionType": "ListView",
+          "actionTypeName": "Campaign.AllActiveCampaigns",
+          "optionsMap": {
+            "operation": "delete"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Campaign",
+      "instructionTypeName":"mdTaskListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-59235b",
+          "description": "Add AllActiveCampaigns List View",
+          "actionType": "ListView",
+          "actionTypeName": "Campaign.AllActiveCampaigns",
+          "optionsMap": {
+            "label": "All Active Campaigns",
+            "filterScope": "Everything",
+            "filters": "CAMPAIGN.ACTIVE:equals:1",
+            "columns": "CAMPAIGN.NAME,CAMPAIGN.START_DATE,CAMPAIGN.END_DATE,CAMPAIGN.CAMPAIGN_TYPE,CAMPAIGN.STATUS,CORE.USERS.FIRST_NAME,CORE.USERS.LAST_NAME"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Auto Loan Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998a",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__AutoLoan",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Bank Account Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998b",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__BankingAccount",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Checking Account Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998c",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__CheckingAccount",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Credit Card Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998d",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__CreditCard",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate General Account Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998e",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__General",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate HELOC Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998f",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__HELOC",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Insurance Policy Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998g",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__InsurancePolicy",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Investment Account Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998h",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__InvestmentAccount",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Loan Account Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998i",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__LoanAccount",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Mortgage Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998j",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__Mortgage",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Savings Account Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998k",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__SavingsAccount",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"FinServ__FinancialAccount__c",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Treasury Service Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-64998l",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__TreasuryService",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Lead",
+      "instructionTypeName": "ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-69352",
+          "description": "Create All Open Leads List View",
+          "actionType": "ListView",
+          "actionTypeName": "Lead.AllOpenLeads",
+          "optionsMap": {
+            "label": "All Open Leads",
+            "filterScope": "Everything",
+            "columns": "FULL_NAME,command__Lead_Writing_Advisors__c,command__Lead_Servicing_Advisors__c,LEAD.STATUS,command__Lead_Birthdate__c,LEAD.CITY,LEAD.STATE,LEAD.ZIP,LEAD.LEAD_SOURCE,LEAD.LAST_ACTIVITY"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Wallet Share Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-66618d",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__WalletShareOpportunity",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"Opportunity",
+      "instructionTypeName":"RecordType",
+      "description":"Deactivate Retirement Planning Record Type",
+      "taskList":[
+        {
+          "jiraTicket":"ac-66618e",
+          "actionType":"RecordType",
+          "actionTypeName":"FinServ__RetirementPlanning",
+          "optionsMap":{
+            "operation" : "deactivate"
+          }
+        }
+      ]
+    }
+  ]
+}
