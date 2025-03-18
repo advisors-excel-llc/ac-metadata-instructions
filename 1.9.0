@@ -211,7 +211,7 @@
           "actionTypeName":"FinServ__Role__c",
           "optionsMap":{
             "operation" : "remove",
-            "picklistValues":"Accountant,Additional Owner,Administrator,Advisor,Annuitant,Appoint/ Remove Authority,Authorized Agent,Authorized Agent/ Beneficial Owner,Authorized Individual,Authorized Signer,Business Manager,Committee Member,Control Person,Corporation,Cosigner,Custodian,Deceased Grantor,Decedent,Discretionary,Foundation,Full Authority,Grantor,Insured,Interested Party,Original Depositor,Other,Power of Attorney,Proprietor,TOD Beneficiary,Trustee,Writing Advisor,Servicing Advisor,Joint Annuitant,Primary Insured,Additional Insured,Primary Beneficiary,Contingent Beneficiary,Owner,Single,Trust"
+            "picklistValues":"Accountant,Additional Owner,Administrator,Advisor,Annuitant,Appoint/ Remove Authority,Authorized Agent,Authorized Agent/ Beneficial Owner,Authorized Individual,Authorized Signer,Business Manager,Committee Member,Control Person,Corporation,Cosigner,Custodian,Deceased Grantor,Decedent,Discretionary,Foundation,Full Authority,Grantor,Insured,Interested Party,Original Depositor,Other,Power of Attorney,Proprietor,TOD Beneficiary,Trustee,Writing Advisor,Servicing Advisor,Joint Annuitant,Primary Insured,Additional Insured,Primary Beneficiary,Contingent Beneficiary,Owner,Single,Trust, Joint"
           }
         }
       ]
