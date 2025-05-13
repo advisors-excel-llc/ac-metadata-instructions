@@ -1,0 +1,34 @@
+{
+  "instructionList": [
+    {
+      "sObjectName":"command__Custom_Note__c",
+      "description": "Add new picklist value to command__Category__c",
+      "taskList":[
+        {
+          "jiraTicket":"ac-71580",
+          "actionType":"PicklistValueCustom",
+          "actionTypeName":"command__Category__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Integration Note"
+          }
+        }
+      ]
+    },
+    {
+      "sObjectName":"command__Custom_Note__c",
+      "instructionTypeName":"command__Custom_Note",
+      "taskList":[
+        {
+          "jiraTicket":"ac-71580",
+          "actionType":"RecordTypePicklist",
+          "actionTypeName":"command__Category__c",
+          "optionsMap":{
+            "operation" : "add",
+            "picklistValues":"Integration Note"
+          }
+        }
+      ]
+    }
+  ]
+}
