@@ -1,0 +1,219 @@
+{
+  "instructionList": [
+        {
+            "sObjectName": "Account",
+            "taskList": [
+                {
+                    "description": "Enable Lightning Pages on Account for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636a",
+                            "description": "Account Business LRP --> Business RT"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ACBusinessRecordPage1",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "AC Basic User",
+                                "recordType": "Account.IndustriesBusiness",
+                                "type_x": "Flexipage"
+                            }   
+                        },
+                        {
+                            "jiraTicket": "ac-70636b",
+                            "description": "Account Business LRP --> Business RT"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ACBusinessRecordPage1",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "Admin",
+                                "recordType": "Account.IndustriesBusiness",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636c",
+                            "description": "Account Business LRP --> Transfer Company RT"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ACBusinessRecordPage1",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "AC Basic User",
+                                "recordType": "Account.Transfer_Company",
+                                "type_x": "Flexipage"
+                            }   
+                        },
+                        {
+                            "jiraTicket": "ac-70636d",
+                            "description": "Account Business LRP --> Transfer Company RT"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ACBusinessRecordPage1",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "Admin",
+                                "recordType": "Account.Transfer_Company",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636e",
+                            "description": "Account Carrier LRP --> Carrier RT"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ACCarrierRecordPage",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "AC Basic User",
+                                "recordType": "Account.Carrier",
+                                "type_x": "Flexipage"
+                            }   
+                        },
+                        {
+                            "jiraTicket": "ac-70636f",
+                            "description": "Account Business LRP --> Carrier RT"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ACCarrierRecordPage",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "Admin",
+                                "recordType": "Account.Carrier",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636g",
+                            "description": "Account Carrier LRP --> Carrier RT"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ClientRecordPage",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "PersonAccount",
+                                "profile": "AC Basic User",
+                                "recordType": "PersonAccount.PersonAccount",
+                                "type_x": "Flexipage"
+                            }   
+                        },
+                        {
+                            "jiraTicket": "ac-70636h",
+                            "description": "Account Business LRP --> Carrier RT"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ClientRecordPage",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "PersonAccount",
+                                "profile": "Admin",
+                                "recordType": "PersonAccount.PersonAccount",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636i",
+                            "description": "Account CustodianRecordPage"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__CustodianRecordPage",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "AC Basic User",
+                                "recordType": "Account.Custodian",
+                                "type_x": "Flexipage"
+                            }   
+                        },
+                        {
+                            "jiraTicket": "ac-70636j",
+                            "description": "Account CustodianRecordPage"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__CustodianRecordPage",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "Admin",
+                                "recordType": "Account.Custodian",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636k",
+                            "description": "Account Household"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ACHouseholdRecordPage",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "AC Basic User",
+                                "recordType": "Account.IndustriesHousehold",
+                                "type_x": "Flexipage"
+                            }   
+                        },
+                        {
+                            "jiraTicket": "ac-70636l",
+                            "description": "Account Household"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__ACHouseholdRecordPage",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "Admin",
+                                "recordType": "Account.IndustriesHousehold",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636m",
+                            "description": "Account Entity"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Account_Record_Page_Entity",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "AC Basic User",
+                                "recordType": "Account.Entity",
+                                "type_x": "Flexipage"
+                            }   
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Account Entity"
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Account_Record_Page_Entity",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "Admin",
+                                "recordType": "Account.Entity",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
+                }
+		    ]  
+		},
+
+        {
+            "sObjectName": "Campaign",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-51182",
+                    "description": "Adds lead conversion field mappings for lead to account",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "optionsMap": {
+                        "actionName": "View",
+                        "content": "command__AC_Campaign",
+                        "formFactor": "Small",
+                        "pageOrSobjectType": "Campaign",
+                        "profile": "AC Basic User",
+                        "recordType": "Campaign.command__AC_Campaign",
+                        "type_x": "Flexipage"
+                    }   
+                }
+		    ]  
+		}
+    ]
+}
