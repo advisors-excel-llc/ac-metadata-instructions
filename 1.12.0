@@ -10,33 +10,33 @@
                     "subTaskList": [
                         {
                             "jiraTicket": "ac-70636a",
-                            "description": "Account Business LRP --> Business RT"
+                            "description": "Account Business",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ACBusinessRecordPage1",
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "AC Basic User",
-                                "recordType": "Account.IndustriesBusiness",
+                                "recordType": "Account.FinServ__IndustriesBusiness",
                                 "type_x": "Flexipage"
                             }   
                         },
                         {
                             "jiraTicket": "ac-70636b",
-                            "description": "Account Business LRP --> Business RT"
+                            "description": "Account Business",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ACBusinessRecordPage1",
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "Admin",
-                                "recordType": "Account.IndustriesBusiness",
+                                "recordType": "Account.FinServ__IndustriesBusiness",
                                 "type_x": "Flexipage"
                             }  
                         },
                         {
                             "jiraTicket": "ac-70636c",
-                            "description": "Account Business LRP --> Transfer Company RT"
+                            "description": "Account Business LRP --> Transfer Company RT",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ACBusinessRecordPage1",
@@ -49,7 +49,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636d",
-                            "description": "Account Business LRP --> Transfer Company RT"
+                            "description": "Account Business LRP --> Transfer Company RT",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ACBusinessRecordPage1",
@@ -62,7 +62,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636e",
-                            "description": "Account Carrier LRP --> Carrier RT"
+                            "description": "Account Carrier LRP --> Carrier RT",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ACCarrierRecordPage",
@@ -75,7 +75,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636f",
-                            "description": "Account Business LRP --> Carrier RT"
+                            "description": "Account Business LRP --> Carrier RT",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ACCarrierRecordPage",
@@ -88,7 +88,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636g",
-                            "description": "Account Carrier LRP --> Carrier RT"
+                            "description": "Account Carrier LRP --> Carrier RT",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ClientRecordPage",
@@ -101,7 +101,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636h",
-                            "description": "Account Business LRP --> Carrier RT"
+                            "description": "Account Business LRP --> Carrier RT",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ClientRecordPage",
@@ -114,7 +114,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636i",
-                            "description": "Account CustodianRecordPage"
+                            "description": "Account CustodianRecordPage",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__CustodianRecordPage",
@@ -127,7 +127,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636j",
-                            "description": "Account CustodianRecordPage"
+                            "description": "Account CustodianRecordPage",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__CustodianRecordPage",
@@ -140,33 +140,33 @@
                         },
                         {
                             "jiraTicket": "ac-70636k",
-                            "description": "Account Household"
+                            "description": "Account Household",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ACHouseholdRecordPage",
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "AC Basic User",
-                                "recordType": "Account.IndustriesHousehold",
+                                "recordType": "Account.FinServ__IndustriesHousehold",
                                 "type_x": "Flexipage"
                             }   
                         },
                         {
                             "jiraTicket": "ac-70636l",
-                            "description": "Account Household"
+                            "description": "Account Household",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ACHouseholdRecordPage",
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "Admin",
-                                "recordType": "Account.IndustriesHousehold",
+                                "recordType": "Account.FinServ__IndustriesHousehold",
                                 "type_x": "Flexipage"
                             }  
                         },
                         {
                             "jiraTicket": "ac-70636m",
-                            "description": "Account Entity"
+                            "description": "Account Entity",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__Account_Record_Page_Entity",
@@ -179,7 +179,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636n",
-                            "description": "Account Entity"
+                            "description": "Account Entity",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__Account_Record_Page_Entity",
@@ -189,29 +189,34 @@
                                 "recordType": "Account.Entity",
                                 "type_x": "Flexipage"
                             }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Account Client Trust",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Client_Record_Page_Trust",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "AC Basic User",
+                                "recordType": "Account.command__Trust",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Account Client Trust",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Client_Record_Page_Trust",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Account",
+                                "profile": "Admin",
+                                "recordType": "Account.command__Trust",
+                                "type_x": "Flexipage"
+                            }  
                         }
                     ]
-                }
-		    ]  
-		},
-
-        {
-            "sObjectName": "Campaign",
-            "taskList": [
-                {
-                    "jiraTicket": "ac-51182",
-                    "description": "Adds lead conversion field mappings for lead to account",
-                    "actionType": "ActionOverride",
-                    "actionTypeName": "command__AC_Advisor",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__AC_Campaign",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "AC Basic User",
-                        "recordType": "Campaign.command__AC_Campaign",
-                        "type_x": "Flexipage"
-                    }   
                 }
 		    ]  
 		}
