@@ -88,7 +88,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636g",
-                            "description": "Account Carrier LRP --> Carrier RT",
+                            "description": "Account Client Record Page",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ClientRecordPage",
@@ -101,7 +101,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636h",
-                            "description": "Account Business LRP --> Carrier RT",
+                            "description": "Account Client Record Page",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__ClientRecordPage",
@@ -224,30 +224,37 @@
             "sObjectName": "Campaign",
             "taskList": [
                 {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Account Client Trust",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__AC_Campaign",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "AC Basic User",
-                        "recordType": "Campaign.command__AC_Campaign",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Account Client Trust",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__AC_Campaign",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "Admin",
-                        "recordType": "Campaign.command__AC_Campaign",
-                        "type_x": "Flexipage"
-                    }  
+                    "description": "Enable Lightning Pages on Campaign for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Account Client Trust",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AC_Campaign",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Campaign",
+                                "profile": "AC Basic User",
+                                "recordType": "Campaign.command__AC_Campaign",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Account Client Trust",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AC_Campaign",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Campaign",
+                                "profile": "Admin",
+                                "recordType": "Campaign.command__AC_Campaign",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
                 }
             ]
         },
@@ -255,30 +262,37 @@
             "sObjectName": "Event",
             "taskList": [
                 {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Advisor Event",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__AC_Event_Layout",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "AC Basic User",
-                        "recordType": "Campaign.command__AdvisorEvent",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Advisor Event",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__AC_Event_Layout",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "Admin",
-                        "recordType": "Campaign.command__AdvisorEvent",
-                        "type_x": "Flexipage"
-                    }  
+                    "description": "Enable Lightning Pages on Event for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636eventa",
+                            "description": "Advisor Event",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AC_Event_Layout",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Event",
+                                "profile": "AC Basic User",
+                                "recordType": "Event.command__AdvisorEvent",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636eventb",
+                            "description": "Advisor Event",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AC_Event_Layout",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Event",
+                                "profile": "Admin",
+                                "recordType": "Event.command__AdvisorEvent",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
                 }
             ]
         },
@@ -286,56 +300,63 @@
             "sObjectName": "Task",
             "taskList": [
                 {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Advisor Event",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__AC_Task_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "AC Basic User",
-                        "recordType": "Campaign.command__AdvisorTask",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Advisor Event",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__AC_Task_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "Admin",
-                        "recordType": "Campaign.command__AdvisorTask",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Client Event",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__AC_Task_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "AC Basic User",
-                        "recordType": "Campaign.command__ClientAssociateTask",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Client Event",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__AC_Task_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "Admin",
-                        "recordType": "Campaign.command__ClientAssociateTask",
-                        "type_x": "Flexipage"
-                    }  
+                    "description": "Enable Lightning Pages on Event for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636taska",
+                            "description": "Advisor Task",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AC_Task_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Task",
+                                "profile": "AC Basic User",
+                                "recordType": "Task.command__AdvisorTask",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636taskb",
+                            "description": "Advisor Task",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AC_Task_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Task",
+                                "profile": "Admin",
+                                "recordType": "Task.command__AdvisorTask",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636taskc",
+                            "description": "Client Associate Task",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AC_Task_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Task",
+                                "profile": "AC Basic User",
+                                "recordType": "Task.command__ClientAssociateTask",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636taskd",
+                            "description": "Client Associate Task",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AC_Task_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Task",
+                                "profile": "Admin",
+                                "recordType": "Task.command__ClientAssociateTask",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
                 }
             ]
         },
@@ -343,30 +364,37 @@
             "sObjectName": "Contact",
             "taskList": [
                 {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Advisor Event",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Contact_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "AC Basic User",
-                        "recordType": "Campaign.command__AdvisorTask",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Advisor Event",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Contact_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Campaign",
-                        "profile": "Admin",
-                        "recordType": "Campaign.command__AdvisorTask",
-                        "type_x": "Flexipage"
-                    }  
+                    "description": "Enable Lightning Pages on Contact for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Advisor Contact",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Contact_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Contact",
+                                "profile": "AC Basic User",
+                                "recordType": "Contact.command__AdvisorTask",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Advisor Contact",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Contact_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Contact",
+                                "profile": "Admin",
+                                "recordType": "Contact.command__AdvisorTask",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
                 }
             ]
         },
@@ -374,30 +402,37 @@
             "sObjectName": "Lead",
             "taskList": [
                 {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Lead General",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Lead_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Lead",
-                        "profile": "AC Basic User",
-                        "recordType": "Lead.FinServ__General",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Lead General",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Lead_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Lead",
-                        "profile": "Admin",
-                        "recordType": "Lead.FinServ__General",
-                        "type_x": "Flexipage"
-                    }  
+                    "description": "Enable Lightning Pages on Lead for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636leada,
+                            "description": "Lead General",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Lead_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Lead",
+                                "profile": "AC Basic User",
+                                "recordType": "Lead.FinServ__General",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636leadb,
+                            "description": "Lead General",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Lead_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Lead",
+                                "profile": "Admin",
+                                "recordType": "Lead.FinServ__General",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
                 }
             ]
         },
@@ -405,373 +440,387 @@
             "sObjectName": "Opportunity",
             "taskList": [
                 {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page Annuity",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "AC Basic User",
-                        "recordType": "Opportunity.command__Annuity",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page Annuity",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "Admin",
-                        "recordType": "Opportunity.command__Annuity",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page AUM",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "AC Basic User",
-                        "recordType": "Opportunity.command__AUM",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page AUM",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "Admin",
-                        "recordType": "Opportunity.command__AUM",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page General",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "AC Basic User",
-                        "recordType": "Opportunity.FinServ__General",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page General",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "Admin",
-                        "recordType": "Opportunity.FinServ__General",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page Life",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "AC Basic User",
-                        "recordType": "Opportunity.command__Life",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page Life",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "Admin",
-                        "recordType": "Opportunity.command__Life",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page Medicare",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "AC Basic User",
-                        "recordType": "Opportunity.command__Medicare",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page Medicare",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "Admin",
-                        "recordType": "Opportunity.command__Medicare",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page WalletShareOpportunity",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "AC Basic User",
-                        "recordType": "Opportunity.FinServ__WalletShareOpportunity",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page WalletShareOpportunity",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "Admin",
-                        "recordType": "Opportunity.FinServ__WalletShareOpportunity",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page RetirementPlanning",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "AC Basic User",
-                        "recordType": "Opportunity.FinServ__RetirementPlanning",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Opportunity Record Page RetirementPlanning",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Opportunity_Record_Page",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "Opportunity",
-                        "profile": "Admin",
-                        "recordType": "Opportunity.FinServ__RetirementPlanning",
-                        "type_x": "Flexipage"
-                    }  
+                    "description": "Enable Lightning Pages on Opportunity for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page Annuity",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "AC Basic User",
+                                "recordType": "Opportunity.command__Annuity",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page Annuity",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "Admin",
+                                "recordType": "Opportunity.command__Annuity",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page AUM",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "AC Basic User",
+                                "recordType": "Opportunity.command__AUM",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page AUM",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "Admin",
+                                "recordType": "Opportunity.command__AUM",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page General",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "AC Basic User",
+                                "recordType": "Opportunity.FinServ__General",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page General",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "Admin",
+                                "recordType": "Opportunity.FinServ__General",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page Life",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "AC Basic User",
+                                "recordType": "Opportunity.command__Life",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page Life",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "Admin",
+                                "recordType": "Opportunity.command__Life",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page Medicare",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "AC Basic User",
+                                "recordType": "Opportunity.command__Medicare",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page Medicare",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "Admin",
+                                "recordType": "Opportunity.command__Medicare",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page WalletShareOpportunity",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "AC Basic User",
+                                "recordType": "Opportunity.FinServ__WalletShareOpportunity",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page WalletShareOpportunity",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "Admin",
+                                "recordType": "Opportunity.FinServ__WalletShareOpportunity",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page RetirementPlanning",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "AC Basic User",
+                                "recordType": "Opportunity.FinServ__RetirementPlanning",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636oppa",
+                            "description": "Opportunity Record Page RetirementPlanning",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Opportunity_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "Opportunity",
+                                "profile": "Admin",
+                                "recordType": "Opportunity.FinServ__RetirementPlanning",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
                 }
             ]
         },
         {
             "sObjectName": "FinServ__FinancialAccount__r",
-            "taskList": [
+            "taskList": [                
                 {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Alternative",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_Alt",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "AC Basic User",
-                        "recordType": "FinServ__FinancialAccount__c.command__Alternative",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Alternative",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_Alt",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "Admin",
-                        "recordType": "FinServ__FinancialAccount__c.command__Alternative",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Annuity",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_Annuity",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "AC Basic User",
-                        "recordType": "FinServ__FinancialAccount__c.command__Annuity",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Annuity",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_Annuity",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "Admin",
-                        "recordType": "FinServ__FinancialAccount__c.command__Annuity",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account AUM",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_AUM",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "AC Basic User",
-                        "recordType": "FinServ__FinancialAccount__c.command__AUM",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account AUM",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_AUM",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "Admin",
-                        "recordType": "FinServ__FinancialAccount__c.command__AUM",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Life",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_Life",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "AC Basic User",
-                        "recordType": "FinServ__FinancialAccount__c.command__Life",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Life",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_Life",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "Admin",
-                        "recordType": "FinServ__FinancialAccount__c.command__Life",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account REIT",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "AC Basic User",
-                        "recordType": "FinServ__FinancialAccount__c.command__REIT_s",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account REIT",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "Admin",
-                        "recordType": "FinServ__FinancialAccount__c.command__REIT_s",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Mutual Fund",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "AC Basic User",
-                        "recordType": "FinServ__FinancialAccount__c.command__Mutual_Funds",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Mutual Fund",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "Admin",
-                        "recordType": "FinServ__FinancialAccount__c.command__Mutual_Funds",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Other",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "AC Basic User",
-                        "recordType": "FinServ__FinancialAccount__c.command__Other",
-                        "type_x": "Flexipage"
-                    }  
-                },
-                {
-                    "jiraTicket": "ac-70636n",
-                    "description": "Financial Account Other",
-                    "optionsMap": {
-                        "actionName": "View",
-                        "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
-                        "formFactor": "Small",
-                        "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                        "profile": "Admin",
-                        "recordType": "FinServ__FinancialAccount__c.command__Other",
-                        "type_x": "Flexipage"
-                    }  
+                    "description": "Enable Lightning Pages on Financial Account for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Alternative",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_Alt",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "AC Basic User",
+                                "recordType": "FinServ__FinancialAccount__c.command__Alternative",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Alternative",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_Alt",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "Admin",
+                                "recordType": "FinServ__FinancialAccount__c.command__Alternative",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Annuity",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_Annuity",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "AC Basic User",
+                                "recordType": "FinServ__FinancialAccount__c.command__Annuity",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Annuity",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_Annuity",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "Admin",
+                                "recordType": "FinServ__FinancialAccount__c.command__Annuity",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account AUM",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_AUM",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "AC Basic User",
+                                "recordType": "FinServ__FinancialAccount__c.command__AUM",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account AUM",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_AUM",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "Admin",
+                                "recordType": "FinServ__FinancialAccount__c.command__AUM",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Life",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_Life",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "AC Basic User",
+                                "recordType": "FinServ__FinancialAccount__c.command__Life",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Life",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_Life",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "Admin",
+                                "recordType": "FinServ__FinancialAccount__c.command__Life",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account REIT",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "AC Basic User",
+                                "recordType": "FinServ__FinancialAccount__c.command__REIT_s",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account REIT",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "Admin",
+                                "recordType": "FinServ__FinancialAccount__c.command__REIT_s",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Mutual Fund",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "AC Basic User",
+                                "recordType": "FinServ__FinancialAccount__c.command__Mutual_Funds",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Mutual Fund",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "Admin",
+                                "recordType": "FinServ__FinancialAccount__c.command__Mutual_Funds",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Other",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "AC Basic User",
+                                "recordType": "FinServ__FinancialAccount__c.command__Other",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636n",
+                            "description": "Financial Account Other",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_REIT_Mutual_Fund_Other",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "Admin",
+                                "recordType": "FinServ__FinancialAccount__c.command__Other",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
                 }
             ]
         }
