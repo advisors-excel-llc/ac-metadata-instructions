@@ -407,7 +407,7 @@
                     "actionTypeName": "command__AC_Advisor",
                     "subTaskList": [
                         {
-                            "jiraTicket": "ac-70636leada,
+                            "jiraTicket": "ac-70636leada",
                             "description": "Lead General",
                             "optionsMap": {
                                 "actionName": "View",
@@ -420,7 +420,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636leadb,
+                            "jiraTicket": "ac-70636leadb",
                             "description": "Lead General",
                             "optionsMap": {
                                 "actionName": "View",
