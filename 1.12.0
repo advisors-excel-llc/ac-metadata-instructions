@@ -43,7 +43,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "AC Basic User",
-                                "recordType": "Account.Transfer_Company",
+                                "recordType": "Account.command__Transfer_Company",
                                 "type_x": "Flexipage"
                             }   
                         },
@@ -56,7 +56,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "Admin",
-                                "recordType": "Account.Transfer_Company",
+                                "recordType": "Account.command__Transfer_Company",
                                 "type_x": "Flexipage"
                             }  
                         },
@@ -69,7 +69,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "AC Basic User",
-                                "recordType": "Account.Carrier",
+                                "recordType": "Account.command__Carrier",
                                 "type_x": "Flexipage"
                             }   
                         },
@@ -82,7 +82,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "Admin",
-                                "recordType": "Account.Carrier",
+                                "recordType": "Account.command__Carrier",
                                 "type_x": "Flexipage"
                             }  
                         },
@@ -121,7 +121,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "AC Basic User",
-                                "recordType": "Account.Custodian",
+                                "recordType": "Account.command__Custodian",
                                 "type_x": "Flexipage"
                             }   
                         },
@@ -134,7 +134,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "Admin",
-                                "recordType": "Account.Custodian",
+                                "recordType": "Account.command__Custodian",
                                 "type_x": "Flexipage"
                             }  
                         },
@@ -173,7 +173,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "AC Basic User",
-                                "recordType": "Account.Entity",
+                                "recordType": "Account.command__Entity",
                                 "type_x": "Flexipage"
                             }   
                         },
@@ -186,7 +186,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Account",
                                 "profile": "Admin",
-                                "recordType": "Account.Entity",
+                                "recordType": "Account.command__Entity",
                                 "type_x": "Flexipage"
                             }  
                         },
@@ -339,7 +339,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Task",
                                 "profile": "AC Basic User",
-                                "recordType": "Task.command__ClientAssociateTask",
+                                "recordType": "Task.FinServ__ClientAssociateTask",
                                 "type_x": "Flexipage"
                             }  
                         },
@@ -352,7 +352,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Task",
                                 "profile": "Admin",
-                                "recordType": "Task.command__ClientAssociateTask",
+                                "recordType": "Task.FinServ__ClientAssociateTask",
                                 "type_x": "Flexipage"
                             }  
                         }
@@ -631,7 +631,7 @@
             ]
         },
         {
-            "sObjectName": "FinServ__FinancialAccount__r",
+            "sObjectName": "FinServ__FinancialAccount__c",
             "taskList": [                
                 {
                     "description": "Enable Lightning Pages on Financial Account for Mobile use",
