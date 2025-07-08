@@ -275,7 +275,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Event",
                                 "profile": "AC Basic User",
-                                "recordType": "Event.command__AdvisorEvent",
+                                "recordType": "Event.FinServ__AdvisorEvent",
                                 "type_x": "Flexipage"
                             }  
                         },
@@ -288,7 +288,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Event",
                                 "profile": "Admin",
-                                "recordType": "Event.command__AdvisorEvent",
+                                "recordType": "Event.FinServ__AdvisorEvent",
                                 "type_x": "Flexipage"
                             }  
                         }
@@ -313,7 +313,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Task",
                                 "profile": "AC Basic User",
-                                "recordType": "Task.command__AdvisorTask",
+                                "recordType": "Task.FinServ__AdvisorTask",
                                 "type_x": "Flexipage"
                             }  
                         },
@@ -326,7 +326,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Task",
                                 "profile": "Admin",
-                                "recordType": "Task.command__AdvisorTask",
+                                "recordType": "Task.FinServ__AdvisorTask",
                                 "type_x": "Flexipage"
                             }  
                         },
