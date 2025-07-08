@@ -95,7 +95,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "PersonAccount",
                                 "profile": "AC Basic User",
-                                "recordType": "PersonAccount.PersonAccount",
+                                "recordType": "PersonAccount.command__PersonAccount",
                                 "type_x": "Flexipage"
                             }   
                         },
@@ -108,7 +108,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "PersonAccount",
                                 "profile": "Admin",
-                                "recordType": "PersonAccount.PersonAccount",
+                                "recordType": "PersonAccount.command__PersonAccount",
                                 "type_x": "Flexipage"
                             }  
                         },
