@@ -631,6 +631,120 @@
             ]
         },
         {
+            "sObjectName": "command__Custom_Note__c",
+            "taskList": [                
+                {
+                    "description": "Enable Lightning Pages on AE Custom Notes for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636Notea",
+                            "description": "Custom Notes",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AE_Note_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "command__Custom_Note__c",
+                                "profile": "AC Basic User",
+                                "recordType": "command__Custom_Note__c.command__Custom_Note",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636Notea",
+                            "description": "Custom Notes",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__AE_Note_Record_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "command__Custom_Note__c",
+                                "profile": "Admin",
+                                "recordType": "command__Custom_Note__c.command__Custom_Note",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sObjectName": "command__Gift__c",
+            "taskList": [                
+                {
+                    "description": "Enable Lightning Pages on Gift object for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636gifta",
+                            "description": "AC Gift",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Gift_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "command__Gift",
+                                "profile": "AC Basic User",
+                                "recordType": "command__Gift__c.command__AC_Gift",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636gifta",
+                            "description": "AC Gift",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Gift_Page",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "command__Gift",
+                                "profile": "Admin",
+                                "recordType": "command__Gift__c.command__AC_Gift",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sObjectName": "Case",
+            "taskList": [                
+                {
+                    "description": "Enable Lightning Pages on Case for Mobile use",
+                    "actionType": "ActionOverride",
+                    "actionTypeName": "command__AC_Advisor",
+                    "subTaskList": [
+                        {
+                            "jiraTicket": "ac-70636casea",
+                            "description": "Case",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_Alt",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "AC Basic User",
+                                "recordType": "FinServ__FinancialAccount__c.command_",
+                                "type_x": "Flexipage"
+                            }  
+                        },
+                        {
+                            "jiraTicket": "ac-70636casea",
+                            "description": "Case Alternative",
+                            "optionsMap": {
+                                "actionName": "View",
+                                "content": "command__Financial_Account_Alt",
+                                "formFactor": "Small",
+                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
+                                "profile": "AC Basic User",
+                                "recordType": "FinServ__FinancialAccount__c.command__Alternative",
+                                "type_x": "Flexipage"
+                            }  
+                        }
+                    ]
+                }
+            ]
+        },                        
+        {
             "sObjectName": "FinServ__FinancialAccount__c",
             "taskList": [                
                 {
