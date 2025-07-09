@@ -652,7 +652,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636Notea",
+                            "jiraTicket": "ac-70636Noteb",
                             "description": "Custom Notes",
                             "optionsMap": {
                                 "actionName": "View",
@@ -690,7 +690,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636gifta",
+                            "jiraTicket": "ac-70636giftb",
                             "description": "AC Gift",
                             "optionsMap": {
                                 "actionName": "View",
@@ -723,20 +723,20 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "FinServ__FinancialAccount__c",
                                 "profile": "AC Basic User",
-                                "recordType": "FinServ__FinancialAccount__c.command_",
+                                "recordType": "FinServ__FinancialAccount__c.command__AC_Case",
                                 "type_x": "Flexipage"
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636casea",
-                            "description": "Case Alternative",
+                            "jiraTicket": "ac-70636caseb",
+                            "description": "Case",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__Financial_Account_Alt",
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "FinServ__FinancialAccount__c",
                                 "profile": "AC Basic User",
-                                "recordType": "FinServ__FinancialAccount__c.command__Alternative",
+                                "recordType": "FinServ__FinancialAccount__c.command__AC_Case",
                                 "type_x": "Flexipage"
                             }  
                         }
