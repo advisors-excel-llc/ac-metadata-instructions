@@ -707,44 +707,6 @@
             ]
         },
         {
-            "sObjectName": "Case",
-            "taskList": [                
-                {
-                    "description": "Enable Lightning Pages on Case for Mobile use",
-                    "actionType": "ActionOverride",
-                    "actionTypeName": "command__AC_Advisor",
-                    "subTaskList": [
-                        {
-                            "jiraTicket": "ac-70636casea",
-                            "description": "Case",
-                            "optionsMap": {
-                                "actionName": "View",
-                                "content": "command__Financial_Account_Alt",
-                                "formFactor": "Small",
-                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                                "profile": "AC Basic User",
-                                "recordType": "FinServ__FinancialAccount__c.command__AC_Case",
-                                "type_x": "Flexipage"
-                            }  
-                        },
-                        {
-                            "jiraTicket": "ac-70636caseb",
-                            "description": "Case",
-                            "optionsMap": {
-                                "actionName": "View",
-                                "content": "command__Financial_Account_Alt",
-                                "formFactor": "Small",
-                                "pageOrSobjectType": "FinServ__FinancialAccount__c",
-                                "profile": "AC Basic User",
-                                "recordType": "FinServ__FinancialAccount__c.command__AC_Case",
-                                "type_x": "Flexipage"
-                            }  
-                        }
-                    ]
-                }
-            ]
-        },                        
-        {
             "sObjectName": "FinServ__FinancialAccount__c",
             "taskList": [                
                 {
