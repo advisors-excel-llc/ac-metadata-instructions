@@ -1,0 +1,20 @@
+{
+  "instructionList": [
+    {
+      "sObjectName": "Account",
+      "taskList": [
+        {
+          "jiraTicket": "ac-69490",
+          "description": "Adds lead conversion field mappings for lead to account",
+          "actionType": "LeadConvertSettings",
+          "actionTypeName": "none",
+          "optionsMap": {
+            "inputObject": "Lead",
+            "outputObject": "Account",
+            "fieldMappings": "command__Alert_Message__c:command__Alert_Message__c"
+          }
+        }
+      ]
+    }
+  ]
+}
