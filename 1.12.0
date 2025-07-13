@@ -377,7 +377,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Contact",
                                 "profile": "AC Basic User",
-                                "recordType": "Contact.command__AdvisorTask",
+                                "recordType": "Contact.command__Advisor",
                                 "type_x": "Flexipage"
                             }  
                         },
@@ -390,7 +390,7 @@
                                 "formFactor": "Small",
                                 "pageOrSobjectType": "Contact",
                                 "profile": "Admin",
-                                "recordType": "Contact.command__AdvisorTask",
+                                "recordType": "Contact.command__Advisor",
                                 "type_x": "Flexipage"
                             }  
                         }
