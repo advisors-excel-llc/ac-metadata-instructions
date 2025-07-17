@@ -246,7 +246,7 @@
                     "subTaskList": [
                         {
                             "jiraTicket": "ac-70636campa",
-                            "description": "Account Client Trust",
+                            "description": "AC Campaign",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__AC_Campaign",
@@ -259,7 +259,7 @@
                         },
                         {
                             "jiraTicket": "ac-70636campb",
-                            "description": "Account Client Trust",
+                            "description": "AC Campaign",
                             "optionsMap": {
                                 "actionName": "View",
                                 "content": "command__AC_Campaign",
