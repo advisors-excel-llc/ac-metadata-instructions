@@ -458,7 +458,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppb",
                             "description": "Opportunity Record Page Annuity",
                             "optionsMap": {
                                 "actionName": "View",
@@ -471,7 +471,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppc",
                             "description": "Opportunity Record Page AUM",
                             "optionsMap": {
                                 "actionName": "View",
@@ -484,7 +484,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppd",
                             "description": "Opportunity Record Page AUM",
                             "optionsMap": {
                                 "actionName": "View",
@@ -497,7 +497,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppe",
                             "description": "Opportunity Record Page General",
                             "optionsMap": {
                                 "actionName": "View",
@@ -510,7 +510,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppf",
                             "description": "Opportunity Record Page General",
                             "optionsMap": {
                                 "actionName": "View",
@@ -523,7 +523,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppg",
                             "description": "Opportunity Record Page Life",
                             "optionsMap": {
                                 "actionName": "View",
@@ -536,7 +536,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636opph",
                             "description": "Opportunity Record Page Life",
                             "optionsMap": {
                                 "actionName": "View",
@@ -549,7 +549,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppi",
                             "description": "Opportunity Record Page Medicare",
                             "optionsMap": {
                                 "actionName": "View",
@@ -562,7 +562,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppj",
                             "description": "Opportunity Record Page Medicare",
                             "optionsMap": {
                                 "actionName": "View",
@@ -575,7 +575,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppk",
                             "description": "Opportunity Record Page WalletShareOpportunity",
                             "optionsMap": {
                                 "actionName": "View",
@@ -588,7 +588,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppl",
                             "description": "Opportunity Record Page WalletShareOpportunity",
                             "optionsMap": {
                                 "actionName": "View",
@@ -601,7 +601,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppm",
                             "description": "Opportunity Record Page RetirementPlanning",
                             "optionsMap": {
                                 "actionName": "View",
@@ -614,7 +614,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636oppa",
+                            "jiraTicket": "ac-70636oppn",
                             "description": "Opportunity Record Page RetirementPlanning",
                             "optionsMap": {
                                 "actionName": "View",
