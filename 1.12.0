@@ -1,22 +1,6 @@
 {
   "instructionList": [
         {
-            "description": "remove Mobile Only option from Salesforce1 app",
-            "taskList": [
-                {
-                    "actionType": "DeclarativeMetadata",
-                    "actionTypeName": "none",
-                    "optionsMap": {
-                        "packageMemeber": "ConnectedApp",
-                        "filePath": "connectedApps/CPQIntegrationUserApp.connectedApp",
-                        "packageMemeber": "ConnectedApp",
-                        "packageSubMembers": "CPQIntegrationUserApp"
-                    }
-                }
-            ]
-        }
-        ,
-        {
             "sObjectName": "Account",
             "taskList": [
                 {
