@@ -1,6 +1,22 @@
 {
   "instructionList": [
         {
+            "description": "remove Mobile Only option from Salesforce1 app",
+            "taskList": [
+                {
+                    "actionType": "DeclarativeMetadata",
+                    "actionTypeName": "none",
+                    "optionsMap": {
+                        "packageMemeber": "ConnectedApp",
+                        "filePath": "connectedApps/CPQIntegrationUserApp.connectedApp",
+                        "packageMemeber": "ConnectedApp",
+                        "packageSubMembers": "CPQIntegrationUserApp"
+                    }
+                }
+            ]
+        }
+        ,
+        {
             "sObjectName": "Account",
             "taskList": [
                 {
@@ -229,7 +245,7 @@
                     "actionTypeName": "command__AC_Advisor",
                     "subTaskList": [
                         {
-                            "jiraTicket": "ac-70636campaigna",
+                            "jiraTicket": "ac-70636campa",
                             "description": "Account Client Trust",
                             "optionsMap": {
                                 "actionName": "View",
@@ -242,7 +258,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636campaignb",
+                            "jiraTicket": "ac-70636campb",
                             "description": "Account Client Trust",
                             "optionsMap": {
                                 "actionName": "View",
@@ -369,7 +385,7 @@
                     "actionTypeName": "command__AC_Advisor",
                     "subTaskList": [
                         {
-                            "jiraTicket": "ac-70636contacta",
+                            "jiraTicket": "ac-70636conta",
                             "description": "Advisor Contact",
                             "optionsMap": {
                                 "actionName": "View",
@@ -382,7 +398,7 @@
                             }  
                         },
                         {
-                            "jiraTicket": "ac-70636contactb",
+                            "jiraTicket": "ac-70636contb",
                             "description": "Advisor Contact",
                             "optionsMap": {
                                 "actionName": "View",
