@@ -899,6 +899,44 @@
                     ]
                 }
             ]
+        },
+        {
+            "sObjectName": "PersonAccount",
+            "instructionTypeName": "command__Client",
+            "taskList": [
+                 {
+                     "jiraTicket": "ac-69486a",
+                     "description": "Add Alert Message field to Description section of Client Layout",
+                     "actionType": "Field",
+                     "actionTypeName": "command__Alert_Message__c",
+                     "location": {
+                         "position": "Below",
+                         "reference": "Description",
+                         "section": "Description",
+                         "column": 0,
+                         "behavior": "Edit"
+                     }
+                 }
+            ]
+        },
+        {
+            "sObjectName": "Lead",
+            "instructionTypeName": "command__AC Lead Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-69486b",
+                    "description": "Add Alert Message field to Description section of Lead Layout",
+                    "actionType": "Field",
+                    "actionTypeName": "command__Alert_Message__c",
+                    "location": {
+                        "position": "Below",
+                        "reference": "Description",
+                        "section": "Description",
+                        "column": 0,
+                        "behavior": "Edit"
+                    }
+                }
+            ]
         }
     ]
 }
