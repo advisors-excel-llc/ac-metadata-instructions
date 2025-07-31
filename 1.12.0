@@ -669,44 +669,6 @@
             ]
         },
         {
-            "sObjectName": "command__Gift__c",
-            "taskList": [                
-                {
-                    "description": "Enable Lightning Pages on Gift object for Mobile use",
-                    "actionType": "ActionOverride",
-                    "actionTypeName": "command__AC_Advisor",
-                    "subTaskList": [
-                        {
-                            "jiraTicket": "ac-70636gifta",
-                            "description": "AC Gift",
-                            "optionsMap": {
-                                "actionName": "View",
-                                "content": "command__Gift_Page",
-                                "formFactor": "Small",
-                                "pageOrSobjectType": "command__Gift",
-                                "profile": "AC Basic User",
-                                "recordType": "command__Gift__c.command__AC_Gift",
-                                "type_x": "Flexipage"
-                            }  
-                        },
-                        {
-                            "jiraTicket": "ac-70636giftb",
-                            "description": "AC Gift",
-                            "optionsMap": {
-                                "actionName": "View",
-                                "content": "command__Gift_Page",
-                                "formFactor": "Small",
-                                "pageOrSobjectType": "command__Gift",
-                                "profile": "Admin",
-                                "recordType": "command__Gift__c.command__AC_Gift",
-                                "type_x": "Flexipage"
-                            }  
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "sObjectName": "FinServ__FinancialAccount__c",
             "taskList": [                
                 {
