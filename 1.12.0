@@ -22,13 +22,13 @@
             "description": "Remove Platform actions from Layout",
             "taskList": [
                 {
-                    "jiraTicket": "ac-",
+                    "jiraTicket": "ac-75387b",
                     "actionType": "CopyFormFactor",
                     "actionTypeName": "nothing",
                     "optionsMap": {
                         "copyFrom": "Large",
                         "copyTo": "Small",
-                        "profiles": "AC Basic User, AC Ready Only, Admin",
+                        "profiles": "AC Basic User, AC Ready Only, 	System Administrator",
                         "actionName": "View",
                         "type": "Flexipage"
                     }
