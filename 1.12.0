@@ -1,6 +1,41 @@
 {
   "instructionList": [
         {
+            "instructionTypeName": "",
+            "description": "Add Phone to Desktop org default lightning page assignments",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-75387a",
+                    "actionType": "OrgDefaultOverrides",
+                    "actionTypeName": "nothing",
+                    "optionsMap": {
+                        "copyFrom": "Large",
+                        "copyTo": "Small",
+                        "actionName": "View",
+                        "type": "Flexipage"
+                    }
+                }
+            ]
+        },
+        {
+            "instructionTypeName": "command__AC_Advisor",
+            "description": "Remove Platform actions from Layout",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-",
+                    "actionType": "CopyFormFactor",
+                    "actionTypeName": "nothing",
+                    "optionsMap": {
+                        "copyFrom": "Large",
+                        "copyTo": "Small",
+                        "profiles": "AC Basic User, AC Ready Only, Admin",
+                        "actionName": "View",
+                        "type": "Flexipage"
+                    }
+                }
+            ]
+        },
+        {
             "sObjectName": "Account",
             "taskList": [
                 {
