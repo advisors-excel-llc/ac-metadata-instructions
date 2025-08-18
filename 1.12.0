@@ -1,6 +1,34 @@
 {
   "instructionList": [
         {
+            "instructionTypeName": "",
+            "description": "Add Phone to Desktop org default lightning page assignments",
+            "taskList": [
+                {
+                    "jiraTicket": "ac-75387a",
+                    "actionType": "OrgDefaultOverrides",
+                    "actionTypeName": "nothing",
+                    "optionsMap": {
+                        "copyFrom": "Large",
+                        "copyTo": "Small",
+                        "actionName": "View",
+                        "type": "Flexipage"
+                    }
+                },
+                {
+                    "jiraTicket": "ac-75387b",
+                    "actionType": "OrgDefaultOverrides",
+                    "actionTypeName": "nothing",
+                    "optionsMap": {
+                        "copyFrom": "Large",
+                        "copyTo": "Small",
+                        "actionName": "View",
+                        "type": "Flexipage"
+                    }
+                }
+            ]
+        },
+        {
             "sObjectName": "Account",
             "taskList": [
                 {
