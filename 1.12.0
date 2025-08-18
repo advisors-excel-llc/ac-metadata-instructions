@@ -14,9 +14,15 @@
                         "actionName": "View",
                         "type": "Flexipage"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "instructionTypeName": "command__AC_Advisor",
+            "description": "Remove Platform actions from Layout",
+            "taskList": [
                 {
-                    "jiraTicket": "ac-75387b",
+                    "jiraTicket": "ac-",
                     "actionType": "CopyFormFactor",
                     "actionTypeName": "nothing",
                     "optionsMap": {
