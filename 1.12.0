@@ -17,11 +17,12 @@
                 },
                 {
                     "jiraTicket": "ac-75387b",
-                    "actionType": "OrgDefaultOverrides",
+                    "actionType": "CopyFormFactor",
                     "actionTypeName": "nothing",
                     "optionsMap": {
                         "copyFrom": "Large",
                         "copyTo": "Small",
+                        "profiles": "AC Basic User, AC Ready Only, Admin",
                         "actionName": "View",
                         "type": "Flexipage"
                     }
