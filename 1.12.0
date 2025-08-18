@@ -28,7 +28,7 @@
                     "optionsMap": {
                         "copyFrom": "Large",
                         "copyTo": "Small",
-                        "profiles": "AC Basic User, AC Ready Only, 	System Administrator",
+                        "profiles": "AC Basic User,AC Ready Only,System Administrator",
                         "actionName": "View",
                         "type": "Flexipage"
                     }
