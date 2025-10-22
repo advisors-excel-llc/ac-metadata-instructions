@@ -1,0 +1,22 @@
+{
+  "instructionList": [
+    {
+      "sObjectName": "Global",
+      "instructionTypeName": "Global Layout",
+      "description": "Add Platform actions to Global Layout",
+      "taskList": [
+        {
+          "jiraTicket": "ac-68710",
+          "actionType": "PlatformAction",
+          "actionTypeName": "nothing",
+          "optionsMap": {
+            "platformActionType": "QuickAction",
+            "platformActionName": "New_AE_Note",
+            "platformActionListContext": "Global",
+            "operation": "add"
+          }
+        }
+      ]
+    }
+  ]
+}
