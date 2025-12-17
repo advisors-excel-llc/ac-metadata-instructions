@@ -11,7 +11,7 @@
           "actionTypeName": "nothing",
           "optionsMap": {
             "platformActionType": "QuickAction",
-            "platformActionName": "New_AE_Note",
+            "platformActionName": "command__New_AE_Note",
             "platformActionListContext": "Global",
             "operation": "add"
           }
