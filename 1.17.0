@@ -1,0 +1,64 @@
+{
+  "instructionList": [
+    {
+      "sobjectName":"Lead",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-66398a",
+          "description": "Delete Closed Referrals I Created List View",
+          "actionType": "ListView",
+          "actionTypeName": "Lead.Closed_Referrals_I_Created",
+          "optionsMap": {
+            "operation":"delete"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"Lead",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-66398b",
+          "description": "Delete Closed Referrals I'm Assigned List View",
+          "actionType": "ListView",
+          "actionTypeName": "Lead.Closed_Referrals_Im_Assigned",
+          "optionsMap": {
+            "operation":"delete"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"Lead",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-66398c",
+          "description": "Delete Open Referrals I Created List View",
+          "actionType": "ListView",
+          "actionTypeName": "Lead.Open_Referrals_I_Created",
+          "optionsMap": {
+            "operation":"delete"
+          }
+        }
+      ]
+    },
+    {
+      "sobjectName":"Lead",
+      "instructionTypeName":"ListView",
+      "taskList":[
+        {
+          "jiraTicket": "AC-66398d",
+          "description": "Delete My Unread Leads List View",
+          "actionType": "ListView",
+          "actionTypeName": "Lead.MyUnreadLeads",
+          "optionsMap": {
+            "operation":"delete"
+          }
+        }
+      ]
+    }
+  ]
+}
