@@ -1,7 +1,7 @@
 {
   "instructionList": [
     {
-      "sobjectName":"Lead",
+      "sObjectName":"Lead",
       "instructionTypeName":"ListView",
       "taskList":[
         {
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "sobjectName":"Lead",
+      "sObjectName":"Lead",
       "instructionTypeName":"ListView",
       "taskList":[
         {
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "sobjectName":"Lead",
+      "sObjectName":"Lead",
       "instructionTypeName":"ListView",
       "taskList":[
         {
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "sobjectName":"Lead",
+      "sObjectName":"Lead",
       "instructionTypeName":"ListView",
       "taskList":[
         {
