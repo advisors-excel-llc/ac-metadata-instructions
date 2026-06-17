@@ -1,0 +1,32 @@
+{
+  "instructionList": [
+    {
+      "sObjectName": "FinServ__ReciprocalRole__c",
+      "instructionTypeName": "ReciprocalRole",
+      "taskList": [
+        {
+          "jiraTicket": "ac-66204a",
+          "description": "Delete Power of Attorney / Client reciprocal role",
+          "actionType": "ReciprocalRole",
+          "actionTypeName": "FinServ__ReciprocalRole__c",
+          "optionsMap": {
+            "operation": "delete",
+            "name": "Client",
+            "inverseRole": "Power of Attorney"
+          }
+        },
+        {
+          "jiraTicket": "ac-66204b",
+          "description": "Delete Parent / Dependent reciprocal role",
+          "actionType": "ReciprocalRole",
+          "actionTypeName": "FinServ__ReciprocalRole__c",
+          "optionsMap": {
+            "operation": "delete",
+            "name": "Parent",
+            "inverseRole": "Dependent"
+          }
+        }
+      ]
+    }
+  ]
+}
