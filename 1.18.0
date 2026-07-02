@@ -1,11 +1,11 @@
 {
-  [
+  "instructionList": [
     {
       "instructionTypeName": "PermSetObjFldPermissions",
       "description": "Create AESYNC Integration Permissions permission set",
       "taskList": [
         {
-          "jiraTicket": "ac-82764b",
+          "jiraTicket": "ac-91373",
           "actionType": "PermSetObjFldPermissions",
           "actionTypeName": "AESYNC_Integration_Permissions",
           "actionTypeLabel": "AESYNC Integration Permissions",
