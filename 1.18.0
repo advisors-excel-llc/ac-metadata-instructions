@@ -9,38 +9,25 @@
           "actionType": "PermSetObjFldPermissions",
           "actionTypeName": "AESYNC_Integration_Permissions",
           "actionTypeLabel": "AESYNC Integration Permissions",
-          "optionsMap": {
 
-            "OBJ|Lead|allowRead" : "true",
-            "OBJ|Lead|allowEdit" : "true",
+          "objectPermissions": [
+            {"object": "Lead", "allowRead": true, "allowEdit": true},
+            {"object": "Account", "allowRead": true},
+            {"object": "Contact", "allowRead": true},
+            {"object": "Campaign", "allowRead": true}
+          ],
 
-            "FLD|Lead.Phone|readable" : "true",
-            "FLD|Lead.Phone|editable" : "true",
-
-            "FLD|Lead.Email|readable" : "true",
-            "FLD|Lead.Email|editable" : "true",
-
-            "FLD|Lead.Address|readable" : "true",
-            "FLD|Lead.Address|editable" : "true",
-
-            "FLD|Lead.LeadSource|readable" : "true",
-            "FLD|Lead.LeadSource|editable" : "true",
-
-            "FLD|Lead.command__AESYNC__c|readable" : "true",
-            "FLD|Lead.command__AESYNC__c|editable" : "true",
-
-            "OBJ|Account|allowRead" : "true",
-
-            "FLD|Account.command__Prospecting_Status__c|readable" : "true",
-            "FLD|Account.command__Account_Client_Since__c|readable" : "true",
-            "FLD|Account.command__Account_Stage__c|readable" : "true",
-
-            "OBJ|Contact|allowRead" : "true",
-
-            "FLD|Contact.Email|readable" : "true",
-
-            "OBJ|Campaign|allowRead" : "true"
-          }
+          "fieldPermissions": [
+            {"field": "Lead.Phone", "readable": true, "editable": true},
+            {"field": "Lead.Email", "readable": true, "editable": true},
+            {"field": "Lead.Address", "readable": true, "editable": true},
+            {"field": "Lead.LeadSource", "readable": true, "editable": true},
+            {"field": "Lead.command__AESYNC__c", "readable": true, "editable": true},
+            {"field": "Account.command__Prospecting_Status__c", "readable": true},
+            {"field": "Account.command__Account_Client_Since__c", "readable": true},
+            {"field": "Account.command__Account_Stage__c", "readable": true},
+            {"field": "Contact.Email", "readable": true}
+          ]
         }
       ]
     }
