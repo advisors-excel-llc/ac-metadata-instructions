@@ -1,0 +1,19 @@
+{
+  "instructionList": [
+    {
+      "instructionType": "PermSetObjFldPermissions",
+      "description": "Create AESYNC Integration Permissions",
+      "taskList": [
+        {
+          "jiraTicket": "ac-91373",
+          "actionType": "PermSetObjFldPermissions",
+          "actionTypeName": "AESYNC_Integration_Permissions",
+          "actionTypeLabel": "AESYNC Integration Permissions",
+          "optionsMap": {
+            "permissionSet": "{\"objectPermissions\":[{\"object\":\"Lead\",\"allowRead\":true,\"allowEdit\":true},{\"object\":\"Account\",\"allowRead\":true},{\"object\":\"Contact\",\"allowRead\":true},{\"object\":\"Campaign\",\"allowRead\":true}],\"fieldPermissions\":[{\"field\":\"Lead.Phone\",\"readable\":true,\"editable\":true},{\"field\":\"Lead.Email\",\"readable\":true,\"editable\":true},{\"field\":\"Lead.Address\",\"readable\":true,\"editable\":true},{\"field\":\"Lead.LeadSource\",\"readable\":true,\"editable\":true},{\"field\":\"Lead.command__AESYNC__c\",\"readable\":true,\"editable\":true},{\"field\":\"Account.command__Prospecting_Status__c\",\"readable\":true},{\"field\":\"Account.command__Account_Client_Since__c\",\"readable\":true},{\"field\":\"Account.command__Account_Stage__c\",\"readable\":true},{\"field\":\"Contact.Email\",\"readable\":true}]}"
+          }
+        }
+      ]
+    }
+  ]
+}
